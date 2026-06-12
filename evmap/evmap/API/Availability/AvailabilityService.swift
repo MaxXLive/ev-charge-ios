@@ -11,8 +11,13 @@ actor AvailabilityService {
     private let detectors: [any AvailabilityDetector]
 
     init() {
-        // v1: nur EnBW. Weitere Detektoren (Tesla, Chargecloud …) hier ergänzen.
-        detectors = [EnBwAvailabilityDetector()]
+        // Reihenfolge zählt: erster Detektor mit Daten gewinnt.
+        // Tesla-Owner vor -Gast (Login schaltet mehr Daten frei); EnBW schließt Tesla ohnehin aus.
+        detectors = [
+            TeslaOwnerAvailabilityDetector(),
+            TeslaGuestAvailabilityDetector(),
+            EnBwAvailabilityDetector(),
+        ]
     }
 
     /// Versucht der Reihe nach alle unterstützenden Detektoren; nil, wenn keiner Daten liefert.

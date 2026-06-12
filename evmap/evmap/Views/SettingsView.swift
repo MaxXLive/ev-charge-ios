@@ -37,6 +37,8 @@ struct SettingsView: View {
     @AppStorage("onboardingDone") private var onboardingDone = false
     @AppStorage("dataSources") private var dataSourcesRaw: String = ""
     @AppStorage("dataSource") private var selectedRaw = DataSourceID.goingElectric.rawValue
+    @Environment(TeslaAuthManager.self) private var teslaAuth
+    @State private var teslaError: String?
 
     private var activeSourcesLabel: String {
         let ids = dataSourcesRaw.split(separator: ",").compactMap { DataSourceID(rawValue: String($0)) }
@@ -90,12 +92,59 @@ struct SettingsView: View {
                     }
                 }
 
+                teslaSection
+
                 Section("Über") {
                     NavigationLink("Lizenzen & Credits") { AboutView() }
                     Button("Einführung erneut zeigen") { onboardingDone = false }
                 }
             }
             .navigationTitle("Einstellungen")
+        }
+    }
+
+    @ViewBuilder private var teslaSection: some View {
+        Section {
+            if teslaAuth.isLoggedIn {
+                HStack {
+                    Text("Angemeldet als")
+                    Spacer()
+                    Text(teslaAuth.email ?? "").foregroundStyle(.secondary)
+                }
+                Button("Abmelden", role: .destructive) { teslaAuth.logout() }
+            } else {
+                Button {
+                    Task {
+                        do { try await teslaAuth.login() }
+                        catch is CancellationError {}
+                        catch {
+                            if (error as NSError).domain != "com.apple.AuthenticationServices.WebAuthenticationSession" {
+                                teslaError = error.localizedDescription
+                            }
+                        }
+                    }
+                } label: {
+                    HStack {
+                        Text("Mit Tesla anmelden")
+                        if teslaAuth.isWorking {
+                            Spacer()
+                            ProgressView()
+                        }
+                    }
+                }
+                .disabled(teslaAuth.isWorking)
+            }
+        } header: {
+            Text("Tesla-Konto")
+        } footer: {
+            Text("Anmelden, um Echtzeitdaten und Preise für Tesla Supercharger zu sehen. Kein Tesla-Fahrzeug nötig.")
+        }
+        .alert("Anmeldung fehlgeschlagen", isPresented: Binding(
+            get: { teslaError != nil }, set: { if !$0 { teslaError = nil } }
+        )) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(teslaError ?? "")
         }
     }
 }

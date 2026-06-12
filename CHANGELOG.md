@@ -4,6 +4,19 @@ Release notes for each version.
 
 ---
 
+## v0.3.0 (Build 4)
+
+**Features**
+
+- Tesla Supercharger real-time data, mirroring the Android app:
+  - Live stall availability and pricing without login (guest mode)
+  - Optional Tesla account login (OAuth2/PKCE) to unlock owner/member pricing and the average utilization graph
+  - Inline "Sign in with Tesla" prompt shown on Supercharger details; no Tesla vehicle required
+  - Tesla account management (login/logout) in Settings; tokens stored in the Keychain
+- Dedicated "Tesla pricing" section in the charger detail view with per-tier rates (Tesla vehicles & members / other customers), time-of-use windows, and blocking fee
+
+---
+
 ## v0.2.0 (Build 3)
 
 **Fixes**

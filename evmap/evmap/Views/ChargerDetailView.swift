@@ -5,6 +5,7 @@
 //  Detail-Ansicht einer Ladestation (Android-Pendant: Bottom-Sheet in MapFragment).
 //
 
+import Charts
 import MapKit
 import SwiftData
 import SwiftUI
@@ -17,6 +18,7 @@ struct ChargerDetailView: View {
 
     @Environment(\.modelContext) private var modelContext
     @Environment(\.openURL) private var openURL
+    @Environment(TeslaAuthManager.self) private var teslaAuth
     @Query private var favorites: [FavoriteEntity]
 
     /// Vollständige Daten nach Nachladen.
@@ -85,6 +87,13 @@ struct ChargerDetailView: View {
                     VStack(alignment: .leading, spacing: 18) {
                         header
                         connectorsSection
+                        teslaLoginPrompt
+                        if let buckets = availability?.utilization, !buckets.isEmpty {
+                            teslaUtilizationSection(buckets)
+                        }
+                        if let pricing = availability?.pricing {
+                            teslaPricingSection(pricing)
+                        }
                         if let cost = current.cost, !cost.isEmpty {
                             costSection(cost)
                         }
@@ -285,6 +294,9 @@ struct ChargerDetailView: View {
     }
 
     private func realtimeSourceText(_ av: ChargeLocationStatus) -> String {
+        if av.source == "Tesla" {
+            return String(localized: "Echtzeit-Status (Beta): Tesla")
+        }
         var text = String(localized: "Echtzeit-Daten: \(av.source)")
         if let last = av.lastChange {
             let fmt = RelativeDateTimeFormatter()
@@ -462,6 +474,169 @@ struct ChargerDetailView: View {
             }
             .foregroundStyle(.tint)
             .buttonStyle(.plain)
+        }
+    }
+
+    // MARK: - Tesla
+
+    private var isTeslaSupercharger: Bool { TeslaSupport.isSupercharger(current) }
+
+    /// Inline-Aufforderung zum Tesla-Login (nur Supercharger, nicht angemeldet).
+    @ViewBuilder private var teslaLoginPrompt: some View {
+        if isTeslaSupercharger && !teslaAuth.isLoggedIn {
+            VStack(alignment: .leading, spacing: 8) {
+                Label("Echtzeitdaten für Tesla Supercharger", systemImage: "bolt.car")
+                    .font(.subheadline.weight(.semibold))
+                Text("Mit Tesla anmelden, um Live-Belegung, Auslastung und Preise zu sehen. Kein Tesla-Fahrzeug nötig.")
+                    .font(.footnote).foregroundStyle(.secondary)
+                Button {
+                    Task {
+                        do {
+                            try await teslaAuth.login()
+                            availability = await model.loadAvailability(for: current)
+                        } catch {}
+                    }
+                } label: {
+                    HStack {
+                        Text("Mit Tesla anmelden")
+                        if teslaAuth.isWorking { Spacer(); ProgressView() }
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                .disabled(teslaAuth.isWorking)
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(.quaternary.opacity(0.5), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+        }
+    }
+
+    private func teslaUtilizationSection(_ buckets: [TeslaUtilizationBucket]) -> some View {
+        section("Durchschnittliche Auslastung", systemImage: "chart.bar") {
+            Chart(buckets) { b in
+                BarMark(
+                    x: .value("Stunde", b.hour),
+                    y: .value("Auslastung", b.percent)
+                )
+                .foregroundStyle(EVMapColor.available)
+            }
+            .chartYScale(domain: 0 ... 100)
+            .chartYAxis {
+                AxisMarks(values: [0, 50, 100]) { v in
+                    AxisGridLine()
+                    AxisValueLabel { if let p = v.as(Int.self) { Text("\(p)%") } }
+                }
+            }
+            .chartXScale(domain: 0 ... 23)
+            .chartXAxis {
+                AxisMarks(values: [0, 6, 12, 18]) { v in
+                    AxisValueLabel { if let h = v.as(Int.self) { Text(String(format: "%02d:00", h)) } }
+                }
+            }
+            .frame(height: 120)
+        }
+    }
+
+    private func teslaPricingSection(_ pricing: TeslaPricing) -> some View {
+        section("Tesla-Preise", systemImage: "bolt.car") {
+            VStack(alignment: .leading, spacing: 10) {
+                if let member = pricing.memberRates {
+                    teslaTier(
+                        pricing.userRates != nil
+                            ? String(localized: "Tesla-Fahrzeuge & Mitglieder")
+                            : String(localized: "Nur Tesla-Fahrzeuge"),
+                        member
+                    )
+                }
+                if let user = pricing.userRates {
+                    teslaTier(String(localized: "Andere Kund:innen"), user)
+                }
+                if let parking = pricing.memberRates?.activePricebook.parking, !parking.rates.isEmpty {
+                    Text("Blockiergebühr: \(formatTeslaRate(parking.rates, parking.currencyCode, parking.uom))")
+                        .font(.footnote).foregroundStyle(.secondary)
+                }
+            }
+        }
+    }
+
+    @ViewBuilder private func teslaTier(_ title: String, _ rates: TeslaRates) -> some View {
+        let charging = rates.activePricebook.charging
+        if let tou = charging.touRates, tou.enabled, !tou.activeRatesByTime.isEmpty {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title).font(.callout.weight(.semibold))
+                ForEach(Array(teslaTouLines(charging).enumerated()), id: \.offset) { _, line in
+                    Text(line).font(.footnote).foregroundStyle(.secondary)
+                }
+            }
+        } else {
+            HStack(spacing: 6) {
+                Text(title).font(.callout.weight(.semibold))
+                Text(formatTeslaRate(charging.rates, charging.currencyCode, charging.uom))
+                    .font(.callout)
+            }
+        }
+    }
+
+    /// Zeitabhängige Tarife formatieren (Spezialfall 2 Tarife: nur Hochpreiszeiten + „Andere Zeiten").
+    private func teslaTouLines(_ c: TeslaPricebookDetails) -> [String] {
+        guard let tou = c.touRates else { return [] }
+        let byTime = tou.activeRatesByTime
+        let distinct = Array(Set(byTime.map { $0.rates })).sorted { ($0.max() ?? 0) > ($1.max() ?? 0) }
+        if distinct.count == 2 {
+            let highTimes = byTime.filter { $0.rates == distinct[0] }
+                .map { "\(teslaFormatTime($0.startTime))–\(teslaFormatTime($0.endTime))" }
+                .joined(separator: ", ")
+            return [
+                "\(highTimes): \(formatTeslaRate(distinct[0], c.currencyCode, c.uom))",
+                String(localized: "Andere Zeiten: \(formatTeslaRate(distinct[1], c.currencyCode, c.uom))"),
+            ]
+        }
+        return byTime.map {
+            "\(teslaFormatTime($0.startTime))–\(teslaFormatTime($0.endTime)): \(formatTeslaRate($0.rates, c.currencyCode, c.uom))"
+        }
+    }
+
+    private func formatTeslaRate(_ rates: [Double], _ currency: String, _ uom: String) -> String {
+        guard let rate = rates.max() else { return "" }
+        let unit: String
+        switch uom {
+        case "kwh": unit = "/kWh"
+        case "min": unit = "/min"
+        default: return ""
+        }
+        let value = "\(teslaCurrencySymbol(currency))\(String(format: "%.2f", rate))\(unit)"
+        return rates.count > 1 ? String(localized: "bis zu \(value)") : value
+    }
+
+    private func teslaFormatTime(_ s: String) -> String {
+        let parts = s.split(separator: ":")
+        guard let h = Int(parts.first ?? "") else { return s }
+        let m = parts.count > 1 ? (Int(parts[1]) ?? 0) : 0
+        var comps = DateComponents()
+        comps.hour = h == 24 ? 23 : h
+        comps.minute = h == 24 ? 59 : m
+        guard let date = Calendar.current.date(from: comps) else { return s }
+        let fmt = DateFormatter()
+        fmt.locale = .current
+        fmt.timeStyle = .short
+        return fmt.string(from: date)
+    }
+
+    /// Währungssymbole wie im Android-Original (ui/BindingAdapters.kt `currency`).
+    private func teslaCurrencySymbol(_ code: String) -> String {
+        switch code {
+        case "EUR": return "€"
+        case "USD": return "$"
+        case "DKK", "SEK", "NOK": return "kr."
+        case "PLN": return "zł"
+        case "CHF": return "Fr. "
+        case "CZK": return "Kč"
+        case "GBP": return "£"
+        case "HRK": return "kn"
+        case "HUF": return "Ft"
+        case "ISK": return "kr"
+        default: return code
         }
     }
 
