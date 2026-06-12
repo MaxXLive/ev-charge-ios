@@ -12,3 +12,6 @@ evmap/DerivedData/
 
 # Android reference clone (read-only, not part of this repo)
 input/
+
+# Local agent instructions (machine-specific paths, simulator UDID)
+CLAUDE.md
