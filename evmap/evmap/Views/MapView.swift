@@ -118,7 +118,9 @@ struct MapView: View {
                         }
                     case let .cluster(cluster):
                         Annotation("", coordinate: cluster.coordinates.clLocationCoordinate) {
-                            ClusterMarker(count: cluster.clusterCount)
+                            ClusterMarker(count: cluster.clusterCount) {
+                                zoomIntoCluster(cluster)
+                            }
                         }
                     }
                 }
@@ -242,6 +244,23 @@ struct MapView: View {
         }
     }
 
+    /// Auf ein Cluster hineinzoomen (zentrieren + Span verkleinern). Der folgende
+    /// Kamerawechsel lädt die Charger neu und löst das Cluster auf.
+    private func zoomIntoCluster(_ cluster: ChargeLocationCluster) {
+        let currentSpan = lastRegion?.span ?? Self.fallbackRegion.span
+        let factor = 3.0
+        let newSpan = MKCoordinateSpan(
+            latitudeDelta: max(currentSpan.latitudeDelta / factor, 0.002),
+            longitudeDelta: max(currentSpan.longitudeDelta / factor, 0.002)
+        )
+        withAnimation {
+            camera = .region(MKCoordinateRegion(
+                center: cluster.coordinates.clLocationCoordinate,
+                span: newSpan
+            ))
+        }
+    }
+
     private func centerOnUserOnce() {
         guard !didCenterOnUser, let coord = locationManager.currentLocation else { return }
         didCenterOnUser = true
@@ -274,15 +293,19 @@ private struct ChargerMarker: View {
 
 private struct ClusterMarker: View {
     let count: Int
+    let onTap: () -> Void
 
     var body: some View {
-        Text("\(count)")
-            .font(.system(size: 13, weight: .bold))
-            .foregroundStyle(.white)
-            .frame(minWidth: 36, minHeight: 36)
-            .background(Circle().fill(.blue.opacity(0.85)))
-            .overlay(Circle().stroke(.white, lineWidth: 2))
-            .shadow(radius: 2)
+        Button(action: onTap) {
+            Text("\(count)")
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(.white)
+                .frame(minWidth: 36, minHeight: 36)
+                .background(Circle().fill(.blue.opacity(0.85)))
+                .overlay(Circle().stroke(.white, lineWidth: 2))
+                .shadow(radius: 2)
+        }
+        .buttonStyle(.plain)
     }
 }
 

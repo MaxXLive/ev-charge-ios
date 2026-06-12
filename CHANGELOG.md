@@ -4,6 +4,18 @@ Release notes for each version.
 
 ---
 
+## v0.3.1 (Build 5)
+
+**Features**
+
+- Tapping a map cluster now zooms into it, expanding it into individual stations
+
+**Localization**
+
+- Added translations for all Tesla strings (login, pricing tiers, utilization, prompts) across the 11 supported languages
+
+---
+
 ## v0.3.0 (Build 4)
 
 **Features**
