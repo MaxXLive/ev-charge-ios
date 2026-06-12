@@ -25,6 +25,8 @@ struct ChargerDetailView: View {
     @State private var detailed: ChargeLocation?
     /// Echtzeit-Verfügbarkeit (falls eine Quelle Daten liefert).
     @State private var availability: ChargeLocationStatus?
+    /// Läuft gerade der erste Verfügbarkeits-Abruf (für Tesla-Platzhalter).
+    @State private var isLoadingAvailability = false
     /// Aktuell im Hero gezeigtes Foto.
     @State private var heroIndex = 0
     /// Vollbild-Galerie offen.
@@ -88,6 +90,9 @@ struct ChargerDetailView: View {
                         header
                         connectorsSection
                         teslaLoginPrompt
+                        if showTeslaLoading {
+                            teslaLoadingPlaceholder
+                        }
                         if let buckets = availability?.utilization, !buckets.isEmpty {
                             teslaUtilizationSection(buckets)
                         }
@@ -187,8 +192,12 @@ struct ChargerDetailView: View {
                 if !current.isDetailed {
                     detailed = await model.loadDetail(for: location)
                 }
+                isLoadingAvailability = true
                 availability = await model.loadAvailability(for: current)
+                isLoadingAvailability = false
             }
+            .animation(.easeInOut(duration: 0.2), value: isLoadingAvailability)
+            .animation(.easeInOut(duration: 0.2), value: availability?.pricing)
             .fullScreenCover(isPresented: $showGallery) {
                 PhotoGalleryView(photos: current.photos ?? [], initialIndex: heroIndex)
             }
@@ -481,6 +490,31 @@ struct ChargerDetailView: View {
 
     private var isTeslaSupercharger: Bool { TeslaSupport.isSupercharger(current) }
 
+    /// Platz für die (noch ladenden) Tesla-Echtzeitdaten reservieren, damit das Layout
+    /// beim Eintreffen nicht springt: nur bei angemeldetem Konto und solange keine Preise da sind.
+    private var showTeslaLoading: Bool {
+        isTeslaSupercharger && teslaAuth.isLoggedIn && isLoadingAvailability && availability?.pricing == nil
+    }
+
+    /// Skelett mit Spinner in etwa der Höhe von Auslastungs-Graph + Preisen.
+    private var teslaLoadingPlaceholder: some View {
+        section("Tesla-Echtzeitdaten", systemImage: "bolt.car") {
+            VStack(alignment: .leading, spacing: 12) {
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .fill(.quaternary.opacity(0.4))
+                    .frame(height: 120)
+                    .overlay { ProgressView() }
+                RoundedRectangle(cornerRadius: 6, style: .continuous)
+                    .fill(.quaternary.opacity(0.4))
+                    .frame(width: 220, height: 16)
+                RoundedRectangle(cornerRadius: 6, style: .continuous)
+                    .fill(.quaternary.opacity(0.4))
+                    .frame(width: 180, height: 16)
+            }
+        }
+        .transition(.opacity)
+    }
+
     /// Inline-Aufforderung zum Tesla-Login (nur Supercharger, nicht angemeldet).
     @ViewBuilder private var teslaLoginPrompt: some View {
         if isTeslaSupercharger && !teslaAuth.isLoggedIn {
@@ -493,7 +527,9 @@ struct ChargerDetailView: View {
                     Task {
                         do {
                             try await teslaAuth.login()
+                            isLoadingAvailability = true
                             availability = await model.loadAvailability(for: current)
+                            isLoadingAvailability = false
                         } catch {}
                     }
                 } label: {
@@ -652,7 +688,9 @@ struct ChargerDetailView: View {
         if let fresh = await model.loadDetail(for: location) {
             detailed = fresh
         }
+        isLoadingAvailability = true
         availability = await model.loadAvailability(for: current)
+        isLoadingAvailability = false
         isReloading = false
     }
 
@@ -719,5 +757,7 @@ private struct TeslaUtilizationChart: View {
             }
         }
         .frame(height: 120)
+        // Platz für die Scrubbing-Bubble, damit sie nicht in die Überschrift schneidet.
+        .padding(.top, 22)
     }
 }

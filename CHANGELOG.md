@@ -4,11 +4,16 @@ Release notes for each version.
 
 ---
 
-## v0.3.2 (Build 6)
+## v0.3.2 (Build 7)
 
 **Features**
 
 - Scrubbing on the Tesla average-utilization chart: drag across the graph to read the utilization for each hour (e.g. "12:00: 13 %")
+- Loading placeholder for Tesla real-time data: when signed in and viewing a Tesla Supercharger, a skeleton with a spinner reserves space while data loads, so the layout no longer jumps when it arrives
+
+**Fixes**
+
+- Leave headroom above the utilization chart so the scrubbing bubble no longer overlaps the section heading
 
 ---
 
