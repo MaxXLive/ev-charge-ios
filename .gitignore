@@ -1,0 +1,14 @@
+# API keys — never commit
+evmap/evmap/Secrets.plist
+
+# Xcode
+evmap/build/
+evmap/DerivedData/
+**/*.xcuserstate
+**/xcuserdata/
+**/*.xcscmblueprint
+**/*.xccheckout
+.DS_Store
+
+# Android reference clone (read-only, not part of this repo)
+input/
