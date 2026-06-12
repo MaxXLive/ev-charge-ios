@@ -19,6 +19,7 @@ struct FilterView: View {
     @State private var showSaveDialog = false
     @State private var newProfileName = ""
     @State private var unsupportedAlertKey: String? = nil
+    @State private var didLoadReferenceData = false
 
     var body: some View {
         NavigationStack {
@@ -66,10 +67,17 @@ struct FilterView: View {
             }
             .onAppear {
                 if working.isEmpty { working = model.currentFilterValues() }
-                Task {
-                    await model.loadReferenceDataIfNeeded()
-                    // Filterliste neu aufbauen nachdem alle RDs geladen (Union kann sich erweitern).
-                    working = model.currentFilterValues()
+            }
+            .task {
+                // Nur EINMAL nach RD-Load: sonst würde jedes erneute Erscheinen
+                // (z.B. Rück-Navigation aus der Mehrfachauswahl) die laufende Auswahl überschreiben.
+                guard !didLoadReferenceData else { return }
+                await model.loadReferenceDataIfNeeded()
+                didLoadReferenceData = true
+                // Filterliste neu aufbauen (Union kann sich erweitern) – bestehende
+                // Edits aus `working` dabei erhalten statt zurückzusetzen.
+                working = model.availableFilters.map { f in
+                    FilterWithValue(filter: f, value: working.first { $0.value.key == f.key }?.value ?? f.defaultValue)
                 }
             }
             .alert(

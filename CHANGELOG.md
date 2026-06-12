@@ -4,6 +4,14 @@ Release notes for each version.
 
 ---
 
+## v0.2.0 (Build 3)
+
+**Fixes**
+
+- Multiple-choice filters (networks, connectors, charge cards, categories) no longer reset to "All" when navigating back from the selection list — in-progress selections are now preserved
+
+---
+
 ## v0.2.0 (Build 2)
 
 **Localization**
