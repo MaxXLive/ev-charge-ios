@@ -89,6 +89,18 @@ evmap/evmap/
 - **SwiftData**: `FavoriteEntity`, `FilterProfileEntity` for local persistence
 - **MapKit**: SwiftUI `Map`, `MKLocalSearchCompleter`, annotation clustering
 
+## Differences from the Android Original
+
+This is a fresh native rewrite, not a 1:1 reproduction. Where the iOS platform offers a better idiom, we followed it rather than mirroring the Android implementation:
+
+- **Multiple data sources at once**: The Android app lets you pick a single active data source at a time. Here you can enable GoingElectric, Open Charge Map, and Nobil together and see merged results on one map. This drove additional work the original never needed: client-side clustering for non-GE sources (GE keeps its server clusters), a union of available filters across active sources, and per-source filter support indicators that grey out filters a given source can't honor.
+- **Language follows system settings**: The Android app ships an in-app language picker. On iOS we rely on the standard per-app language setting in the system Settings, which is the platform convention and removes a redundant in-app screen. Translation of free-text fields uses Apple's native Translation framework instead of a third-party/API-based translation.
+- **Native iOS layout, not an Android port**: The UI is built from scratch in SwiftUI following Apple's Human Interface Guidelines: a `TabView` for Map / Favorites / Settings, native `Map` with SwiftUI annotations, `.sheet` detail presentation, and system components throughout. Screens and navigation match iOS expectations rather than copying Android's Material layout.
+- **No third-party UI or map frameworks**: Pure SwiftUI + MapKit, no UIKit. The Android app uses Mapbox/Google Maps; here MapKit covers map rendering, clustering, and location search.
+- **Apple-native persistence**: SwiftData for favorites and filter profiles instead of the Android Room/database stack.
+
+What is intentionally kept the same: the data-source APIs and models, filter definitions, pin color logic by power level, and EnBW real-time availability matching, all ported to stay faithful to the original behavior.
+
 ## Adding a New Data Source
 
 1. Implement `ChargepointAPI` in `API/<SourceName>/`
