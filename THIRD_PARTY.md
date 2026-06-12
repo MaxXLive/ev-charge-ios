@@ -1,13 +1,13 @@
-# Drittanbieter-Hinweise / Third-Party Notices
+# Third-Party Notices
 
 ## EVMap (Android)
 
-Dieses Projekt ist ein nativer iOS-Nachbau und übernimmt Datenmodelle, API-Logik
-(GoingElectric) und Konzepte aus der quelloffenen Android-App **EVMap**.
+This project is a native iOS reimplementation and reuses data models, API logic
+(GoingElectric), and concepts from the open-source Android app **EVMap**.
 
-- Quelle: https://github.com/ev-map/EVMap
-- Copyright (c) 2020–2026 Johan von Forstner und Mitwirkende
-- Lizenz: MIT
+- Source: https://github.com/ev-map/EVMap
+- Copyright (c) 2020-2026 Johan von Forstner and contributors
+- License: MIT
 
 ```
 MIT License
@@ -33,7 +33,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## Datenquellen
+## Data Sources
 
-- **GoingElectric.de** – Ladestationsdaten der Community (API-Key erforderlich).
-- **Apple MapKit** – Karten, Geocoding/Suche (Teil von iOS).
+- **GoingElectric.de**: community charging station data (API key required).
+- **Apple MapKit**: maps, geocoding/search (part of iOS).
