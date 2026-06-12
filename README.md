@@ -2,6 +2,12 @@
 
 A native iOS/SwiftUI port of [EVMap](https://ev-map.app) — an open-source Android app for finding EV charging stations (MIT License, Copyright Johan von Forstner). Ad-free, non-commercial, open source.
 
+<p align="center">
+  <img src="assets/screenshots/en/screenshot-map.png" width="32%" alt="Map" />
+  <img src="assets/screenshots/en/screenshot-charger-details.png" width="32%" alt="Station detail" />
+  <img src="assets/screenshots/en/screenshot-filter.png" width="32%" alt="Filters" />
+</p>
+
 ## Features
 
 - **Multiple data sources**: GoingElectric (DACH), Open Charge Map (worldwide), Nobil (Norway/Sweden) — use one or combine multiple simultaneously

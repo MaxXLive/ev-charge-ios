@@ -53,7 +53,7 @@ struct ChargerDetailView: View {
         case "openchargemap": return "Open Charge Map"
         case "nobil": return "NOBIL"
         case "openstreetmap": return "OpenStreetMap"
-        default: return "Datenquelle"
+        default: return String(localized: "Datenquelle")
         }
     }
 
@@ -148,7 +148,7 @@ struct ChargerDetailView: View {
                         Image(systemName: isFavorite ? "star.fill" : "star")
                             .foregroundStyle(isFavorite ? .yellow : .secondary)
                     }
-                    .accessibilityLabel(isFavorite ? "Favorit entfernen" : "Als Favorit speichern")
+                    .accessibilityLabel(isFavorite ? String(localized: "Favorit entfernen") : String(localized: "Als Favorit speichern"))
 
                     if let share = shareURL {
                         ShareLink(item: share, subject: Text(current.name)) {
@@ -285,11 +285,12 @@ struct ChargerDetailView: View {
     }
 
     private func realtimeSourceText(_ av: ChargeLocationStatus) -> String {
-        var text = "Echtzeit-Daten: \(av.source)"
+        var text = String(localized: "Echtzeit-Daten: \(av.source)")
         if let last = av.lastChange {
             let fmt = RelativeDateTimeFormatter()
-            fmt.locale = Locale(identifier: "de_DE")
-            text += " · aktualisiert \(fmt.localizedString(for: last, relativeTo: .now))"
+            fmt.locale = .current
+            let rel = fmt.localizedString(for: last, relativeTo: .now)
+            text += " · " + String(localized: "aktualisiert \(rel)")
         }
         return text
     }
@@ -298,10 +299,10 @@ struct ChargerDetailView: View {
         section("Kosten", systemImage: "eurosign.circle") {
             VStack(alignment: .leading, spacing: 4) {
                 if let fc = cost.freecharging {
-                    Text(fc ? "⚡ Laden kostenlos" : "⚡ Laden kostenpflichtig")
+                    if fc { Text("⚡ Laden kostenlos") } else { Text("⚡ Laden kostenpflichtig") }
                 }
                 if let fp = cost.freeparking {
-                    Text(fp ? "🅿️ Parken kostenlos" : "🅿️ Parken kostenpflichtig")
+                    if fp { Text("🅿️ Parken kostenlos") } else { Text("🅿️ Parken kostenpflichtig") }
                 }
                 if let d = cost.descriptionLong ?? cost.descriptionShort {
                     Text(d).foregroundStyle(.secondary).font(.footnote)
@@ -316,13 +317,9 @@ struct ChargerDetailView: View {
                 Text("24 Stunden geöffnet")
             } else if let days = hours.days {
                 VStack(alignment: .leading, spacing: 2) {
-                    dayRow("Mo", days.monday)
-                    dayRow("Di", days.tuesday)
-                    dayRow("Mi", days.wednesday)
-                    dayRow("Do", days.thursday)
-                    dayRow("Fr", days.friday)
-                    dayRow("Sa", days.saturday)
-                    dayRow("So", days.sunday)
+                    ForEach(Array(weekdayRows(days).enumerated()), id: \.offset) { _, row in
+                        dayRow(row.label, row.hours)
+                    }
                 }.font(.callout.monospacedDigit())
             } else if let desc = hours.description {
                 Text(desc)
@@ -330,10 +327,26 @@ struct ChargerDetailView: View {
         }
     }
 
+    /// Wochentags-Kürzel in der Sprache des Systems (Mo–So), in der passenden Reihenfolge.
+    private func weekdayRows(_ days: OpeningHoursDays) -> [(label: String, hours: Hours?)] {
+        // Calendar liefert Kürzel So..Sa (Index 0 = Sonntag). Wir ordnen Mo..So.
+        let symbols = Calendar.current.shortWeekdaySymbols
+        let mondayFirst = [2, 3, 4, 5, 6, 7, 1]  // 1=So … 7=Sa
+        let dayHours: [Hours?] = [days.monday, days.tuesday, days.wednesday,
+                                  days.thursday, days.friday, days.saturday, days.sunday]
+        return zip(mondayFirst, dayHours).map { weekday, h in
+            (label: symbols[weekday - 1], hours: h)
+        }
+    }
+
     private func dayRow(_ label: String, _ hours: Hours?) -> some View {
         HStack {
-            Text(label).frame(width: 28, alignment: .leading).foregroundStyle(.secondary)
-            Text(hours?.description ?? "geschlossen")
+            Text(label).frame(width: 32, alignment: .leading).foregroundStyle(.secondary)
+            if let desc = hours?.description {
+                Text(desc)
+            } else {
+                Text("geschlossen")
+            }
             Spacer()
         }
     }
@@ -455,7 +468,7 @@ struct ChargerDetailView: View {
     // MARK: - Bausteine
 
     private func section<Content: View>(
-        _ title: String,
+        _ title: LocalizedStringKey,
         systemImage: String,
         @ViewBuilder content: () -> Content
     ) -> some View {

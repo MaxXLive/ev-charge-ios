@@ -98,22 +98,22 @@ struct Chargepoint: Codable, Hashable, Sendable {
             }
         }
 
-        /// Menschenlesbarer (deutscher) Name für einen Steckertyp.
+        /// Menschenlesbarer, lokalisierter Name für einen Steckertyp.
         static func displayName(for type: String) -> String {
             switch type {
-            case type1: return "Typ 1"
-            case type2Unknown, type2Socket, type2Plug: return "Typ 2"
-            case type3a: return "Typ 3A"
-            case type3c: return "Typ 3C"
-            case ccsType1: return "CCS Typ 1"
-            case ccsType2: return "CCS Typ 2"
-            case ccsUnknown: return "CCS"
-            case schuko: return "Schuko"
-            case chademo: return "CHAdeMO"
-            case supercharger: return "Tesla Supercharger"
-            case ceeBlau: return "CEE Blau"
-            case ceeRot: return "CEE Rot"
-            case teslaRoadsterHpc: return "Tesla HPC"
+            case type1: return String(localized: "Typ 1")
+            case type2Unknown, type2Socket, type2Plug: return String(localized: "Typ 2")
+            case type3a: return String(localized: "Typ 3A")
+            case type3c: return String(localized: "Typ 3C")
+            case ccsType1: return String(localized: "CCS Typ 1")
+            case ccsType2: return String(localized: "CCS Typ 2")
+            case ccsUnknown: return String(localized: "CCS")
+            case schuko: return String(localized: "Schuko")
+            case chademo: return String(localized: "CHAdeMO")
+            case supercharger: return String(localized: "Tesla Supercharger")
+            case ceeBlau: return String(localized: "CEE Blau")
+            case ceeRot: return String(localized: "CEE Rot")
+            case teslaRoadsterHpc: return String(localized: "Tesla HPC")
             default: return type
             }
         }

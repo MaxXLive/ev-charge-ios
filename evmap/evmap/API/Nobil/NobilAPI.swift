@@ -99,7 +99,7 @@ actor NobilAPI: ChargepointAPI {
     func getChargepointDetail(referenceData: ReferenceData, id: Int64) async -> Resource<ChargeLocation> {
         // Nobil liefert Volldaten bereits in der Suche; ein separater Detail-Abruf per Long-ID
         // ist nicht möglich (IDs sind z.B. "SWE_1234").
-        .error("Nicht unterstützt", nil)
+        .error(String(localized: "Nicht unterstützt"), nil)
     }
 
     func getReferenceData() async -> Resource<ReferenceData> {
@@ -112,31 +112,32 @@ actor NobilAPI: ChargepointAPI {
         let C = Chargepoint.Connector.self
         let connectors = [C.type1, C.type2Socket, C.type2Plug, C.ccsUnknown, C.chademo, C.supercharger]
         let connectorMap = Dictionary(uniqueKeysWithValues: connectors.map { ($0, C.displayName(for: $0)) })
+        // Keys sind feste Nobil-Werte (englisch), Anzeigewerte werden lokalisiert.
         let accessibilityMap: [String: String] = [
-            "Public": "Öffentlich",
-            "Visitors": "Besucher",
-            "Employees": "Mitarbeiter",
-            "By appointment": "Nach Vereinbarung",
-            "Residents": "Anwohner",
+            "Public": String(localized: "Öffentlich"),
+            "Visitors": String(localized: "Besucher"),
+            "Employees": String(localized: "Mitarbeiter"),
+            "By appointment": String(localized: "Nach Vereinbarung"),
+            "Residents": String(localized: "Anwohner"),
         ]
         return [
-            .boolean(key: "freeparking", name: "Kostenloses Parken"),
-            .boolean(key: "open_247", name: "24/7 geöffnet"),
-            .slider(key: "min_power", name: "Min. Leistung", min: 0, max: powerSteps.count - 1, steps: powerSteps, unit: "kW"),
-            .multipleChoice(key: "connectors", name: "Steckertypen", choices: connectorMap, commonChoices: nil, manyChoices: true),
-            .slider(key: "min_connectors", name: "Min. Anzahl Ladepunkte", min: 1, max: 10, steps: nil, unit: nil),
-            .multipleChoice(key: "accessibilities", name: "Zugänglichkeit", choices: accessibilityMap, commonChoices: nil, manyChoices: true),
+            .boolean(key: "freeparking", name: String(localized: "Kostenloses Parken")),
+            .boolean(key: "open_247", name: String(localized: "24/7 geöffnet")),
+            .slider(key: "min_power", name: String(localized: "Min. Leistung"), min: 0, max: powerSteps.count - 1, steps: powerSteps, unit: "kW"),
+            .multipleChoice(key: "connectors", name: String(localized: "Steckertypen"), choices: connectorMap, commonChoices: nil, manyChoices: true),
+            .slider(key: "min_connectors", name: String(localized: "Min. Anzahl Ladepunkte"), min: 1, max: 10, steps: nil, unit: nil),
+            .multipleChoice(key: "accessibilities", name: String(localized: "Zugänglichkeit"), choices: accessibilityMap, commonChoices: nil, manyChoices: true),
         ]
     }
 
     nonisolated private func errorMessage(_ error: Error) -> String {
         if let e = error as? APIError {
             switch e {
-            case let .http(code): return "Serverfehler (HTTP \(code))."
+            case let .http(code): return String(localized: "Serverfehler (HTTP \(code)).")
             case let .api(msg): return msg
             }
         }
         if let urlError = error as? URLError { return urlError.localizedDescription }
-        return "Antwort konnte nicht gelesen werden."
+        return String(localized: "Antwort konnte nicht gelesen werden.")
     }
 }

@@ -119,7 +119,7 @@ actor OpenChargeMapAPI: ChargepointAPI {
         referenceData: ReferenceData
     ) async -> Resource<ChargepointList> {
         guard let refData = referenceData as? OCMReferenceData else {
-            return .error("Referenzdaten fehlen", nil)
+            return .error(String(localized: "Referenzdaten fehlen"), nil)
         }
         do {
             let data = try await get(path: "/poi/", query: query)
@@ -160,7 +160,7 @@ actor OpenChargeMapAPI: ChargepointAPI {
 
     func getChargepointDetail(referenceData: ReferenceData, id: Int64) async -> Resource<ChargeLocation> {
         guard let refData = referenceData as? OCMReferenceData else {
-            return .error("Referenzdaten fehlen", nil)
+            return .error(String(localized: "Referenzdaten fehlen"), nil)
         }
         do {
             let data = try await get(path: "/poi/", query: [
@@ -170,7 +170,7 @@ actor OpenChargeMapAPI: ChargepointAPI {
                 URLQueryItem(name: "verbose", value: "false"),
             ])
             let pois = try JSONDecoder().decode([OCMChargepoint].self, from: data)
-            guard let poi = pois.first else { return .error("Nicht gefunden", nil) }
+            guard let poi = pois.first else { return .error(String(localized: "Nicht gefunden"), nil) }
             return .success(poi.convert(refData: refData, isDetailed: true))
         } catch {
             return .error(errorMessage(error), nil)
@@ -196,20 +196,20 @@ actor OpenChargeMapAPI: ChargepointAPI {
         let commonConnectors: Set<String> = ["1", "25", "1036", "32", "33", "2"]
 
         return [
-            .slider(key: "min_power", name: "Min. Leistung", min: 0, max: powerSteps.count - 1, steps: powerSteps, unit: "kW"),
-            .multipleChoice(key: "connectors", name: "Steckertypen", choices: plugMap, commonChoices: commonConnectors, manyChoices: true),
-            .multipleChoice(key: "operators", name: "Betreiber", choices: operatorMap, commonChoices: nil, manyChoices: true),
-            .boolean(key: "exclude_faults", name: "Defekte ausblenden"),
-            .slider(key: "min_connectors", name: "Min. Anzahl Ladepunkte", min: 1, max: 10, steps: nil, unit: nil),
+            .slider(key: "min_power", name: String(localized: "Min. Leistung"), min: 0, max: powerSteps.count - 1, steps: powerSteps, unit: "kW"),
+            .multipleChoice(key: "connectors", name: String(localized: "Steckertypen"), choices: plugMap, commonChoices: commonConnectors, manyChoices: true),
+            .multipleChoice(key: "operators", name: String(localized: "Betreiber"), choices: operatorMap, commonChoices: nil, manyChoices: true),
+            .boolean(key: "exclude_faults", name: String(localized: "Defekte ausblenden")),
+            .slider(key: "min_connectors", name: String(localized: "Min. Anzahl Ladepunkte"), min: 1, max: 10, steps: nil, unit: nil),
         ]
     }
 
     nonisolated private func errorMessage(_ error: Error) -> String {
         if let apiError = error as? APIError, case let .http(code) = apiError {
-            if code == 401 || code == 403 { return "API-Key fehlt oder ist ungültig." }
-            return "Serverfehler (HTTP \(code))."
+            if code == 401 || code == 403 { return String(localized: "API-Key fehlt oder ist ungültig.") }
+            return String(localized: "Serverfehler (HTTP \(code)).")
         }
         if let urlError = error as? URLError { return urlError.localizedDescription }
-        return "Antwort konnte nicht gelesen werden."
+        return String(localized: "Antwort konnte nicht gelesen werden.")
     }
 }

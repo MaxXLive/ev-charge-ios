@@ -154,7 +154,9 @@ struct FilterView: View {
             HStack {
                 Text(name)
                 Spacer()
-                Text(display == min && steps?.first == 0 ? "egal" : "\(display) \(unit ?? "")")
+                (display == min && steps?.first == 0
+                    ? Text("egal")
+                    : Text("\(display) \(unit ?? "")"))
                     .foregroundStyle(.secondary)
             }
             Slider(value: binding, in: Double(min)...Double(max), step: 1)
@@ -210,8 +212,8 @@ struct FilterView: View {
 
     private func multiChoiceSummary(_ key: String) -> String {
         guard let i = index(of: key), case let .multipleChoice(_, vals, all) = working[i].value else { return "" }
-        if all { return "Alle" }
-        return vals.isEmpty ? "Keine" : "\(vals.count) ausgewählt"
+        if all { return String(localized: "Alle") }
+        return vals.isEmpty ? String(localized: "Keine") : String(localized: "\(vals.count) ausgewählt")
     }
 
     // MARK: - Aktionen

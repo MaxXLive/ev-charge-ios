@@ -29,13 +29,13 @@ enum DataSourceID: String, CaseIterable, Identifiable, Sendable {
     var subtitle: String {
         switch self {
         case .goingElectric:
-            return "Sehr gute Abdeckung in den deutschsprachigen Ländern. Beschreibungen in Deutsch. Von der Community gepflegt."
+            return String(localized: "Sehr gute Abdeckung in den deutschsprachigen Ländern. Beschreibungen in Deutsch. Von der Community gepflegt.")
         case .openChargeMap:
-            return "Weltweite Abdeckung mit hoher Qualität. Beschreibungen in Englisch oder Landessprache. Von der Community gepflegt und offizielle Verzeichnisse einiger Länder (z.B. Nordamerika, UK, Frankreich, Norwegen)."
+            return String(localized: "Weltweite Abdeckung mit hoher Qualität. Beschreibungen in Englisch oder Landessprache. Von der Community gepflegt und offizielle Verzeichnisse einiger Länder (z.B. Nordamerika, UK, Frankreich, Norwegen).")
         case .nobil:
-            return "Offizielles Verzeichnis in Schweden und Norwegen."
+            return String(localized: "Offizielles Verzeichnis in Schweden und Norwegen.")
         case .openStreetMap:
-            return "Experimentelle Unterstützung in EVMap, nicht alle Funktionen nutzbar."
+            return String(localized: "Experimentelle Unterstützung in EVMap, nicht alle Funktionen nutzbar.")
         }
     }
 

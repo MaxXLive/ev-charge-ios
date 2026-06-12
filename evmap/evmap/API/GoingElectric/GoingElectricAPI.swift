@@ -225,7 +225,7 @@ actor GoingElectricAPI: ChargepointAPI {
             guard body.status == Self.statusOK,
                   let items = body.chargelocations, items.count == 1,
                   case let .location(loc) = items[0] else {
-                return .error("Ungültige Antwort", nil)
+                return .error(String(localized: "Ungültige Antwort"), nil)
             }
             return .success(loc.convert(apikey: apikey, isDetailed: true))
         } catch {
@@ -247,7 +247,7 @@ actor GoingElectricAPI: ChargepointAPI {
 
             guard plugs.status == Self.statusOK, networks.status == Self.statusOK, cards.status == Self.statusOK,
                   let p = plugs.result, let n = networks.result, let c = cards.result else {
-                return .error("Referenzdaten unvollständig", nil)
+                return .error(String(localized: "Referenzdaten unvollständig"), nil)
             }
             return .success(GEReferenceData(plugs: p, networks: n, chargecards: c))
         } catch {
@@ -269,19 +269,34 @@ actor GoingElectricAPI: ChargepointAPI {
         let networkMap = Dictionary(uniqueKeysWithValues: refData.networks.map { ($0, $0) })
         let chargecardMap = Dictionary(uniqueKeysWithValues: refData.chargecards.map { (String($0.id), $0.name) })
 
+        // Keys sind die festen GE-API-Werte (deutsch), die Anzeigewerte werden lokalisiert.
         let categoryMap: [String: String] = [
-            "Autohaus": "Autohaus", "Autobahnraststätte": "Autobahnraststätte",
-            "Autohof": "Autohof", "Bahnhof": "Bahnhof", "Behörde": "Behörde",
-            "Campingplatz": "Campingplatz", "Einkaufszentrum": "Einkaufszentrum",
-            "Ferienwohnung": "Ferienwohnung", "Flughafen": "Flughafen",
-            "Freizeitpark": "Freizeitpark", "Hotel": "Hotel", "Kino": "Kino",
-            "Kirche": "Kirche", "Krankenhaus": "Krankenhaus", "Museum": "Museum",
-            "Parkhaus": "Parkhaus", "Parkplatz": "Parkplatz",
-            "Privater Ladepunkt": "Privater Ladepunkt", "Rastplatz": "Rastplatz",
-            "Restaurant": "Restaurant", "Schwimmbad": "Schwimmbad",
-            "Supermarkt": "Supermarkt", "Tankstelle": "Tankstelle",
-            "Tiefgarage": "Tiefgarage", "Tierpark": "Tierpark",
-            "Wohnmobilstellplatz": "Wohnmobilstellplatz",
+            "Autohaus": String(localized: "Autohaus"),
+            "Autobahnraststätte": String(localized: "Autobahnraststätte"),
+            "Autohof": String(localized: "Autohof"),
+            "Bahnhof": String(localized: "Bahnhof"),
+            "Behörde": String(localized: "Behörde"),
+            "Campingplatz": String(localized: "Campingplatz"),
+            "Einkaufszentrum": String(localized: "Einkaufszentrum"),
+            "Ferienwohnung": String(localized: "Ferienwohnung"),
+            "Flughafen": String(localized: "Flughafen"),
+            "Freizeitpark": String(localized: "Freizeitpark"),
+            "Hotel": String(localized: "Hotel"),
+            "Kino": String(localized: "Kino"),
+            "Kirche": String(localized: "Kirche"),
+            "Krankenhaus": String(localized: "Krankenhaus"),
+            "Museum": String(localized: "Museum"),
+            "Parkhaus": String(localized: "Parkhaus"),
+            "Parkplatz": String(localized: "Parkplatz"),
+            "Privater Ladepunkt": String(localized: "Privater Ladepunkt"),
+            "Rastplatz": String(localized: "Rastplatz"),
+            "Restaurant": String(localized: "Restaurant"),
+            "Schwimmbad": String(localized: "Schwimmbad"),
+            "Supermarkt": String(localized: "Supermarkt"),
+            "Tankstelle": String(localized: "Tankstelle"),
+            "Tiefgarage": String(localized: "Tiefgarage"),
+            "Tierpark": String(localized: "Tierpark"),
+            "Wohnmobilstellplatz": String(localized: "Wohnmobilstellplatz"),
         ]
 
         let commonConnectors = Set(
@@ -292,17 +307,17 @@ actor GoingElectricAPI: ChargepointAPI {
         )
 
         return [
-            .boolean(key: "freecharging", name: "Kostenloses Laden"),
-            .boolean(key: "freeparking", name: "Kostenloses Parken"),
-            .boolean(key: "open_247", name: "24/7 geöffnet"),
-            .slider(key: "min_power", name: "Min. Leistung", min: 0, max: powerSteps.count - 1, steps: powerSteps, unit: "kW"),
-            .multipleChoice(key: "connectors", name: "Steckertypen", choices: plugMap, commonChoices: commonConnectors, manyChoices: true),
-            .slider(key: "min_connectors", name: "Min. Anzahl Ladepunkte", min: 1, max: 10, steps: nil, unit: nil),
-            .multipleChoice(key: "networks", name: "Netzwerke", choices: networkMap, commonChoices: nil, manyChoices: true),
-            .boolean(key: "exclude_faults", name: "Defekte ausblenden"),
-            .boolean(key: "barrierfree", name: "Frei zugänglich"),
-            .multipleChoice(key: "chargecards", name: "Ladekarten", choices: chargecardMap, commonChoices: nil, manyChoices: true),
-            .multipleChoice(key: "categories", name: "Kategorien", choices: categoryMap, commonChoices: nil, manyChoices: true),
+            .boolean(key: "freecharging", name: String(localized: "Kostenloses Laden")),
+            .boolean(key: "freeparking", name: String(localized: "Kostenloses Parken")),
+            .boolean(key: "open_247", name: String(localized: "24/7 geöffnet")),
+            .slider(key: "min_power", name: String(localized: "Min. Leistung"), min: 0, max: powerSteps.count - 1, steps: powerSteps, unit: "kW"),
+            .multipleChoice(key: "connectors", name: String(localized: "Steckertypen"), choices: plugMap, commonChoices: commonConnectors, manyChoices: true),
+            .slider(key: "min_connectors", name: String(localized: "Min. Anzahl Ladepunkte"), min: 1, max: 10, steps: nil, unit: nil),
+            .multipleChoice(key: "networks", name: String(localized: "Netzwerke"), choices: networkMap, commonChoices: nil, manyChoices: true),
+            .boolean(key: "exclude_faults", name: String(localized: "Defekte ausblenden")),
+            .boolean(key: "barrierfree", name: String(localized: "Frei zugänglich")),
+            .multipleChoice(key: "chargecards", name: String(localized: "Ladekarten"), choices: chargecardMap, commonChoices: nil, manyChoices: true),
+            .multipleChoice(key: "categories", name: String(localized: "Kategorien"), choices: categoryMap, commonChoices: nil, manyChoices: true),
         ]
     }
 
@@ -312,13 +327,13 @@ actor GoingElectricAPI: ChargepointAPI {
         if let apiError = error as? APIError {
             switch apiError {
             case let .http(code) where code == 401 || code == 403 || code == 429:
-                return "API-Key fehlt, ist ungültig oder das Limit ist erreicht."
+                return String(localized: "API-Key fehlt, ist ungültig oder das Limit ist erreicht.")
             case let .http(code):
-                return "Serverfehler (HTTP \(code))."
+                return String(localized: "Serverfehler (HTTP \(code)).")
             case let .badStatus(status):
-                return "Unerwarteter Status: \(status)."
+                return String(localized: "Unerwarteter Status: \(status).")
             case .decoding:
-                return "Antwort konnte nicht gelesen werden."
+                return String(localized: "Antwort konnte nicht gelesen werden.")
             }
         }
         if let urlError = error as? URLError { return urlError.localizedDescription }

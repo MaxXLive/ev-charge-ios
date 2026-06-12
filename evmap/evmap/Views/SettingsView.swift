@@ -4,15 +4,16 @@
 //
 
 import SwiftUI
+import UIKit
 
 enum AppearanceSetting: String, CaseIterable, Identifiable {
     case system, light, dark
     var id: String { rawValue }
     var label: String {
         switch self {
-        case .system: return "System"
-        case .light: return "Hell"
-        case .dark: return "Dunkel"
+        case .system: return String(localized: "System")
+        case .light: return String(localized: "Hell")
+        case .dark: return String(localized: "Dunkel")
         }
     }
     var colorScheme: ColorScheme? {
@@ -27,7 +28,7 @@ enum AppearanceSetting: String, CaseIterable, Identifiable {
 enum DistanceUnit: String, CaseIterable, Identifiable {
     case kilometers, miles
     var id: String { rawValue }
-    var label: String { self == .kilometers ? "Kilometer" : "Meilen" }
+    var label: String { self == .kilometers ? String(localized: "Kilometer") : String(localized: "Meilen") }
 }
 
 struct SettingsView: View {
@@ -39,7 +40,7 @@ struct SettingsView: View {
 
     private var activeSourcesLabel: String {
         let ids = dataSourcesRaw.split(separator: ",").compactMap { DataSourceID(rawValue: String($0)) }
-        if ids.count > 1 { return "\(ids.count) Quellen" }
+        if ids.count > 1 { return String(localized: "\(ids.count) Quellen") }
         let single = ids.first ?? DataSourceID(rawValue: selectedRaw) ?? .goingElectric
         return single.displayName
     }
@@ -54,6 +55,23 @@ struct SettingsView: View {
                     Picker("Einheiten", selection: $units) {
                         ForEach(DistanceUnit.allCases) { Text($0.label).tag($0) }
                     }
+                }
+
+                Section {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        Link(destination: url) {
+                            HStack {
+                                Text("App-Sprache")
+                                Spacer()
+                                Image(systemName: "arrow.up.right.square")
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                } header: {
+                    Text("Sprache")
+                } footer: {
+                    Text("Die Sprache der App folgt den Systemeinstellungen. Über „App-Sprache“ öffnest du die iOS-Einstellungen, um eine andere Sprache nur für EVMap zu wählen.")
                 }
 
                 Section("Datenquelle") {

@@ -4,6 +4,17 @@ Release notes for each version.
 
 ---
 
+## v0.2.0 (Build 2)
+
+**Localization**
+
+- Full app localization in 11 languages: German, English, French, Italian, Dutch, Portuguese, Swedish, Norwegian Bokmål, Czech, Estonian, Romanian
+- Translations sourced from the upstream EVMap (Android) project where available; iOS-specific strings translated additionally
+- Language follows the system; a new "Language" section in Settings deep-links to the iOS system settings to override the app language individually
+- English is the fallback for device languages that aren't bundled
+
+---
+
 ## v0.1.0 (Build 1)
 
 **Initial release**

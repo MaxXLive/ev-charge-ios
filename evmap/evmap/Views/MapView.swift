@@ -295,9 +295,9 @@ enum MapStyleOption: String, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .standard: return "Standard"
-        case .satellite: return "Satellit"
-        case .hybrid: return "Hybrid"
+        case .standard: return String(localized: "Standard")
+        case .satellite: return String(localized: "Satellit")
+        case .hybrid: return String(localized: "Hybrid")
         }
     }
 
