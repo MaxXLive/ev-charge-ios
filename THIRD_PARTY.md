@@ -33,7 +33,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## Data Sources
+## Data Sources & Services
 
-- **GoingElectric.de**: community charging station data (API key required).
-- **Apple MapKit**: maps, geocoding/search (part of iOS).
+Charging station data and other services are retrieved from the following
+providers. Each remains the property of its respective owner and is subject to
+that provider's terms and data license.
+
+- **GoingElectric.de** (https://www.goingelectric.de): community charging
+  station data and photos (API key required).
+- **Open Charge Map** (https://openchargemap.org): worldwide charging station
+  data (API key required).
+- **NOBIL** (https://nobil.no): charging station data for Norway and Sweden,
+  operated by Enova/the Norwegian Energy Agency (API key required).
+- **EnBW** (https://www.enbw.com): real-time connector availability via the
+  EnBW public e-mobility API.
+- **Chargeprice** (https://www.chargeprice.app): price comparison, opened via
+  deep link for supported stations.
+- **Apple MapKit**: maps, geocoding, and location search (part of iOS).
+- **Apple Translation framework**: on-device translation of station notes and
+  amenities (part of iOS).
