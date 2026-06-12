@@ -4,6 +4,14 @@ Release notes for each version.
 
 ---
 
+## v0.3.2 (Build 6)
+
+**Features**
+
+- Scrubbing on the Tesla average-utilization chart: drag across the graph to read the utilization for each hour (e.g. "12:00: 13 %")
+
+---
+
 ## v0.3.1 (Build 5)
 
 **Features**

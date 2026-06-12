@@ -514,27 +514,7 @@ struct ChargerDetailView: View {
 
     private func teslaUtilizationSection(_ buckets: [TeslaUtilizationBucket]) -> some View {
         section("Durchschnittliche Auslastung", systemImage: "chart.bar") {
-            Chart(buckets) { b in
-                BarMark(
-                    x: .value("Stunde", b.hour),
-                    y: .value("Auslastung", b.percent)
-                )
-                .foregroundStyle(EVMapColor.available)
-            }
-            .chartYScale(domain: 0 ... 100)
-            .chartYAxis {
-                AxisMarks(values: [0, 50, 100]) { v in
-                    AxisGridLine()
-                    AxisValueLabel { if let p = v.as(Int.self) { Text("\(p)%") } }
-                }
-            }
-            .chartXScale(domain: 0 ... 23)
-            .chartXAxis {
-                AxisMarks(values: [0, 6, 12, 18]) { v in
-                    AxisValueLabel { if let h = v.as(Int.self) { Text(String(format: "%02d:00", h)) } }
-                }
-            }
-            .frame(height: 120)
+            TeslaUtilizationChart(buckets: buckets)
         }
     }
 
@@ -681,5 +661,63 @@ struct ChargerDetailView: View {
         let item = MKMapItem(location: coord, address: nil)
         item.name = current.name
         item.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
+    }
+}
+
+// MARK: - Auslastungs-Diagramm (mit Scrubbing)
+
+/// Balkendiagramm der durchschnittlichen Auslastung. Tippen/Ziehen hebt die Stunde
+/// hervor und zeigt „HH:00: X %" wie im Android-Original.
+private struct TeslaUtilizationChart: View {
+    let buckets: [TeslaUtilizationBucket]
+    @State private var selectedHour: Int?
+
+    private var selected: TeslaUtilizationBucket? {
+        selectedHour.flatMap { h in buckets.first { $0.hour == h } }
+    }
+
+    var body: some View {
+        Chart {
+            ForEach(buckets) { b in
+                BarMark(
+                    x: .value("Stunde", b.hour),
+                    y: .value("Auslastung", b.percent)
+                )
+                .foregroundStyle(
+                    selectedHour == nil || selectedHour == b.hour
+                        ? EVMapColor.available
+                        : EVMapColor.available.opacity(0.35)
+                )
+            }
+            if let sel = selected {
+                RuleMark(x: .value("Stunde", sel.hour))
+                    .foregroundStyle(.secondary.opacity(0.6))
+                    .annotation(
+                        position: .top,
+                        overflowResolution: .init(x: .fit(to: .chart), y: .disabled)
+                    ) {
+                        Text("\(String(format: "%02d:00", sel.hour)): \(sel.percent) %")
+                            .font(.caption.weight(.semibold))
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(.regularMaterial, in: Capsule())
+                    }
+            }
+        }
+        .chartXSelection(value: $selectedHour)
+        .chartYScale(domain: 0 ... 100)
+        .chartYAxis {
+            AxisMarks(values: [0, 50, 100]) { v in
+                AxisGridLine()
+                AxisValueLabel { if let p = v.as(Int.self) { Text("\(p)%") } }
+            }
+        }
+        .chartXScale(domain: 0 ... 23)
+        .chartXAxis {
+            AxisMarks(values: [0, 6, 12, 18]) { v in
+                AxisValueLabel { if let h = v.as(Int.self) { Text(String(format: "%02d:00", h)) } }
+            }
+        }
+        .frame(height: 120)
     }
 }
