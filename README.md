@@ -33,7 +33,7 @@ A native iOS/SwiftUI port of [EVMap](https://ev-map.app) — an open-source Andr
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/evmap-ios.git
+git clone https://github.com/MaxXLive/evmap-ios.git
 cd evmap-ios/evmap
 ```
 
