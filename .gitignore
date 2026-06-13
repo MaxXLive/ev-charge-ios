@@ -20,6 +20,9 @@ evmap/fastlane/test_output/
 evmap/vendor/bundle/
 evmap/build/
 
+# Playwright MCP screenshots/snapshots
+.playwright-mcp/
+
 # Android reference clone (read-only, not part of this repo)
 input/
 
