@@ -109,6 +109,25 @@ What is intentionally kept the same: the data-source APIs and models, filter def
 3. Populate `supportedFilterKeys` for the new case (drives filter greying in multi-source mode)
 4. Wire up `makeAPI()` and add the key to `Secrets.swift` / `Secrets.example.plist`
 
+## Releasing to the App Store
+
+App Store Connect automation lives in `evmap/fastlane/`. See `evmap/fastlane/SETUP.md` for the one-time setup (API key, UITest target).
+
+```bash
+cd evmap
+
+# Upload metadata + screenshots (10 languages) only — no binary
+fastlane metadata
+
+# Build + upload to TestFlight (no build number bump)
+NO_BUMP=1 fastlane beta
+
+# Full release: build, metadata, screenshots, submit for review
+fastlane release
+```
+
+Screenshots are captured automatically by `fastlane screenshots` (snapshot → frameit → 1290×2796 pad), then uploaded by `metadata`/`release`.
+
 ## Versioning
 
 Version and build number follow the scheme `MAJOR.MINOR.PATCH (BUILD)`. Bugfixes bump the build number, minor features bump the patch version, and new feature areas bump the minor version. `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` live in the Xcode project (Debug and Release).

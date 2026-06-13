@@ -12,6 +12,9 @@ TARGET="${1:-1290x2796}"
 BG="${2:-white}"
 DIR="${3:-$(cd "$(dirname "$0")/screenshots" && pwd)}"
 
+# snapshot uses iOS language code "nb" for Norwegian; deliver requires "no".
+[ -d "$DIR/nb" ] && mv "$DIR/nb" "$DIR/no" && echo "renamed screenshots/nb → screenshots/no"
+
 shopt -s nullglob
 count=0
 for f in "$DIR"/*/*_framed.png; do

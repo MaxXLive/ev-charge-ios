@@ -34,6 +34,7 @@ platform :ios do
   desc "Build a signed release archive (.ipa)"
   lane :build do
     build_app(
+      project: "evmap.xcodeproj",
       scheme: "evmap",
       configuration: "Release",
       export_method: "app-store",
@@ -71,7 +72,9 @@ platform :ios do
       skip_screenshots: false,
       overwrite_screenshots: true,
       precheck_include_in_app_purchases: false,
-      force: true # skip the HTML preview prompt
+      ignore_language_directory_validation: true,
+      run_precheck_before_submit: false,
+      force: true
     )
   end
 

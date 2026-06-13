@@ -1,15 +1,17 @@
-EVMap helps you find electric vehicle charging stations from several data sources: GoingElectric, Open Charge Map and Nobil. Everything in one ad-free, open-source app.
+Using EVMap, you can find electric vehicle chargers comfortably using your iPhone. It provides mobile access to the community-driven databases from GoingElectric.de and Open Charge Map, containing information about charging locations across the world. For many chargepoints in Europe, you can see real-time status information.
 
-FEATURES
-• Multiple data sources: combine GoingElectric (DACH), Open Charge Map (worldwide) and Nobil (Norway/Sweden)
-• Map with color-coded pins by power level, clustering and standard, satellite or hybrid styles
-• Station detail: connectors with type and power, opening hours, costs, swipeable photos, charge cards
-• Real-time availability for GoingElectric stations in DACH/EU via the EnBW API
-• Powerful filters: connector type, power, network, charge cards, barrier-free and more
-• Filter profiles: save and load your own presets
-• Favorites: star stations and sort by distance
-• Location search via Apple Maps
-• Translate station notes with Apple's native Translation framework
-• Chargeprice integration for price comparison
+Features:
+- Shows all charging stations from the community-maintained GoingElectric.de and Open Charge Map directories
+- Realtime availability information (only in Europe)
+- Integrated price comparison using Chargeprice.app (only in Europe)
+- Map data from OpenStreetMap
+- Search for places
+- Advanced filtering options, including saved filter profiles
+- Favorites list, also with availability information
+- No ads, fully open source
 
-A native iOS port of the open-source EVMap Android app. Ad-free, non-commercial, open source.
+EVMap is an open source project and can be found at https://github.com/MaxXLive/evmap-ios.
+
+This app is not an official product of GoingElectric.de or Open Charge Map, it only uses their public APIs.
+
+A list of necessary permissions with explanations is available here: https://github.com/MaxXLive/evmap-ios

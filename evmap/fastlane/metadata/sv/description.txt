@@ -1,15 +1,17 @@
-EVMap hjälper dig att hitta laddstationer för elbilar från flera datakällor: GoingElectric, Open Charge Map och Nobil. Allt i en reklamfri app med öppen källkod.
+Med EVMap hittar du enkelt laddare till elfordon med hjälp av din iPhone-telefon. Du får tillgång till data från GoingElectric.de och Open Charge Map som innehåller information om laddstationer över hela världen. För många laddstationer i Europa finns realtidsstatus.
 
-FUNKTIONER
-• Flera datakällor: kombinera GoingElectric (DACH), Open Charge Map (världen) och Nobil (Norge/Sverige)
-• Karta med färgkodade nålar efter effekt, klustring och standard-, satellit- eller hybridvyer
-• Stationsdetaljer: kontakter med typ och effekt, öppettider, kostnader, svepbara foton, laddkort
-• Realtidstillgänglighet för GoingElectric-stationer i DACH/EU via EnBW-API:t
-• Kraftfulla filter: kontakttyp, effekt, nätverk, laddkort, tillgänglighet med mera
-• Filterprofiler: spara och ladda dina egna förinställningar
-• Favoriter: stjärnmärk stationer och sortera efter avstånd
-• Platssökning via Apple Kartor
-• Översätt stationsanteckningar med Apples inbyggda Translation-ramverk
-• Chargeprice-integration för prisjämförelse
+Funktioner:
+- Visar laddstationer från databaserna GoingElectric.de och Open Charge Map
+- Realtidsstatus om en laddstations tillgänglighet (bara i Europa)
+- Integrerad prisjämförelse genom Chargeprice.app (bara i Europa)
+- Kartdata från OpenStreetMap
+- Sök efter platser
+- Avancerad filterfunktion, med möjlighet att spara filterprofiler
+- Favoritlista, med tillgänglighetsstatus
+- Inga annonser, helt öppen källkod
 
-En inbyggd iOS-port av appen EVMap med öppen källkod för Android. Reklamfri, icke-kommersiell, öppen källkod.
+EVMap är fri programvara och hittas på https://github.com/MaxXLive/evmap-ios.
+
+Denna app är inte en officiell produkt från GoingElectric.de eller Open Charge Map. Appen använder endast deras öppna API:er.
+
+En lista över nödvändiga behörigheter med förklaringar finns här: https://github.com/MaxXLive/evmap-ios
