@@ -1,0 +1,1 @@
+First release of EVMap for iOS. Find EV charging stations from GoingElectric, Open Charge Map and Nobil, with live availability, powerful filters, favorites and detailed station info.

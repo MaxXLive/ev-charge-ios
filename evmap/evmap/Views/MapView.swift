@@ -38,6 +38,18 @@ struct MapView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
     )
 
+    // Fester Kartenausschnitt für App-Store-Screenshots (Stuttgart Mitte,
+    // eng gezoomt → einzelne Ladepunkte statt Cluster).
+    private static let screenshotRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 48.7720, longitude: 9.1688),
+        span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007)
+    )
+
+    private var isScreenshotMode: Bool {
+        ProcessInfo.processInfo.arguments.contains("-screenshotMode")
+            || ProcessInfo.processInfo.environment["FASTLANE_SNAPSHOT"] == "YES"
+    }
+
     private var entries: [MapEntry] {
         (model.chargers.value?.items ?? []).map { MapEntry($0) }
     }
@@ -149,6 +161,7 @@ struct MapView: View {
                               ? "line.3.horizontal.decrease.circle.fill"
                               : "line.3.horizontal.decrease.circle")
                     }
+                    .accessibilityIdentifier("filterButton")
                 }
             }
             .sheet(isPresented: $showFilters) {
@@ -163,7 +176,7 @@ struct MapView: View {
             }
             .sheet(item: $model.selected) { loc in
                 ChargerDetailView(location: loc, model: model)
-                    .presentationDetents([.medium, .large])
+                    .presentationDetents(isScreenshotMode ? [.large] : [.medium, .large])
                     .presentationBackgroundInteraction(.enabled(upThrough: .medium))
             }
             .task {
@@ -174,6 +187,12 @@ struct MapView: View {
             }
             .onChange(of: appState.mapTarget) {
                 centerOnTarget()
+            }
+            .onAppear {
+                if isScreenshotMode {
+                    didCenterOnUser = true // Auto-Zentrierung auf Nutzerstandort unterdrücken
+                    camera = .region(Self.screenshotRegion)
+                }
             }
         }
     }
@@ -288,6 +307,8 @@ private struct ChargerMarker: View {
             )
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("chargerPin")
+        .accessibilityLabel(location.name)
     }
 }
 

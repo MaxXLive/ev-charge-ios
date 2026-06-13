@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2000F2FF2955DA4B716D09D7 /* evmapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AACE6416A6CB2774917DD1 /* evmapUITests.swift */; };
+		31051FED75EF997E4C7BB0A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8558F5B446819D2A708DA045 /* Foundation.framework */; };
+		6F5E08134FB8DB1F40295A33 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D32E4929A2115F882548F /* SnapshotHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F818899FF73AC98FC8E7EE7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 480535482FDB76BE00C699A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4805354F2FDB76BE00C699A1;
+			remoteInfo = evmap;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		087D32E4929A2115F882548F /* SnapshotHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		480535502FDB76BE00C699A1 /* evmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0D787F6904A6761B0C0C3B /* evmapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evmapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8558F5B446819D2A708DA045 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A0AACE6416A6CB2774917DD1 /* evmapUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = evmapUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		480535522FDB76BE00C699A1 /* evmap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = evmap;
 			sourceTree = "<group>";
 		};
@@ -26,14 +48,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB5D6DE60E26CF3A050A5137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31051FED75EF997E4C7BB0A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151825ADA2F8E998070E9235 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8558F5B446819D2A708DA045 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		480535472FDB76BE00C699A1 = {
 			isa = PBXGroup;
 			children = (
 				480535522FDB76BE00C699A1 /* evmap */,
 				480535512FDB76BE00C699A1 /* Products */,
+				AD4B0E246E8DB3BC456CB4A4 /* Frameworks */,
+				F0ED1BD799D37167498CD6ED /* evmapUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,13 +81,50 @@
 			isa = PBXGroup;
 			children = (
 				480535502FDB76BE00C699A1 /* evmap.app */,
+				5C0D787F6904A6761B0C0C3B /* evmapUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4B0E246E8DB3BC456CB4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				151825ADA2F8E998070E9235 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0ED1BD799D37167498CD6ED /* evmapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				087D32E4929A2115F882548F /* SnapshotHelper.swift */,
+				A0AACE6416A6CB2774917DD1 /* evmapUITests.swift */,
+			);
+			name = evmapUITests;
+			path = evmapUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2B482B844317536F944DA790 /* evmapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0280B327C708DEC7EF847BF2 /* Build configuration list for PBXNativeTarget "evmapUITests" */;
+			buildPhases = (
+				ED3C8099F73D0D531BE6430A /* Sources */,
+				AB5D6DE60E26CF3A050A5137 /* Frameworks */,
+				4C4113BC4AB796B276D27268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF806946CC3E1FACF2E03469 /* PBXTargetDependency */,
+			);
+			name = evmapUITests;
+			productName = evmapUITests;
+			productReference = 5C0D787F6904A6761B0C0C3B /* evmapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		4805354F2FDB76BE00C699A1 /* evmap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4805355B2FDB76BF00C699A1 /* Build configuration list for PBXNativeTarget "evmap" */;
@@ -64,8 +141,6 @@
 				480535522FDB76BE00C699A1 /* evmap */,
 			);
 			name = evmap;
-			packageProductDependencies = (
-			);
 			productName = evmap;
 			productReference = 480535502FDB76BE00C699A1 /* evmap.app */;
 			productType = "com.apple.product-type.application";
@@ -80,6 +155,9 @@
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
+					2B482B844317536F944DA790 = {
+						TestTargetID = 4805354F2FDB76BE00C699A1;
+					};
 					4805354F2FDB76BE00C699A1 = {
 						CreatedOnToolsVersion = 26.3;
 					};
@@ -110,12 +188,20 @@
 			projectRoot = "";
 			targets = (
 				4805354F2FDB76BE00C699A1 /* evmap */,
+				2B482B844317536F944DA790 /* evmapUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4805354E2FDB76BE00C699A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4113BC4AB796B276D27268 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,7 +218,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED3C8099F73D0D531BE6430A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5E08134FB8DB1F40295A33 /* SnapshotHelper.swift in Sources */,
+				2000F2FF2955DA4B716D09D7 /* evmapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF806946CC3E1FACF2E03469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = evmap;
+			target = 4805354F2FDB76BE00C699A1 /* evmap */;
+			targetProxy = F818899FF73AC98FC8E7EE7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		480535592FDB76BF00C699A1 /* Debug */ = {
@@ -262,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = P4LHQ8Z83H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -278,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.2;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ermackov.evmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -297,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = P4LHQ8Z83H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -313,7 +417,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.2;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ermackov.evmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -326,9 +430,61 @@
 			};
 			name = Release;
 		};
+		F09628CC8AEE141C419C167C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4LHQ8Z83H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ermackov.evmapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = evmap;
+			};
+			name = Debug;
+		};
+		F2DF4FCA9EB9C4ACBC1FA027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4LHQ8Z83H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ermackov.evmapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = evmap;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0280B327C708DEC7EF847BF2 /* Build configuration list for PBXNativeTarget "evmapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DF4FCA9EB9C4ACBC1FA027 /* Release */,
+				F09628CC8AEE141C419C167C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4805354B2FDB76BE00C699A1 /* Build configuration list for PBXProject "evmap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

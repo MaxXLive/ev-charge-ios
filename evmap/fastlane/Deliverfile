@@ -1,0 +1,13 @@
+# Non-localized App Store metadata. Localized text lives in metadata/<locale>/.
+app_identifier("de.ermackov.evmap")
+
+# Categories (App Store category keys). Navigation fits a charging-station map.
+primary_category("MZGenre.Navigation")
+secondary_category("MZGenre.Travel")
+
+# Age rating etc. are managed in App Store Connect; deliver only touches what's
+# present here and under metadata/.
+copyright("#{Time.now.year} Max Ermackov")
+
+# Don't let a missing screenshot for one device size abort the whole upload.
+run_precheck_before_submit(false)

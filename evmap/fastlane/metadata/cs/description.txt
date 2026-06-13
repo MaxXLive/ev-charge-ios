@@ -1,0 +1,15 @@
+EVMap vám pomůže najít nabíjecí stanice pro elektromobily z více datových zdrojů: GoingElectric, Open Charge Map a Nobil. Vše v jedné aplikaci bez reklam s otevřeným zdrojovým kódem.
+
+FUNKCE
+• Více datových zdrojů: kombinujte GoingElectric (DACH), Open Charge Map (celosvětově) a Nobil (Norsko/Švédsko)
+• Mapa s barevně odlišenými špendlíky podle výkonu, shlukování a standardní, satelitní nebo hybridní zobrazení
+• Detail stanice: konektory s typem a výkonem, otevírací doba, ceny, posuvné fotografie, nabíjecí karty
+• Dostupnost v reálném čase pro stanice GoingElectric v DACH/EU přes API EnBW
+• Výkonné filtry: typ konektoru, výkon, síť, nabíjecí karty, bezbariérovost a další
+• Profily filtrů: ukládejte a načítejte vlastní předvolby
+• Oblíbené: označte stanice hvězdičkou a seřaďte podle vzdálenosti
+• Vyhledávání míst přes Apple Mapy
+• Překládejte poznámky stanic pomocí nativního frameworku Translation od Apple
+• Integrace Chargeprice pro porovnání cen
+
+Nativní iOS port open source aplikace EVMap pro Android. Bez reklam, nekomerční, open source.

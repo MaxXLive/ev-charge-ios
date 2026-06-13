@@ -1,0 +1,15 @@
+EVMap helps you find electric vehicle charging stations from several data sources: GoingElectric, Open Charge Map and Nobil. Everything in one ad-free, open-source app.
+
+FEATURES
+• Multiple data sources: combine GoingElectric (DACH), Open Charge Map (worldwide) and Nobil (Norway/Sweden)
+• Map with color-coded pins by power level, clustering and standard, satellite or hybrid styles
+• Station detail: connectors with type and power, opening hours, costs, swipeable photos, charge cards
+• Real-time availability for GoingElectric stations in DACH/EU via the EnBW API
+• Powerful filters: connector type, power, network, charge cards, barrier-free and more
+• Filter profiles: save and load your own presets
+• Favorites: star stations and sort by distance
+• Location search via Apple Maps
+• Translate station notes with Apple's native Translation framework
+• Chargeprice integration for price comparison
+
+A native iOS port of the open-source EVMap Android app. Ad-free, non-commercial, open source.

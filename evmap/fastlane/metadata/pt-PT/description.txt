@@ -1,0 +1,15 @@
+O EVMap ajuda-o a encontrar estações de carregamento para veículos elétricos a partir de várias fontes de dados: GoingElectric, Open Charge Map e Nobil. Tudo numa aplicação sem anúncios e de código aberto.
+
+FUNCIONALIDADES
+• Várias fontes de dados: combine GoingElectric (DACH), Open Charge Map (mundial) e Nobil (Noruega/Suécia)
+• Mapa com pinos codificados por cor segundo a potência, agrupamento e vistas padrão, satélite ou híbrida
+• Detalhe da estação: conectores com tipo e potência, horários, custos, fotos deslizáveis, cartões de carregamento
+• Disponibilidade em tempo real para estações GoingElectric em DACH/UE através da API EnBW
+• Filtros poderosos: tipo de conector, potência, rede, cartões de carregamento, acessibilidade e mais
+• Perfis de filtros: guarde e carregue as suas predefinições
+• Favoritos: marque estações e ordene por distância
+• Pesquisa de locais através do Mapas da Apple
+• Traduza as notas das estações com a framework nativa Translation da Apple
+• Integração Chargeprice para comparação de preços
+
+Um port nativo iOS da aplicação de código aberto EVMap para Android. Sem anúncios, não comercial, código aberto.

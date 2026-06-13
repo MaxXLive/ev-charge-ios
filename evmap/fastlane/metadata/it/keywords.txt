@@ -1,0 +1,1 @@
+EV,ricarica,colonnina,elettrica,auto,stazione,mappa ricarica,emobilità,EVSE,caricatore

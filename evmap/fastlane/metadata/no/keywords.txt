@@ -1,0 +1,1 @@
+elbil,lading,ladestasjon,elektrisk,bil,stasjon,ladekart,emobilitet,EVSE,lader

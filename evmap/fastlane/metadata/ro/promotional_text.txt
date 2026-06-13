@@ -1,0 +1,1 @@
+Găsește stații de încărcare pentru mașini electrice din mai multe surse într-o aplicație fără reclame și open source.

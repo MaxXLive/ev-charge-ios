@@ -10,6 +10,16 @@ evmap/DerivedData/
 **/*.xccheckout
 .DS_Store
 
+# fastlane secrets & build output
+evmap/fastlane/.env
+evmap/fastlane/*.p8
+evmap/fastlane/report.xml
+evmap/fastlane/Preview.html
+evmap/fastlane/screenshots/
+evmap/fastlane/test_output/
+evmap/vendor/bundle/
+evmap/build/
+
 # Android reference clone (read-only, not part of this repo)
 input/
 

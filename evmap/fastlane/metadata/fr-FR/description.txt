@@ -1,0 +1,15 @@
+EVMap vous aide à trouver des bornes de recharge pour véhicules électriques depuis plusieurs sources de données : GoingElectric, Open Charge Map et Nobil. Le tout dans une application sans publicité et open source.
+
+FONCTIONNALITÉS
+• Plusieurs sources de données : combinez GoingElectric (DACH), Open Charge Map (mondial) et Nobil (Norvège/Suède)
+• Carte avec repères colorés selon la puissance, regroupement et vues standard, satellite ou hybride
+• Détail de la station : connecteurs avec type et puissance, horaires, tarifs, photos, cartes de recharge
+• Disponibilité en temps réel pour les stations GoingElectric en DACH/UE via l'API EnBW
+• Filtres puissants : type de connecteur, puissance, réseau, cartes de recharge, accessibilité et plus
+• Profils de filtres : enregistrez et chargez vos préréglages
+• Favoris : marquez des stations et triez par distance
+• Recherche de lieu via Plans d'Apple
+• Traduisez les notes des stations avec le framework Translation d'Apple
+• Intégration Chargeprice pour comparer les prix
+
+Un portage natif iOS de l'application open source EVMap pour Android. Sans publicité, non commerciale, open source.

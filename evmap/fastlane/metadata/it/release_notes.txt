@@ -1,0 +1,1 @@
+Prima versione di EVMap per iOS. Trova stazioni di ricarica per auto elettriche da GoingElectric, Open Charge Map e Nobil, con disponibilità in tempo reale, filtri avanzati, preferiti e dettagli delle stazioni.

@@ -1,0 +1,5 @@
+app_identifier("de.ermackov.evmap")
+# Apple ID / team only needed as fallback. With App Store Connect API key
+# (see Fastfile), itc_team_id / apple_id are resolved automatically.
+itc_team_id(ENV["ITC_TEAM_ID"]) if ENV["ITC_TEAM_ID"]
+team_id("P4LHQ8Z83H") # Developer Portal team (signing)

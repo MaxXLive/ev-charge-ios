@@ -1,0 +1,1 @@
+Første versjon av EVMap for iOS. Finn ladestasjoner for elbil fra GoingElectric, Open Charge Map og Nobil, med sanntidstilgjengelighet, kraftige filtre, favoritter og stasjonsdetaljer.

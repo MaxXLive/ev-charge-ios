@@ -1,0 +1,1 @@
+elbil,laddning,laddstolpe,elektrisk,bil,station,laddkarta,emobilitet,EVSE,laddare

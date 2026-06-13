@@ -1,0 +1,1 @@
+VE,carregamento,carregador,elétrico,carro,estação,mapa carregamento,emobilidade,EVSE

@@ -1,0 +1,1 @@
+EV,încărcare,stație,electric,mașină,încărcător,hartă încărcare,emobilitate,EVSE

@@ -1,0 +1,15 @@
+Mit EVMap findest du Ladestationen für Elektroautos aus mehreren Datenquellen: GoingElectric, Open Charge Map und Nobil. Alles in einer werbefreien Open-Source-App.
+
+FUNKTIONEN
+• Mehrere Datenquellen: GoingElectric (DACH), Open Charge Map (weltweit) und Nobil (Norwegen/Schweden) kombinieren
+• Karte mit farbcodierten Pins nach Ladeleistung, Clustering sowie Standard-, Satelliten- und Hybrid-Ansicht
+• Stationsdetails: Stecker mit Typ und Leistung, Öffnungszeiten, Kosten, wischbare Fotos, Ladekarten
+• Echtzeit-Verfügbarkeit für GoingElectric-Stationen in DACH/EU über die EnBW-API
+• Starke Filter: Steckertyp, Leistung, Netzwerk, Ladekarten, barrierefrei und mehr
+• Filterprofile: eigene Voreinstellungen speichern und laden
+• Favoriten: Stationen markieren und nach Entfernung sortieren
+• Standortsuche über Apple Karten
+• Stationsnotizen übersetzen mit Apples nativem Translation-Framework
+• Chargeprice-Integration für Preisvergleiche
+
+Ein nativer iOS-Port der quelloffenen EVMap-Android-App. Werbefrei, nicht kommerziell, Open Source.
