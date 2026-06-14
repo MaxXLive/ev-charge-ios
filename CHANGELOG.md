@@ -4,6 +4,17 @@ Release notes for each version.
 
 ---
 
+## v1.0.0 (Build 10)
+
+**Lizenzen & Credits**
+
+- Lizenzen-&-Credits-Seite erweitert: Attribution für alle Datenquellen (Open Charge Map CC BY-SA 4.0, NOBIL, Chargeprice), Apple Maps/MapKit und EnBW-Verfügbarkeit
+- Eigenes Copyright (Max Ermackov, MIT) mit GitHub-Link ergänzt
+- Hinweis, dass keine externen Drittanbieter-Bibliotheken verwendet werden
+- Alle neuen Texte in alle 11 Sprachen übersetzt
+
+---
+
 ## v1.0.0 (Build 9)
 
 **Features**

@@ -13345,6 +13345,776 @@
           }
         }
       }
+    },
+    "EVMap iOS auf GitHub": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS na GitHubu"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS auf GitHub"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS on GitHub"
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS GitHubis"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS sur GitHub"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS su GitHub"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS på GitHub"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS op GitHub"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS no GitHub"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS pe GitHub"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EVMap iOS på GitHub"
+          }
+        }
+      }
+    },
+    "© 2026 Max Ermackov. Lizenz: MIT.": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Licence: MIT."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Lizenz: MIT."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. License: MIT."
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Litsents: MIT."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Licence : MIT."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Licenza: MIT."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Lisens: MIT."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Licentie: MIT."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Licença: MIT."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Licență: MIT."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Max Ermackov. Licens: MIT."
+          }
+        }
+      }
+    },
+    "App": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aplikace"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rakendus"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aplicație"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        }
+      }
+    },
+    "Daten von Open Charge Map und Mitwirkenden, lizenziert unter CC BY-SA 4.0.": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data od Open Charge Map a přispěvatelů, licencováno pod CC BY-SA 4.0."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daten von Open Charge Map und Mitwirkenden, lizenziert unter CC BY-SA 4.0."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data from Open Charge Map and contributors, licensed under CC BY-SA 4.0."
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andmed Open Charge Mapilt ja kaastöötajatelt, litsentsitud CC BY-SA 4.0 alusel."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Données d'Open Charge Map et des contributeurs, sous licence CC BY-SA 4.0."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dati da Open Charge Map e collaboratori, concessi in licenza CC BY-SA 4.0."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data fra Open Charge Map og bidragsytere, lisensiert under CC BY-SA 4.0."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gegevens van Open Charge Map en bijdragers, gelicentieerd onder CC BY-SA 4.0."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dados do Open Charge Map e colaboradores, licenciados sob CC BY-SA 4.0."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date de la Open Charge Map și colaboratori, licențiate sub CC BY-SA 4.0."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data från Open Charge Map och bidragsgivare, licensierad under CC BY-SA 4.0."
+          }
+        }
+      }
+    },
+    "Ladestationsdaten von NOBIL (Norsk elbilforening / Enova).": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data nabíjecích stanic od NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladestationsdaten von NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Charging station data from NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laadimisjaamade andmed NOBILilt (Norsk elbilforening / Enova)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Données des bornes de NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dati delle stazioni di ricarica da NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladestasjonsdata fra NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laadstationgegevens van NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dados das estações de carregamento da NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date despre stațiile de încărcare de la NOBIL (Norsk elbilforening / Enova)."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laddstationsdata från NOBIL (Norsk elbilforening / Enova)."
+          }
+        }
+      }
+    },
+    "Preisvergleich powered by Chargeprice.": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porovnání cen powered by Chargeprice."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preisvergleich powered by Chargeprice."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price comparison powered by Chargeprice."
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hinnavõrdlus powered by Chargeprice."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparaison des prix powered by Chargeprice."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confronto prezzi powered by Chargeprice."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prissammenligning powered by Chargeprice."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prijsvergelijking powered by Chargeprice."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparação de preços powered by Chargeprice."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparație de prețuri powered by Chargeprice."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prisjämförelse powered by Chargeprice."
+          }
+        }
+      }
+    },
+    "Karte & Verfügbarkeit": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mapa a dostupnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karte & Verfügbarkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Map & availability"
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaart ja saadavus"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carte et disponibilité"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mappa e disponibilità"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kart og tilgjengelighet"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaart en beschikbaarheid"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mapa e disponibilidade"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hartă și disponibilitate"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karta och tillgänglighet"
+          }
+        }
+      }
+    },
+    "Karten von Apple Maps (MapKit).": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mapy z Apple Maps (MapKit)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karten von Apple Maps (MapKit)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maps from Apple Maps (MapKit)."
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaardid Apple Mapsist (MapKit)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cartes d'Apple Maps (MapKit)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mappe da Apple Maps (MapKit)."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kart fra Apple Maps (MapKit)."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaarten van Apple Maps (MapKit)."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mapas do Apple Maps (MapKit)."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hărți de la Apple Maps (MapKit)."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kartor från Apple Maps (MapKit)."
+          }
+        }
+      }
+    },
+    "Echtzeit-Verfügbarkeit teilweise via EnBW-Ladenetz.": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostupnost v reálném čase částečně přes EnBW Ladenetz."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Echtzeit-Verfügbarkeit teilweise via EnBW-Ladenetz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Real-time availability partly via EnBW Ladenetz."
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reaalajas saadavus osaliselt EnBW Ladenetzi kaudu."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponibilité en temps réel en partie via EnBW Ladenetz."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponibilità in tempo reale in parte tramite EnBW Ladenetz."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sanntidstilgjengelighet delvis via EnBW Ladenetz."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Realtime beschikbaarheid deels via EnBW Ladenetz."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponibilidade em tempo real parcialmente via EnBW Ladenetz."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponibilitate în timp real parțial prin EnBW Ladenetz."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillgänglighet i realtid delvis via EnBW Ladenetz."
+          }
+        }
+      }
+    },
+    "Open-Source-Bibliotheken": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open source knihovny"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open-Source-Bibliotheken"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open source libraries"
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avatud lähtekoodiga teegid"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bibliothèques open source"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Librerie open source"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åpen kildekode-biblioteker"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opensourcebibliotheken"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bibliotecas de código aberto"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biblioteci open source"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bibliotek med öppen källkod"
+          }
+        }
+      }
+    },
+    "Diese App nutzt ausschließlich von Apple bereitgestellte Frameworks und keine externen Drittanbieter-Bibliotheken.": {
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tato aplikace používá výhradně frameworky poskytované společností Apple a žádné externí knihovny třetích stran."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese App nutzt ausschließlich von Apple bereitgestellte Frameworks und keine externen Drittanbieter-Bibliotheken."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This app uses only frameworks provided by Apple and no external third-party libraries."
+          }
+        },
+        "et": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See rakendus kasutab ainult Apple'i pakutavaid raamistikke ega ühtegi välist kolmanda osapoole teeki."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette application utilise uniquement des frameworks fournis par Apple et aucune bibliothèque tierce externe."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa app utilizza esclusivamente framework forniti da Apple e nessuna libreria esterna di terze parti."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denne appen bruker kun rammeverk levert av Apple og ingen eksterne tredjepartsbiblioteker."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deze app gebruikt uitsluitend door Apple geleverde frameworks en geen externe bibliotheken van derden."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este app utiliza exclusivamente frameworks fornecidos pela Apple e nenhuma biblioteca externa de terceiros."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Această aplicație folosește exclusiv framework-uri furnizate de Apple și nicio bibliotecă externă de la terți."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den här appen använder endast ramverk från Apple och inga externa tredjepartsbibliotek."
+          }
+        }
+      }
     }
   },
   "version": "1.1"

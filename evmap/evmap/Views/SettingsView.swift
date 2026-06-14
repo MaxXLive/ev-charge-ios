@@ -164,14 +164,41 @@ struct AboutView: View {
                 .listRowBackground(Color.clear)
                 Text("EVMap iOS ist eine native SwiftUI-Portierung der quelloffenen Android-App EVMap.")
             }
+            Section("App") {
+                Link("EVMap iOS auf GitHub", destination: URL(string: "https://github.com/MaxXLive/evmap-ios")!)
+                Text("© 2026 Max Ermackov. Lizenz: MIT.")
+                    .font(.footnote).foregroundStyle(.secondary)
+            }
             Section("Original") {
                 Link("EVMap (Android) auf GitHub", destination: URL(string: "https://github.com/ev-map/EVMap")!)
                 Text("© 2020–2026 Johan von Forstner und Mitwirkende. Lizenz: MIT.")
                     .font(.footnote).foregroundStyle(.secondary)
             }
-            Section("Daten") {
+            Section("Datenquellen") {
                 Link("GoingElectric.de", destination: URL(string: "https://www.goingelectric.de/")!)
                 Text("Ladestationsdaten von der GoingElectric-Community.")
+                    .font(.footnote).foregroundStyle(.secondary)
+
+                Link("Open Charge Map", destination: URL(string: "https://openchargemap.org/")!)
+                Text("Daten von Open Charge Map und Mitwirkenden, lizenziert unter CC BY-SA 4.0.")
+                    .font(.footnote).foregroundStyle(.secondary)
+
+                Link("NOBIL", destination: URL(string: "https://nobil.no/")!)
+                Text("Ladestationsdaten von NOBIL (Norsk elbilforening / Enova).")
+                    .font(.footnote).foregroundStyle(.secondary)
+
+                Link("Chargeprice", destination: URL(string: "https://www.chargeprice.app/")!)
+                Text("Preisvergleich powered by Chargeprice.")
+                    .font(.footnote).foregroundStyle(.secondary)
+            }
+            Section("Karte & Verfügbarkeit") {
+                Text("Karten von Apple Maps (MapKit).")
+                    .font(.footnote).foregroundStyle(.secondary)
+                Text("Echtzeit-Verfügbarkeit teilweise via EnBW-Ladenetz.")
+                    .font(.footnote).foregroundStyle(.secondary)
+            }
+            Section("Open-Source-Bibliotheken") {
+                Text("Diese App nutzt ausschließlich von Apple bereitgestellte Frameworks und keine externen Drittanbieter-Bibliotheken.")
                     .font(.footnote).foregroundStyle(.secondary)
             }
         }
