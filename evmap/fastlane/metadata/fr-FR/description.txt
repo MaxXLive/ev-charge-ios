@@ -9,6 +9,7 @@ Caractéristiques :
 - Recherche de lieux
 - Options de filtrage avancées, y compris les profils de filtrage enregistrés
 - Liste de favoris, avec également des informations sur la disponibilité
+- Prise en charge d'Apple CarPlay : trouvez des bornes directement sur l'écran de votre voiture
 - Pas de publicité, entièrement open source
 
 EVMap est un projet open source et peut être trouvé sur https://github.com/MaxXLive/evmap-ios.

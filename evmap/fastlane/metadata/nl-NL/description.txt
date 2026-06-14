@@ -8,6 +8,7 @@ Kenmerken:
 - Zoek naar locaties
 - Geavanceerde filtermogelijkheden, inclusief bewaarde filterprofielen
 - Lijst van favorieten, met statusinformatie
+- Apple CarPlay-ondersteuning: vind laadpalen direct op het scherm van je auto
 - Geen advertenties, volledig open source
 
 EVMap is een open source project en is te vinden op https://github.com/MaxXLive/evmap-ios.

@@ -8,6 +8,7 @@ Caratteristiche:
 - Ricerca di luoghi
 - Opzioni di filtraggio avanzate, compresi i profili di filtro salvati
 - Elenco dei preferiti, anche con informazioni sulla disponibilità
+- Supporto Apple CarPlay: trova i punti di ricarica direttamente sul display dell'auto
 - Nessuna pubblicità, completamente open source
 
 EVMap è un progetto open source e si trova all'indirizzo https://github.com/MaxXLive/evmap-ios.

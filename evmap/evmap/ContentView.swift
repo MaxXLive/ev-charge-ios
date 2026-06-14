@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var appState = AppState()
-    @State private var locationManager = LocationManager()
+    @State private var locationManager = LocationManager.shared
     @State private var teslaAuth = TeslaAuthManager()
     @AppStorage("onboardingDone") private var onboardingDone = false
     @AppStorage("appearance") private var appearance: AppearanceSetting = .system

@@ -9,6 +9,7 @@ Destaques:
 - Pesquise lugares
 - Opções de filtragem avançadas, incluindo filtros de pesquisa que podem ser guardados
 - Lista de favoritos, também com informações de disponibilidade
+- Suporte Apple CarPlay: encontre carregadores diretamente no ecrã do seu carro
 - Sem publicidade e de código aberto
 
 O EVMap é um projeto de código aberto e pode ser encontrado em https://github.com/MaxXLive/evmap-ios.

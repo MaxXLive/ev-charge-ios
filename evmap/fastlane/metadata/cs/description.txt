@@ -8,6 +8,7 @@ Funkce:
 - Vyhledávání míst
 - Pokročilé možnosti filtrování, včetně uložených profilů filtrů
 - Seznam oblíbených, také s informacemi o dostupnosti
+- Podpora Apple CarPlay: najděte nabíječky přímo na displeji vašeho automobilu
 - Žádné reklamy, plně otevřený zdrojový kód
 
 EVMap je projekt s otevřeným zdrojovým kódem a najdete jej na adrese https://github.com/MaxXLive/evmap-ios.

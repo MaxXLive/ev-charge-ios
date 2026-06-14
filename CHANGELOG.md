@@ -4,6 +4,17 @@ Release notes for each version.
 
 ---
 
+## v1.0.0 (Build 9)
+
+**Features**
+
+- Apple CarPlay support: nearby charger map, station detail, navigation, favorites list, place search, and saved filter profiles — all directly on the car display
+- Colored teardrop pin markers in CarPlay (matching phone app: power-based color coding)
+- CarPlay onboarding page in the setup wizard
+- App Store descriptions updated in all 10 languages to mention CarPlay
+
+---
+
 ## v0.4.0 (Build 8)
 
 **Features**

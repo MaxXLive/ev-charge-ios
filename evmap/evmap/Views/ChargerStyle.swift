@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 enum ChargerStyle {
     /// Markerfarbe nach maximaler Ladeleistung – identisch zum Android-Original.
@@ -17,6 +18,16 @@ enum ChargerStyle {
         case 20..<43: return Color(hex: 0x03A9F4)  // ≥ 20 kW – blau
         case 11..<20: return Color(hex: 0x9E9E9E)  // ≥ 11 kW – grau
         default: return Color(hex: 0x607D8B)       // < 11 kW – blaugrau
+        }
+    }
+
+    static func uiColor(forPower power: Double?) -> UIColor {
+        switch power ?? 0 {
+        case 100...: return UIColor(hex: 0xFDD835)
+        case 43..<100: return UIColor(hex: 0xFF9800)
+        case 20..<43: return UIColor(hex: 0x03A9F4)
+        case 11..<20: return UIColor(hex: 0x9E9E9E)
+        default: return UIColor(hex: 0x607D8B)
         }
     }
 
@@ -36,6 +47,17 @@ extension Color {
             green: Double((hex >> 8) & 0xFF) / 255,
             blue: Double(hex & 0xFF) / 255,
             opacity: 1
+        )
+    }
+}
+
+extension UIColor {
+    convenience init(hex: UInt) {
+        self.init(
+            red: CGFloat((hex >> 16) & 0xFF) / 255,
+            green: CGFloat((hex >> 8) & 0xFF) / 255,
+            blue: CGFloat(hex & 0xFF) / 255,
+            alpha: 1
         )
     }
 }

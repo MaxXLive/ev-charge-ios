@@ -8,6 +8,7 @@ FUNCȚII
 • Filtre puternice: tip conector, putere, rețea, carduri de încărcare, accesibilitate și altele
 • Profiluri de filtre: salvează și încarcă propriile presetări
 • Favorite: marchează stații și sortează după distanță
+• Apple CarPlay: găsești stații de încărcare direct pe ecranul mașinii tale
 • Căutare locații prin Apple Maps
 • Traduce notele stațiilor cu framework-ul nativ Translation de la Apple
 • Integrare Chargeprice pentru compararea prețurilor

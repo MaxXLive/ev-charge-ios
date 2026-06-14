@@ -9,7 +9,7 @@ struct OnboardingView: View {
     let onDone: () -> Void
     @State private var page = 0
 
-    private let pageCount = 3
+    private let pageCount = 4
 
     var body: some View {
         VStack(spacing: 0) {
@@ -19,7 +19,8 @@ struct OnboardingView: View {
             TabView(selection: $page) {
                 welcome.tag(0)
                 legend.tag(1)
-                dataSource.tag(2)
+                carPlay.tag(2)
+                dataSource.tag(3)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
 
@@ -70,6 +71,14 @@ struct OnboardingView: View {
                 .multilineTextAlignment(.center)
         }
         .padding(32)
+    }
+
+    private var carPlay: some View {
+        onboardPage(
+            icon: "car.fill",
+            title: String(localized: "Apple CarPlay"),
+            text: String(localized: "EVMap unterstützt Apple CarPlay. Verbinde dein iPhone mit dem Autodisplay und finde Ladestationen direkt auf der Fahrt – ohne dein Telefon zu berühren.")
+        )
     }
 
     private var dataSource: some View {

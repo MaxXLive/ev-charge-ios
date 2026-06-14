@@ -9,6 +9,7 @@ Du finner info om ladestasjoner i hele verden og sanntidsinfo for mange av dem s
 - Søk etter steder
 - Avanserte filtreringsvalg, inkludert lagrede filterprofiler
 - Favorittliste, som også har tilgjengelighetsinfo
+- Apple CarPlay-støtte: finn ladere direkte på bilens skjerm
 - Ingen reklame
 
 Du finner kildekoden på https://github.com/MaxXLive/evmap-ios.

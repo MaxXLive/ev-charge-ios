@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2000F2FF2955DA4B716D09D7 /* evmapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AACE6416A6CB2774917DD1 /* evmapUITests.swift */; };
+		20D8457BC23C44F7A5CDF080 /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58897905BB44A5F9224A7FA /* CarPlay.framework */; };
 		31051FED75EF997E4C7BB0A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8558F5B446819D2A708DA045 /* Foundation.framework */; };
 		6F5E08134FB8DB1F40295A33 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D32E4929A2115F882548F /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
@@ -28,13 +29,12 @@
 		5C0D787F6904A6761B0C0C3B /* evmapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evmapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8558F5B446819D2A708DA045 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A0AACE6416A6CB2774917DD1 /* evmapUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = evmapUITests.swift; sourceTree = "<group>"; };
+		A58897905BB44A5F9224A7FA /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CarPlay.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		480535522FDB76BE00C699A1 /* evmap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = evmap;
 			sourceTree = "<group>";
 		};
@@ -45,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D8457BC23C44F7A5CDF080 /* CarPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				8558F5B446819D2A708DA045 /* Foundation.framework */,
+				A58897905BB44A5F9224A7FA /* CarPlay.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -100,7 +102,6 @@
 				087D32E4929A2115F882548F /* SnapshotHelper.swift */,
 				A0AACE6416A6CB2774917DD1 /* evmapUITests.swift */,
 			);
-			name = evmapUITests;
 			path = evmapUITests;
 			sourceTree = "<group>";
 		};
@@ -365,11 +366,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = evmap/evmap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = P4LHQ8Z83H;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EVMap;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
@@ -383,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ermackov.evmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -401,11 +404,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = evmap/evmap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = P4LHQ8Z83H;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EVMap;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
@@ -419,7 +424,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ermackov.evmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

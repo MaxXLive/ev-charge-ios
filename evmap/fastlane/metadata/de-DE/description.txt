@@ -8,6 +8,7 @@ Funktionen:
 - Suche nach Orten
 - Erweiterte Filterfunktionen, Filterprofile speichern
 - Favoritenliste, auch mit Anzeige der Verfügbarkeit
+- Apple CarPlay-Unterstützung: Ladestationen direkt auf dem Autodisplay
 - Keine nervige Werbung
 
 EVMap ist ein Open-Source-Projekt und unter https://github.com/MaxXLive/evmap-ios zu finden.

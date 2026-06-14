@@ -8,6 +8,7 @@ Funktioner:
 - Sök efter platser
 - Avancerad filterfunktion, med möjlighet att spara filterprofiler
 - Favoritlista, med tillgänglighetsstatus
+- Apple CarPlay-stöd: hitta laddare direkt på bilens skärm
 - Inga annonser, helt öppen källkod
 
 EVMap är fri programvara och hittas på https://github.com/MaxXLive/evmap-ios.

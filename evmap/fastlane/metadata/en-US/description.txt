@@ -12,6 +12,7 @@ Features:
 
 EVMap is an open source project and can be found at https://github.com/MaxXLive/evmap-ios.
 
+- Apple CarPlay support: find chargers directly on your car's display
 This app is not an official product of GoingElectric.de or Open Charge Map, it only uses their public APIs.
 
 A list of necessary permissions with explanations is available here: https://github.com/MaxXLive/evmap-ios
