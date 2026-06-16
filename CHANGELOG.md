@@ -4,6 +4,15 @@ Release notes for each version.
 
 ---
 
+## v1.0.0 (Build 13)
+
+**Apple CarPlay (aktiviert)**
+
+- Apple CarPlay vollständig aktiviert nach Genehmigung des `com.apple.developer.carplay-charging` Entitlements
+- Lade-Karte, Stationsdetails, Navigation, Favoriten, Suche und Filter-Profile direkt am Autodisplay
+
+---
+
 ## v1.0.0 (Build 10)
 
 **Lizenzen & Credits**
