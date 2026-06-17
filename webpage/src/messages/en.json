@@ -25,7 +25,7 @@
     "stats": {
       "sources": { "value": "3", "label": "Data sources" },
       "languages": { "value": "11", "label": "Languages" },
-      "price": { "value": "€0", "label": "Forever free" },
+      "price": { "currency": "USD", "label": "Forever free" },
       "trackers": { "value": "0", "label": "Trackers" }
     },
     "featuresEyebrow": "Features",

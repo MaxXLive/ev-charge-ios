@@ -25,7 +25,7 @@
     "stats": {
       "sources": { "value": "3", "label": "Datenquellen" },
       "languages": { "value": "11", "label": "Sprachen" },
-      "price": { "value": "0 €", "label": "Für immer gratis" },
+      "price": { "currency": "EUR", "label": "Für immer gratis" },
       "trackers": { "value": "0", "label": "Tracker" }
     },
     "featuresEyebrow": "Funktionen",

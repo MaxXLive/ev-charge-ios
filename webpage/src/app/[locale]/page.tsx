@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations, useLocale, useFormatter } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import {
@@ -46,6 +46,7 @@ export async function generateMetadata({
 export default function HomePage() {
   const t = useTranslations("home");
   const locale = useLocale();
+  const format = useFormatter();
   const shot = (name: string) => `/screenshots/${locale}/${name}.png`;
 
   const features = [
@@ -58,11 +59,11 @@ export default function HomePage() {
   ] as const;
 
   const stats = ["sources", "languages", "price", "trackers"] as const;
-  const priceValue = new Intl.NumberFormat(locale, {
+  const priceValue = format.number(0, {
     style: "currency",
-    currency: "EUR",
+    currency: t("stats.price.currency"),
     maximumFractionDigits: 0,
-  }).format(0);
+  });
   const highlightRows = ["availability", "filters", "free"] as const;
 
   return (

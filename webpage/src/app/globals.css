@@ -39,6 +39,13 @@
 
 html {
   scroll-behavior: smooth;
+  /* Footer is dark; match overscroll below it so no white shows on mobile */
+  background-color: var(--ink);
+}
+
+/* Offset anchor targets for the fixed navbar */
+section[id] {
+  scroll-margin-top: 5rem;
 }
 
 body {
