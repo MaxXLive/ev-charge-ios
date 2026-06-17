@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "homeTitle": "EVMap for iOS: Find EV charging stations",
+    "homeDescription": "Ad-free, open source EV charging station finder for iOS. Powered by GoingElectric, Open Charge Map and Nobil with real-time availability and CarPlay support."
+  },
+  "nav": {
+    "features": "Features",
+    "screenshots": "Screenshots",
+    "sources": "Data",
+    "privacy": "Privacy",
+    "support": "Support",
+    "download": "Download"
+  },
+  "home": {
+    "heroEyebrow": "Ad-free · Open source",
+    "heroTitle": "Every charger. One map.",
+    "heroSubtitle": "EVMap finds EV charging stations across Europe with live availability. Fast, native and built to respect your privacy.",
+    "heroNote": "Free · iPhone, iPad & CarPlay · iOS 26 or later",
+    "shotMapAlt": "EVMap map with charging stations",
+    "shotDetailAlt": "EVMap charging station details",
+    "shotFilterAlt": "EVMap filter options",
+    "highlightEyebrow": "At a glance",
+    "highlightTitle": "Know before you go",
+    "highlightBody": "Open any station to see live availability, every connector and its power, opening hours, photos and pricing. Then start navigation in one tap.",
+    "stats": {
+      "sources": { "value": "3", "label": "Data sources" },
+      "languages": { "value": "11", "label": "Languages" },
+      "price": { "value": "€0", "label": "Forever free" },
+      "trackers": { "value": "0", "label": "Trackers" }
+    },
+    "featuresEyebrow": "Features",
+    "featuresTitle": "Built for finding a charge, fast",
+    "featuresSubtitle": "A native iOS app with no clutter, no ads and no accounts.",
+    "featuresMore": "And the details that matter: photos, opening hours, charge cards, pricing and Tesla Supercharger availability.",
+    "features": {
+      "availability": {
+        "title": "Real-time availability",
+        "desc": "See which connectors are free or in use right now for supported stations across the DACH region, before you drive there."
+      },
+      "carplay": {
+        "title": "Apple CarPlay",
+        "desc": "Find your next charger straight from your car's dashboard."
+      },
+      "search": {
+        "title": "Search anywhere",
+        "desc": "Jump to any address, city or point of interest in seconds."
+      },
+      "filters": {
+        "title": "Powerful filters",
+        "desc": "Plug type, minimum power, network, charge cards, availability and more."
+      },
+      "favorites": {
+        "title": "Offline favorites",
+        "desc": "Save your go-to stations, sorted by distance and stored on your device."
+      },
+      "privacy": {
+        "title": "Privacy first",
+        "desc": "No tracking, no analytics. Your location never leaves your phone."
+      },
+      "languages": {
+        "title": "11 languages",
+        "desc": "Fully localized in German, English, French, Norwegian and more."
+      },
+      "free": {
+        "title": "Ad-free & open source",
+        "desc": "Non-commercial and fully open source. No ads, no subscriptions and no hidden costs, ever."
+      }
+    },
+    "screensEyebrow": "A closer look",
+    "screensTitle": "Designed to feel right at home on iOS",
+    "screensSubtitle": "Map, station details and filters. Clean, fast and native.",
+    "screens": {
+      "map": "Map",
+      "detail": "Station details",
+      "filter": "Filters"
+    },
+    "sourcesEyebrow": "Coverage",
+    "sourcesTitle": "Powered by trusted data sources",
+    "sourcesSubtitle": "Combine multiple databases for the best coverage wherever you drive.",
+    "sources": {
+      "ge": { "name": "GoingElectric", "region": "Germany, Austria & Switzerland" },
+      "ocm": { "name": "Open Charge Map", "region": "Worldwide coverage" },
+      "nobil": { "name": "Nobil", "region": "Norway & Sweden" }
+    },
+    "sourcesNote": "Enable one or several sources at once. EVMap merges and de-duplicates the results on your map.",
+    "openSourceBadge": "Open source",
+    "openSourceTitle": "Inspired by the original EVMap for Android",
+    "openSourceBody": "This native iOS app is a port of EVMap, the popular open source Android app by Johan von Forstner (MIT License). Same idea and same data sources, rebuilt natively for iPhone, iPad and CarPlay.",
+    "openSourceAndroidCta": "Android original",
+    "openSourceGithubCta": "View on GitHub",
+    "androidShotAlt": "EVMap for Android map screen",
+    "androidShotCaption": "EVMap for Android",
+    "ctaTitle": "Find your next charge.",
+    "ctaSubtitle": "Download EVMap and never hunt for a charging station again."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: 13 June 2026",
+    "intro": "EVMap for iOS does not collect, store, or share any personal data.",
+    "dataYouEnterTitle": "Data you enter",
+    "dataYouEnter": {
+      "location": {
+        "label": "Location",
+        "desc": "Used only on-device to center the map and sort favorites by distance. Never transmitted to the developer."
+      },
+      "tesla": {
+        "label": "Tesla account credentials",
+        "desc": "If you sign in to your Tesla account, credentials are stored in the iOS Keychain on your device only, used solely to fetch real-time Supercharger availability, and never transmitted to the developer."
+      },
+      "filters": {
+        "label": "Filter settings and favorites",
+        "desc": "Stored locally on your device via SwiftData."
+      }
+    },
+    "thirdPartyTitle": "Third-party services",
+    "thirdPartyIntro": "EVMap contacts the following external APIs to load charging station data. Your IP address is visible to these services as part of normal network requests.",
+    "thirdPartyService": "Service",
+    "thirdPartyPurpose": "Purpose",
+    "thirdPartyRows": {
+      "0": "Charging station data for DACH",
+      "1": "Charging station data worldwide",
+      "2": "Charging station data for Norway/Sweden",
+      "3": "Real-time availability for GoingElectric stations",
+      "4": "Price comparison (deep-link only, no data sent)"
+    },
+    "analyticsTitle": "Analytics",
+    "analyticsBody": "No analytics, tracking SDKs, or crash reporting tools are included.",
+    "contactTitle": "Contact",
+    "contactSupportCta": "support page"
+  },
+  "support": {
+    "title": "Support & Feedback",
+    "subtitle": "Have a question, found a bug, or want to suggest a feature? We'd love to hear from you.",
+    "category": "Category",
+    "categoryPlaceholder": "Select a category",
+    "titleField": "Subject",
+    "titlePlaceholder": "Short summary of your request",
+    "message": "Message",
+    "messagePlaceholder": "Describe your request or suggestion in detail...",
+    "email": "Your email",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Send",
+    "sending": "Sending...",
+    "successTitle": "Thank you!",
+    "successMessage": "Your feedback has been received. We'll get back to you by email if needed.",
+    "sendAnother": "Send another",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "required": "This field is required.",
+    "invalidEmail": "Please enter a valid email address.",
+    "captchaRequired": "Please complete the CAPTCHA.",
+    "captchaFailed": "CAPTCHA verification failed. Please try again."
+  },
+  "footer": {
+    "tagline": "Ad-free, open source EV charging station finder for iOS.",
+    "appCol": "App",
+    "projectCol": "Project",
+    "android": "Android version",
+    "copyright": "© {year} Max Ermackov.",
+    "attribution": "Based on EVMap by Johan von Forstner (MIT License)."
+  }
+}

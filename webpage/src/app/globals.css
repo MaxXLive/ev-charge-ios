@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --surface: #f6f8f6;
+  --surface-2: #eef2ee;
+  --foreground: #0f1411;
+  --muted: #5b655e;
+  --border: #e6eae6;
+
+  /* One restrained green, from the EVMap logo (#4caf50 / #087f22) */
+  --accent: #15994a;
+  --accent-hover: #117a3b;
+  --accent-deep: #0c5f2c;
+  --accent-soft: #eaf5ee;
+
+  --ink: #0c1410;
+
+  --danger: #c83232;
+  --success: #15994a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-soft: var(--accent-soft);
+  --color-ink: var(--ink);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --font-sans: var(--font-geist-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #d3dad4;
+  border-radius: 5px;
+}
+
+/* Section eyebrow label */
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Soft drop shadow for framed phone images */
+.phone-shadow {
+  filter: drop-shadow(0 24px 40px rgba(15, 30, 20, 0.16));
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--surface) inset !important;
+  -webkit-text-fill-color: var(--foreground) !important;
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "homeTitle": "EVMap for iOS: Ladestationen finden",
+    "homeDescription": "Werbefreier, quelloffener Ladesäulen-Finder für iOS. Mit GoingElectric, Open Charge Map und Nobil, Echtzeit-Verfügbarkeit und CarPlay-Unterstützung."
+  },
+  "nav": {
+    "features": "Funktionen",
+    "screenshots": "Screenshots",
+    "sources": "Daten",
+    "privacy": "Datenschutz",
+    "support": "Support",
+    "download": "Laden"
+  },
+  "home": {
+    "heroEyebrow": "Werbefrei · Open Source",
+    "heroTitle": "Jede Ladesäule. Eine Karte.",
+    "heroSubtitle": "EVMap findet Ladestationen in ganz Europa mit Echtzeit-Verfügbarkeit. Schnell, nativ und gebaut, um deine Privatsphäre zu schützen.",
+    "heroNote": "Kostenlos · iPhone, iPad & CarPlay · ab iOS 26",
+    "shotMapAlt": "EVMap-Karte mit Ladestationen",
+    "shotDetailAlt": "EVMap-Stationsdetails",
+    "shotFilterAlt": "EVMap-Filteroptionen",
+    "highlightEyebrow": "Auf einen Blick",
+    "highlightTitle": "Wissen, bevor du losfährst",
+    "highlightBody": "Öffne eine Station und sieh Echtzeit-Verfügbarkeit, jeden Anschluss mit Leistung, Öffnungszeiten, Fotos und Preise. Dann starte die Navigation mit einem Tipp.",
+    "stats": {
+      "sources": { "value": "3", "label": "Datenquellen" },
+      "languages": { "value": "11", "label": "Sprachen" },
+      "price": { "value": "0 €", "label": "Für immer gratis" },
+      "trackers": { "value": "0", "label": "Tracker" }
+    },
+    "featuresEyebrow": "Funktionen",
+    "featuresTitle": "Gemacht, um schnell zu laden",
+    "featuresSubtitle": "Eine native iOS-App ohne Ballast, ohne Werbung und ohne Konten.",
+    "featuresMore": "Und die Details, die zählen: Fotos, Öffnungszeiten, Ladekarten, Preise und Tesla-Supercharger-Verfügbarkeit.",
+    "features": {
+      "availability": {
+        "title": "Echtzeit-Verfügbarkeit",
+        "desc": "Sieh für unterstützte Stationen im DACH-Raum, welche Anschlüsse gerade frei oder belegt sind, schon bevor du losfährst."
+      },
+      "carplay": {
+        "title": "Apple CarPlay",
+        "desc": "Finde deinen nächsten Ladepunkt direkt vom Display deines Autos aus."
+      },
+      "search": {
+        "title": "Überall suchen",
+        "desc": "Springe in Sekunden zu jeder Adresse, Stadt oder zu jedem Ort."
+      },
+      "filters": {
+        "title": "Starke Filter",
+        "desc": "Steckertyp, Mindestleistung, Netzwerk, Ladekarten, Verfügbarkeit und mehr."
+      },
+      "favorites": {
+        "title": "Offline-Favoriten",
+        "desc": "Speichere deine Lieblingsstationen, sortiert nach Entfernung und lokal auf deinem Gerät."
+      },
+      "privacy": {
+        "title": "Datenschutz zuerst",
+        "desc": "Kein Tracking, keine Analyse. Dein Standort verlässt nie dein iPhone."
+      },
+      "languages": {
+        "title": "11 Sprachen",
+        "desc": "Vollständig lokalisiert in Deutsch, Englisch, Französisch, Norwegisch und mehr."
+      },
+      "free": {
+        "title": "Werbefrei & quelloffen",
+        "desc": "Nicht-kommerziell und vollständig Open Source. Keine Werbung, keine Abos und keine versteckten Kosten, niemals."
+      }
+    },
+    "screensEyebrow": "Genauer hinsehen",
+    "screensTitle": "Fühlt sich auf iOS zu Hause an",
+    "screensSubtitle": "Karte, Stationsdetails und Filter. Klar, schnell und nativ.",
+    "screens": {
+      "map": "Karte",
+      "detail": "Stationsdetails",
+      "filter": "Filter"
+    },
+    "sourcesEyebrow": "Abdeckung",
+    "sourcesTitle": "Verlässliche Datenquellen",
+    "sourcesSubtitle": "Kombiniere mehrere Datenbanken für die beste Abdeckung, wo immer du fährst.",
+    "sources": {
+      "ge": { "name": "GoingElectric", "region": "Deutschland, Österreich & Schweiz" },
+      "ocm": { "name": "Open Charge Map", "region": "Weltweite Abdeckung" },
+      "nobil": { "name": "Nobil", "region": "Norwegen & Schweden" }
+    },
+    "sourcesNote": "Aktiviere eine oder mehrere Quellen gleichzeitig. EVMap führt die Ergebnisse zusammen und entfernt Duplikate auf deiner Karte.",
+    "openSourceBadge": "Open Source",
+    "openSourceTitle": "Inspiriert vom Original EVMap für Android",
+    "openSourceBody": "Diese native iOS-App ist eine Portierung von EVMap, der beliebten quelloffenen Android-App von Johan von Forstner (MIT-Lizenz). Gleiche Idee und gleiche Datenquellen, neu gebaut für iPhone, iPad und CarPlay.",
+    "openSourceAndroidCta": "Android-Original",
+    "openSourceGithubCta": "Auf GitHub ansehen",
+    "androidShotAlt": "EVMap für Android Kartenansicht",
+    "androidShotCaption": "EVMap für Android",
+    "ctaTitle": "Finde deine nächste Ladung.",
+    "ctaSubtitle": "Lade EVMap und suche nie wieder nach einer Ladestation."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert: 13. Juni 2026",
+    "intro": "EVMap für iOS sammelt, speichert oder teilt keine personenbezogenen Daten.",
+    "dataYouEnterTitle": "Daten, die du eingibst",
+    "dataYouEnter": {
+      "location": {
+        "label": "Standort",
+        "desc": "Wird nur auf dem Gerät verwendet, um die Karte zu zentrieren und Favoriten nach Entfernung zu sortieren. Wird nie an den Entwickler übertragen."
+      },
+      "tesla": {
+        "label": "Tesla-Zugangsdaten",
+        "desc": "Wenn du dich bei deinem Tesla-Konto anmeldest, werden die Zugangsdaten ausschließlich im iOS-Schlüsselbund auf deinem Gerät gespeichert, nur zum Abrufen der Echtzeit-Verfügbarkeit von Superchargern genutzt und nie an den Entwickler übertragen."
+      },
+      "filters": {
+        "label": "Filtereinstellungen und Favoriten",
+        "desc": "Werden lokal auf deinem Gerät via SwiftData gespeichert."
+      }
+    },
+    "thirdPartyTitle": "Drittanbieter-Dienste",
+    "thirdPartyIntro": "EVMap kontaktiert die folgenden externen APIs, um Ladestationsdaten zu laden. Deine IP-Adresse ist für diese Dienste im Rahmen normaler Netzwerkanfragen sichtbar.",
+    "thirdPartyService": "Dienst",
+    "thirdPartyPurpose": "Zweck",
+    "thirdPartyRows": {
+      "0": "Ladestationsdaten für DACH",
+      "1": "Ladestationsdaten weltweit",
+      "2": "Ladestationsdaten für Norwegen/Schweden",
+      "3": "Echtzeit-Verfügbarkeit für GoingElectric-Stationen",
+      "4": "Preisvergleich (nur Deep-Link, keine Datenübertragung)"
+    },
+    "analyticsTitle": "Analyse",
+    "analyticsBody": "Es sind keine Analyse-, Tracking-SDKs oder Crash-Reporting-Tools enthalten.",
+    "contactTitle": "Kontakt",
+    "contactSupportCta": "Support-Seite"
+  },
+  "support": {
+    "title": "Support & Feedback",
+    "subtitle": "Hast du eine Frage, einen Bug gefunden oder möchtest ein Feature vorschlagen? Wir freuen uns auf dein Feedback.",
+    "category": "Kategorie",
+    "categoryPlaceholder": "Kategorie auswählen",
+    "titleField": "Betreff",
+    "titlePlaceholder": "Kurze Beschreibung deines Anliegens",
+    "message": "Nachricht",
+    "messagePlaceholder": "Beschreibe dein Anliegen oder deinen Vorschlag im Detail...",
+    "email": "Deine E-Mail",
+    "emailPlaceholder": "du@beispiel.de",
+    "submit": "Senden",
+    "sending": "Wird gesendet...",
+    "successTitle": "Vielen Dank!",
+    "successMessage": "Dein Feedback wurde empfangen. Wir melden uns bei Bedarf per E-Mail bei dir.",
+    "sendAnother": "Weiteres senden",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "required": "Dieses Feld ist erforderlich.",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "captchaRequired": "Bitte das CAPTCHA ausfüllen.",
+    "captchaFailed": "CAPTCHA-Überprüfung fehlgeschlagen. Bitte erneut versuchen."
+  },
+  "footer": {
+    "tagline": "Werbefreier, quelloffener Ladesäulen-Finder für iOS.",
+    "appCol": "App",
+    "projectCol": "Projekt",
+    "android": "Android-Version",
+    "copyright": "© {year} Max Ermackov.",
+    "attribution": "Basiert auf EVMap von Johan von Forstner (MIT-Lizenz)."
+  }
+}
