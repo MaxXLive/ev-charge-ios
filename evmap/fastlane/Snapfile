@@ -1,8 +1,7 @@
 # Devices to screenshot. App Store requires a 6.9"/6.7" iPhone shot.
 # Add an iPad ("iPad Pro 13-inch (M4)") here if the app ships an iPad listing.
 devices([
-  "iPhone 17 Pro",
-  "iPad Pro 13-inch (M4)"
+  "iPhone 17 Pro"
 ])
 
 # Languages to capture. These are iOS language codes passed as -AppleLanguages.
@@ -19,7 +18,8 @@ languages([
   "nb",
   "cs",
   "pt-PT",
-  "ro"
+  "ro",
+  "es-ES"
 ])
 
 scheme("evmapUITests")

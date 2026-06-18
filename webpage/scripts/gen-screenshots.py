@@ -21,7 +21,7 @@ except ImportError:
     sys.exit("Pillow required:  pip3 install Pillow")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.normpath(os.path.join(HERE, "..", "..", "evmap", "fastlane", "screenshots"))
+SRC = os.path.normpath(os.path.join(HERE, "..", "..", "evmap", "fastlane", "screenshots_web"))
 OUT = os.path.normpath(os.path.join(HERE, "..", "public", "screenshots"))
 
 # fastlane file name -> web file name

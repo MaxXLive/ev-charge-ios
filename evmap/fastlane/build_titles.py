@@ -68,6 +68,11 @@ TITLES = {
         "Disponibilitate în timp real & detalii",
         "Găsește exact ce ai nevoie",
     ),
+    "es-ES": (
+        "Todas las estaciones de carga de un vistazo",
+        "Disponibilidad en tiempo real & detalles",
+        "Encuentra exactamente lo que necesitas",
+    ),
 }
 
 
