@@ -23,10 +23,22 @@
     "highlightTitle": "Wissen, bevor du losfährst",
     "highlightBody": "Öffne eine Station und sieh Echtzeit-Verfügbarkeit, jeden Anschluss mit Leistung, Öffnungszeiten, Fotos und Preise. Dann starte die Navigation mit einem Tipp.",
     "stats": {
-      "sources": { "value": "3", "label": "Datenquellen" },
-      "languages": { "value": "11", "label": "Sprachen" },
-      "price": { "currency": "EUR", "label": "Für immer gratis" },
-      "trackers": { "value": "0", "label": "Tracker" }
+      "sources": {
+        "value": "3",
+        "label": "Datenquellen"
+      },
+      "languages": {
+        "value": "12",
+        "label": "Sprachen"
+      },
+      "price": {
+        "currency": "EUR",
+        "label": "Für immer gratis"
+      },
+      "trackers": {
+        "value": "0",
+        "label": "Tracker"
+      }
     },
     "featuresEyebrow": "Funktionen",
     "featuresTitle": "Gemacht, um schnell zu laden",
@@ -58,7 +70,7 @@
         "desc": "Kein Tracking, keine Analyse. Dein Standort verlässt nie dein iPhone."
       },
       "languages": {
-        "title": "11 Sprachen",
+        "title": "12 Sprachen",
         "desc": "Vollständig lokalisiert in Deutsch, Englisch, Französisch, Norwegisch und mehr."
       },
       "free": {
@@ -78,9 +90,18 @@
     "sourcesTitle": "Verlässliche Datenquellen",
     "sourcesSubtitle": "Kombiniere mehrere Datenbanken für die beste Abdeckung, wo immer du fährst.",
     "sources": {
-      "ge": { "name": "GoingElectric", "region": "Deutschland, Österreich & Schweiz" },
-      "ocm": { "name": "Open Charge Map", "region": "Weltweite Abdeckung" },
-      "nobil": { "name": "Nobil", "region": "Norwegen & Schweden" }
+      "ge": {
+        "name": "GoingElectric",
+        "region": "Deutschland, Österreich & Schweiz"
+      },
+      "ocm": {
+        "name": "Open Charge Map",
+        "region": "Weltweite Abdeckung"
+      },
+      "nobil": {
+        "name": "Nobil",
+        "region": "Norwegen & Schweden"
+      }
     },
     "sourcesNote": "Aktiviere eine oder mehrere Quellen gleichzeitig. EVMap führt die Ergebnisse zusammen und entfernt Duplikate auf deiner Karte.",
     "openSourceBadge": "Open Source",

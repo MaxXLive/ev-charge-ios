@@ -23,36 +23,85 @@
     "highlightTitle": "Sachez avant de partir",
     "highlightBody": "Ouvrez n'importe quelle borne pour voir la disponibilité en temps réel, chaque connecteur avec sa puissance, les horaires, les photos et les tarifs. Lancez ensuite la navigation d'une pression.",
     "stats": {
-      "sources": { "value": "3", "label": "Sources de données" },
-      "languages": { "value": "11", "label": "Langues" },
-      "price": { "currency": "EUR", "label": "Toujours gratuit" },
-      "trackers": { "value": "0", "label": "Traceurs" }
+      "sources": {
+        "value": "3",
+        "label": "Sources de données"
+      },
+      "languages": {
+        "value": "12",
+        "label": "Langues"
+      },
+      "price": {
+        "currency": "EUR",
+        "label": "Toujours gratuit"
+      },
+      "trackers": {
+        "value": "0",
+        "label": "Traceurs"
+      }
     },
     "featuresEyebrow": "Fonctionnalités",
     "featuresTitle": "Conçu pour trouver une borne rapidement",
     "featuresSubtitle": "Une application iOS native sans publicité, sans compte et sans superflu.",
     "featuresMore": "Et les détails qui comptent: photos, horaires, cartes de recharge, tarifs et disponibilité des Superchargeurs Tesla.",
     "features": {
-      "availability": { "title": "Disponibilité en temps réel", "desc": "Voyez quels connecteurs sont libres ou occupés pour les bornes prises en charge dans la région DACH, avant de vous y rendre." },
-      "carplay": { "title": "Apple CarPlay", "desc": "Trouvez votre prochaine borne directement depuis l'écran de votre voiture." },
-      "search": { "title": "Recherche partout", "desc": "Accédez à n'importe quelle adresse, ville ou point d'intérêt en quelques secondes." },
-      "filters": { "title": "Filtres puissants", "desc": "Type de connecteur, puissance minimale, réseau, cartes de recharge, disponibilité et plus encore." },
-      "favorites": { "title": "Favoris hors ligne", "desc": "Enregistrez vos bornes habituelles, triées par distance et stockées sur votre appareil." },
-      "privacy": { "title": "Vie privée d'abord", "desc": "Aucun suivi, aucune analyse. Votre position ne quitte jamais votre téléphone." },
-      "languages": { "title": "11 langues", "desc": "Entièrement localisé en allemand, anglais, français, norvégien et plus encore." },
-      "free": { "title": "Sans pub et open source", "desc": "Non commercial et entièrement open source. Sans pub, sans abonnement et sans frais cachés, jamais." }
+      "availability": {
+        "title": "Disponibilité en temps réel",
+        "desc": "Voyez quels connecteurs sont libres ou occupés pour les bornes prises en charge dans la région DACH, avant de vous y rendre."
+      },
+      "carplay": {
+        "title": "Apple CarPlay",
+        "desc": "Trouvez votre prochaine borne directement depuis l'écran de votre voiture."
+      },
+      "search": {
+        "title": "Recherche partout",
+        "desc": "Accédez à n'importe quelle adresse, ville ou point d'intérêt en quelques secondes."
+      },
+      "filters": {
+        "title": "Filtres puissants",
+        "desc": "Type de connecteur, puissance minimale, réseau, cartes de recharge, disponibilité et plus encore."
+      },
+      "favorites": {
+        "title": "Favoris hors ligne",
+        "desc": "Enregistrez vos bornes habituelles, triées par distance et stockées sur votre appareil."
+      },
+      "privacy": {
+        "title": "Vie privée d'abord",
+        "desc": "Aucun suivi, aucune analyse. Votre position ne quitte jamais votre téléphone."
+      },
+      "languages": {
+        "title": "12 langues",
+        "desc": "Entièrement localisé en allemand, anglais, français, norvégien et plus encore."
+      },
+      "free": {
+        "title": "Sans pub et open source",
+        "desc": "Non commercial et entièrement open source. Sans pub, sans abonnement et sans frais cachés, jamais."
+      }
     },
     "screensEyebrow": "Regarder de plus près",
     "screensTitle": "Conçu pour se sentir chez soi sur iOS",
     "screensSubtitle": "Carte, détails des bornes et filtres. Clair, rapide et natif.",
-    "screens": { "map": "Carte", "detail": "Détails de la borne", "filter": "Filtres" },
+    "screens": {
+      "map": "Carte",
+      "detail": "Détails de la borne",
+      "filter": "Filtres"
+    },
     "sourcesEyebrow": "Couverture",
     "sourcesTitle": "Alimenté par des sources de données fiables",
     "sourcesSubtitle": "Combinez plusieurs bases de données pour une meilleure couverture où que vous conduisiez.",
     "sources": {
-      "ge": { "name": "GoingElectric", "region": "Allemagne, Autriche et Suisse" },
-      "ocm": { "name": "Open Charge Map", "region": "Couverture mondiale" },
-      "nobil": { "name": "Nobil", "region": "Norvège et Suède" }
+      "ge": {
+        "name": "GoingElectric",
+        "region": "Allemagne, Autriche et Suisse"
+      },
+      "ocm": {
+        "name": "Open Charge Map",
+        "region": "Couverture mondiale"
+      },
+      "nobil": {
+        "name": "Nobil",
+        "region": "Norvège et Suède"
+      }
     },
     "sourcesNote": "Activez une ou plusieurs sources à la fois. EVMap fusionne et déduplique les résultats sur votre carte.",
     "openSourceBadge": "Open source",
@@ -71,9 +120,18 @@
     "intro": "EVMap for iOS ne collecte, ne stocke et ne partage aucune donnée personnelle.",
     "dataYouEnterTitle": "Données que vous saisissez",
     "dataYouEnter": {
-      "location": { "label": "Localisation", "desc": "Utilisée uniquement sur l'appareil pour centrer la carte et trier les favoris par distance. Jamais transmise au développeur." },
-      "tesla": { "label": "Identifiants Tesla", "desc": "Si vous vous connectez à votre compte Tesla, les identifiants sont stockés uniquement dans le trousseau iOS de votre appareil, utilisés uniquement pour récupérer la disponibilité en temps réel des Superchargeurs, et jamais transmis au développeur." },
-      "filters": { "label": "Filtres et favoris", "desc": "Stockés localement sur votre appareil via SwiftData." }
+      "location": {
+        "label": "Localisation",
+        "desc": "Utilisée uniquement sur l'appareil pour centrer la carte et trier les favoris par distance. Jamais transmise au développeur."
+      },
+      "tesla": {
+        "label": "Identifiants Tesla",
+        "desc": "Si vous vous connectez à votre compte Tesla, les identifiants sont stockés uniquement dans le trousseau iOS de votre appareil, utilisés uniquement pour récupérer la disponibilité en temps réel des Superchargeurs, et jamais transmis au développeur."
+      },
+      "filters": {
+        "label": "Filtres et favoris",
+        "desc": "Stockés localement sur votre appareil via SwiftData."
+      }
     },
     "thirdPartyTitle": "Services tiers",
     "thirdPartyIntro": "EVMap contacte les API externes suivantes pour charger les données des bornes. Votre adresse IP est visible par ces services dans le cadre des requêtes réseau normales.",

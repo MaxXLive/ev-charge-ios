@@ -23,36 +23,85 @@
     "highlightTitle": "Știi înainte să pleci",
     "highlightBody": "Deschide orice stație pentru a vedea disponibilitatea în timp real, fiecare conector cu puterea sa, orarul, fotografiile și prețurile. Apoi pornește navigarea cu o atingere.",
     "stats": {
-      "sources": { "value": "3", "label": "Surse de date" },
-      "languages": { "value": "11", "label": "Limbi" },
-      "price": { "currency": "RON", "label": "Mereu gratuit" },
-      "trackers": { "value": "0", "label": "Trackere" }
+      "sources": {
+        "value": "3",
+        "label": "Surse de date"
+      },
+      "languages": {
+        "value": "12",
+        "label": "Limbi"
+      },
+      "price": {
+        "currency": "RON",
+        "label": "Mereu gratuit"
+      },
+      "trackers": {
+        "value": "0",
+        "label": "Trackere"
+      }
     },
     "featuresEyebrow": "Funcționalități",
     "featuresTitle": "Creat pentru a găsi o încărcare rapid",
     "featuresSubtitle": "O aplicație iOS nativă fără reclame, fără cont și fără complicații.",
     "featuresMore": "Și detaliile care contează: fotografii, orar, carduri de încărcare, prețuri și disponibilitatea Tesla Superchargerelor.",
     "features": {
-      "availability": { "title": "Disponibilitate în timp real", "desc": "Află care conectori sunt liberi sau ocupați acum pentru stațiile acceptate din regiunea DACH, înainte să ajungi acolo." },
-      "carplay": { "title": "Apple CarPlay", "desc": "Găsește următorul punct de încărcare direct de pe ecranul mașinii tale." },
-      "search": { "title": "Caută oriunde", "desc": "Ajunge la orice adresă, oraș sau punct de interes în câteva secunde." },
-      "filters": { "title": "Filtre puternice", "desc": "Tip conector, putere minimă, rețea, carduri de încărcare, disponibilitate și altele." },
-      "favorites": { "title": "Favorite offline", "desc": "Salvează stațiile preferate, sortate după distanță și stocate pe dispozitivul tău." },
-      "privacy": { "title": "Confidențialitate pe primul loc", "desc": "Nicio urmărire, nicio analiză. Locația ta nu părăsește niciodată telefonul." },
-      "languages": { "title": "11 limbi", "desc": "Complet localizat în germană, engleză, franceză, norvegiană și altele." },
-      "free": { "title": "Fără reclame și open source", "desc": "Necomercial și complet open source. Fără reclame, fără abonamente și fără costuri ascunse, niciodată." }
+      "availability": {
+        "title": "Disponibilitate în timp real",
+        "desc": "Află care conectori sunt liberi sau ocupați acum pentru stațiile acceptate din regiunea DACH, înainte să ajungi acolo."
+      },
+      "carplay": {
+        "title": "Apple CarPlay",
+        "desc": "Găsește următorul punct de încărcare direct de pe ecranul mașinii tale."
+      },
+      "search": {
+        "title": "Caută oriunde",
+        "desc": "Ajunge la orice adresă, oraș sau punct de interes în câteva secunde."
+      },
+      "filters": {
+        "title": "Filtre puternice",
+        "desc": "Tip conector, putere minimă, rețea, carduri de încărcare, disponibilitate și altele."
+      },
+      "favorites": {
+        "title": "Favorite offline",
+        "desc": "Salvează stațiile preferate, sortate după distanță și stocate pe dispozitivul tău."
+      },
+      "privacy": {
+        "title": "Confidențialitate pe primul loc",
+        "desc": "Nicio urmărire, nicio analiză. Locația ta nu părăsește niciodată telefonul."
+      },
+      "languages": {
+        "title": "12 limbi",
+        "desc": "Complet localizat în germană, engleză, franceză, norvegiană și altele."
+      },
+      "free": {
+        "title": "Fără reclame și open source",
+        "desc": "Necomercial și complet open source. Fără reclame, fără abonamente și fără costuri ascunse, niciodată."
+      }
     },
     "screensEyebrow": "O privire mai atentă",
     "screensTitle": "Creat să se simtă acasă pe iOS",
     "screensSubtitle": "Hartă, detalii stații și filtre. Clar, rapid și nativ.",
-    "screens": { "map": "Hartă", "detail": "Detalii stație", "filter": "Filtre" },
+    "screens": {
+      "map": "Hartă",
+      "detail": "Detalii stație",
+      "filter": "Filtre"
+    },
     "sourcesEyebrow": "Acoperire",
     "sourcesTitle": "Alimentat de surse de date de încredere",
     "sourcesSubtitle": "Combină mai multe baze de date pentru cea mai bună acoperire oriunde conduci.",
     "sources": {
-      "ge": { "name": "GoingElectric", "region": "Germania, Austria și Elveția" },
-      "ocm": { "name": "Open Charge Map", "region": "Acoperire globală" },
-      "nobil": { "name": "Nobil", "region": "Norvegia și Suedia" }
+      "ge": {
+        "name": "GoingElectric",
+        "region": "Germania, Austria și Elveția"
+      },
+      "ocm": {
+        "name": "Open Charge Map",
+        "region": "Acoperire globală"
+      },
+      "nobil": {
+        "name": "Nobil",
+        "region": "Norvegia și Suedia"
+      }
     },
     "sourcesNote": "Activează una sau mai multe surse simultan. EVMap unește și elimină duplicatele din rezultatele de pe harta ta.",
     "openSourceBadge": "Open source",
@@ -71,9 +120,18 @@
     "intro": "EVMap for iOS nu colectează, stochează sau distribuie date cu caracter personal.",
     "dataYouEnterTitle": "Date pe care le introduci",
     "dataYouEnter": {
-      "location": { "label": "Locație", "desc": "Utilizată doar pe dispozitiv pentru centrarea hărții și sortarea favoritelor după distanță. Nu este transmisă niciodată dezvoltatorului." },
-      "tesla": { "label": "Date de autentificare Tesla", "desc": "Dacă te autentifici în contul tău Tesla, datele sunt stocate doar în Keychain-ul iOS al dispozitivului tău, utilizate exclusiv pentru preluarea disponibilității în timp real a Superchargerelor și niciodată transmise dezvoltatorului." },
-      "filters": { "label": "Setări filtre și favorite", "desc": "Stocate local pe dispozitivul tău prin SwiftData." }
+      "location": {
+        "label": "Locație",
+        "desc": "Utilizată doar pe dispozitiv pentru centrarea hărții și sortarea favoritelor după distanță. Nu este transmisă niciodată dezvoltatorului."
+      },
+      "tesla": {
+        "label": "Date de autentificare Tesla",
+        "desc": "Dacă te autentifici în contul tău Tesla, datele sunt stocate doar în Keychain-ul iOS al dispozitivului tău, utilizate exclusiv pentru preluarea disponibilității în timp real a Superchargerelor și niciodată transmise dezvoltatorului."
+      },
+      "filters": {
+        "label": "Setări filtre și favorite",
+        "desc": "Stocate local pe dispozitivul tău prin SwiftData."
+      }
     },
     "thirdPartyTitle": "Servicii terțe",
     "thirdPartyIntro": "EVMap contactează următoarele API-uri externe pentru a încărca datele stațiilor. Adresa ta IP este vizibilă pentru aceste servicii ca parte a cererilor de rețea normale.",

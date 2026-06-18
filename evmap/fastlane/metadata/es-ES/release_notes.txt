@@ -1,0 +1,1 @@
+Primera versión de EVMap para iOS. Encuentra puntos de carga para vehículos eléctricos desde GoingElectric, Open Charge Map y Nobil, con disponibilidad en tiempo real, filtros potentes, favoritos e información detallada de las estaciones.

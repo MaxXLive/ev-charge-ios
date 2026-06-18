@@ -1,0 +1,18 @@
+EVMap te ayuda a encontrar puntos de carga para vehículos eléctricos desde múltiples fuentes de datos: GoingElectric, Open Charge Map y Nobil. Todo en una app sin publicidad y de código abierto.
+
+CARACTERÍSTICAS
+- Múltiples fuentes de datos: combina GoingElectric (DACH), Open Charge Map (mundial) y Nobil (Noruega/Suecia)
+- Mapa con pines coloreados por potencia, agrupación y vistas estándar, satélite o híbrida
+- Detalles de estaciones: conectores con tipo y potencia, horarios, costes, fotos deslizables, tarjetas de carga
+- Disponibilidad en tiempo real para estaciones GoingElectric en la región DACH/UE a través de la API de EnBW
+- Tesla Superchargers: disponibilidad en tiempo real, precios y ocupación tras iniciar sesión, sin necesidad de vehículo Tesla
+- Filtros potentes: tipo de conector, potencia, red, tarjetas de carga, accesibilidad y más
+- Perfiles de filtros: guarda y carga tus propios ajustes
+- Favoritos: marca estaciones y ordénalas por distancia
+- Apple CarPlay: encuentra puntos de carga directamente en la pantalla de tu coche
+- Busca lugares y encuentra puntos de carga cercanos a través de Apple Maps
+- Traduce las notas de las estaciones con el framework de traducción nativo de Apple
+
+Una app iOS nativa para encontrar puntos de carga para VE. Sin publicidad, sin fines comerciales, código abierto. Código fuente: https://github.com/MaxXLive/evmap-ios
+
+EVMap no es un producto oficial de GoingElectric.de, Open Charge Map ni Nobil; solo utiliza sus APIs públicas.

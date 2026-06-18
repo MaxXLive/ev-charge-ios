@@ -18,6 +18,7 @@ const LOCALE_LABELS: Record<string, string> = {
   fr: "Français",
   it: "Italiano",
   nl: "Nederlands",
+  es: "Español",
   no: "Norsk",
   pt: "Português",
   ro: "Română",

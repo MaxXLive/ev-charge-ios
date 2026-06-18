@@ -1,0 +1,1 @@
+VE,carga,cargador,eléctrico,coche,estación,ev charging,charge map,emovilidad,evse

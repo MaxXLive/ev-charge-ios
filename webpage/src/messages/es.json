@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "homeTitle": "EVMap para iOS: Encuentra estaciones de carga para VE",
+    "homeDescription": "Buscador de estaciones de carga para VE en iOS, sin anuncios y de código abierto. Usa GoingElectric, Open Charge Map y Nobil con disponibilidad en tiempo real y soporte para CarPlay."
+  },
+  "nav": {
+    "features": "Funciones",
+    "screenshots": "Capturas",
+    "sources": "Datos",
+    "privacy": "Privacidad",
+    "support": "Soporte",
+    "download": "Descargar"
+  },
+  "home": {
+    "heroEyebrow": "Sin anuncios · Código abierto",
+    "heroTitle": "Cada cargador. Un mapa.",
+    "heroSubtitle": "EVMap encuentra estaciones de carga para vehículos eléctricos en toda Europa con disponibilidad en tiempo real. Rápido, nativo y diseñado para respetar tu privacidad.",
+    "heroNote": "Gratis · iPhone, iPad y CarPlay · iOS 26 o posterior",
+    "shotMapAlt": "Mapa de EVMap con estaciones de carga",
+    "shotDetailAlt": "Detalles de estación de carga en EVMap",
+    "shotFilterAlt": "Opciones de filtro en EVMap",
+    "highlightEyebrow": "De un vistazo",
+    "highlightTitle": "Infórmate antes de salir",
+    "highlightBody": "Abre cualquier estación para ver la disponibilidad en tiempo real, cada conector y su potencia, horarios de apertura, fotos y precios. Luego inicia la navegación con un toque.",
+    "stats": {
+      "sources": {
+        "value": "3",
+        "label": "Fuentes de datos"
+      },
+      "languages": {
+        "value": "12",
+        "label": "Idiomas"
+      },
+      "price": {
+        "currency": "USD",
+        "label": "Siempre gratis"
+      },
+      "trackers": {
+        "value": "0",
+        "label": "Rastreadores"
+      }
+    },
+    "featuresEyebrow": "Funciones",
+    "featuresTitle": "Diseñado para encontrar carga rápidamente",
+    "featuresSubtitle": "Una app nativa para iOS sin desorden, sin anuncios y sin cuentas.",
+    "featuresMore": "Y los detalles que importan: fotos, horarios de apertura, tarjetas de carga, precios y disponibilidad de Tesla Supercharger.",
+    "features": {
+      "availability": {
+        "title": "Disponibilidad en tiempo real",
+        "desc": "Ve qué conectores están libres o en uso ahora mismo en las estaciones compatibles de la región DACH, antes de conducir hasta allí."
+      },
+      "carplay": {
+        "title": "Apple CarPlay",
+        "desc": "Encuentra tu próximo cargador directamente desde el salpicadero de tu coche."
+      },
+      "search": {
+        "title": "Busca en cualquier lugar",
+        "desc": "Ve a cualquier dirección, ciudad o punto de interés en segundos."
+      },
+      "filters": {
+        "title": "Filtros avanzados",
+        "desc": "Tipo de conector, potencia mínima, red, tarjetas de carga, disponibilidad y más."
+      },
+      "favorites": {
+        "title": "Favoritos sin conexión",
+        "desc": "Guarda tus estaciones habituales, ordenadas por distancia y almacenadas en tu dispositivo."
+      },
+      "privacy": {
+        "title": "Privacidad ante todo",
+        "desc": "Sin seguimiento, sin analíticas. Tu ubicación nunca sale de tu teléfono."
+      },
+      "languages": {
+        "title": "12 idiomas",
+        "desc": "Totalmente localizada en alemán, inglés, francés, noruego y más."
+      },
+      "free": {
+        "title": "Sin anuncios y código abierto",
+        "desc": "No comercial y completamente de código abierto. Sin anuncios, sin suscripciones ni costes ocultos, nunca."
+      }
+    },
+    "screensEyebrow": "Una mirada más cercana",
+    "screensTitle": "Diseñada para sentirse como en casa en iOS",
+    "screensSubtitle": "Mapa, detalles de estación y filtros. Limpio, rápido y nativo.",
+    "screens": {
+      "map": "Mapa",
+      "detail": "Detalles de estación",
+      "filter": "Filtros"
+    },
+    "sourcesEyebrow": "Cobertura",
+    "sourcesTitle": "Impulsado por fuentes de datos de confianza",
+    "sourcesSubtitle": "Combina múltiples bases de datos para la mejor cobertura allá donde conduzcas.",
+    "sources": {
+      "ge": {
+        "name": "GoingElectric",
+        "region": "Alemania, Austria y Suiza"
+      },
+      "ocm": {
+        "name": "Open Charge Map",
+        "region": "Cobertura mundial"
+      },
+      "nobil": {
+        "name": "Nobil",
+        "region": "Noruega y Suecia"
+      }
+    },
+    "sourcesNote": "Activa una o varias fuentes a la vez. EVMap combina y elimina duplicados de los resultados en tu mapa.",
+    "openSourceBadge": "Código abierto",
+    "openSourceTitle": "Inspirada en el EVMap original para Android",
+    "openSourceBody": "Esta app nativa para iOS es un port de EVMap, la popular app de código abierto para Android de Johan von Forstner (MIT License). La misma idea y las mismas fuentes de datos, reconstruida de forma nativa para iPhone, iPad y CarPlay.",
+    "openSourceAndroidCta": "Original para Android",
+    "openSourceGithubCta": "Ver en GitHub",
+    "androidShotAlt": "Pantalla del mapa de EVMap para Android",
+    "androidShotCaption": "EVMap para Android",
+    "ctaTitle": "Encuentra tu próxima carga.",
+    "ctaSubtitle": "Descarga EVMap y no vuelvas a buscar una estación de carga."
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: 13 de junio de 2026",
+    "intro": "EVMap para iOS no recopila, almacena ni comparte ningún dato personal.",
+    "dataYouEnterTitle": "Datos que introduces",
+    "dataYouEnter": {
+      "location": {
+        "label": "Ubicación",
+        "desc": "Se usa solo en el dispositivo para centrar el mapa y ordenar los favoritos por distancia. Nunca se transmite al desarrollador."
+      },
+      "tesla": {
+        "label": "Credenciales de cuenta Tesla",
+        "desc": "Si inicias sesión con tu cuenta Tesla, las credenciales se almacenan en el llavero de iOS solo en tu dispositivo, se usan únicamente para obtener la disponibilidad en tiempo real de los Supercharger, y nunca se transmiten al desarrollador."
+      },
+      "filters": {
+        "label": "Configuración de filtros y favoritos",
+        "desc": "Se almacenan localmente en tu dispositivo mediante SwiftData."
+      }
+    },
+    "thirdPartyTitle": "Servicios de terceros",
+    "thirdPartyIntro": "EVMap se conecta a las siguientes APIs externas para cargar datos de estaciones de carga. Tu dirección IP es visible para estos servicios como parte de las solicitudes de red normales.",
+    "thirdPartyService": "Servicio",
+    "thirdPartyPurpose": "Finalidad",
+    "thirdPartyRows": {
+      "0": "Datos de estaciones de carga para DACH",
+      "1": "Datos de estaciones de carga en todo el mundo",
+      "2": "Datos de estaciones de carga para Noruega/Suecia",
+      "3": "Disponibilidad en tiempo real para estaciones de GoingElectric",
+      "4": "Comparación de precios (solo enlace profundo, no se envían datos)"
+    },
+    "analyticsTitle": "Analíticas",
+    "analyticsBody": "No se incluyen analíticas, SDK de seguimiento ni herramientas de informes de errores.",
+    "contactTitle": "Contacto",
+    "contactSupportCta": "página de soporte"
+  },
+  "support": {
+    "title": "Soporte y comentarios",
+    "subtitle": "¿Tienes una pregunta, encontraste un error o quieres sugerir una función? Nos encantaría saber de ti.",
+    "category": "Categoría",
+    "categoryPlaceholder": "Selecciona una categoría",
+    "titleField": "Asunto",
+    "titlePlaceholder": "Breve resumen de tu solicitud",
+    "message": "Mensaje",
+    "messagePlaceholder": "Describe tu solicitud o sugerencia en detalle...",
+    "email": "Tu correo electrónico",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "successTitle": "¡Gracias!",
+    "successMessage": "Tu comentario ha sido recibido. Te responderemos por correo electrónico si es necesario.",
+    "sendAnother": "Enviar otro",
+    "errorGeneric": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "required": "Este campo es obligatorio.",
+    "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida.",
+    "captchaRequired": "Por favor, completa el CAPTCHA.",
+    "captchaFailed": "La verificación del CAPTCHA falló. Por favor, inténtalo de nuevo."
+  },
+  "footer": {
+    "tagline": "Buscador de estaciones de carga para VE en iOS, sin anuncios y de código abierto.",
+    "appCol": "App",
+    "projectCol": "Proyecto",
+    "android": "Versión para Android",
+    "copyright": "© {year} Max Ermackov.",
+    "attribution": "Basado en EVMap de Johan von Forstner (MIT License)."
+  }
+}

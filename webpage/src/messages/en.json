@@ -23,10 +23,22 @@
     "highlightTitle": "Know before you go",
     "highlightBody": "Open any station to see live availability, every connector and its power, opening hours, photos and pricing. Then start navigation in one tap.",
     "stats": {
-      "sources": { "value": "3", "label": "Data sources" },
-      "languages": { "value": "11", "label": "Languages" },
-      "price": { "currency": "USD", "label": "Forever free" },
-      "trackers": { "value": "0", "label": "Trackers" }
+      "sources": {
+        "value": "3",
+        "label": "Data sources"
+      },
+      "languages": {
+        "value": "12",
+        "label": "Languages"
+      },
+      "price": {
+        "currency": "USD",
+        "label": "Forever free"
+      },
+      "trackers": {
+        "value": "0",
+        "label": "Trackers"
+      }
     },
     "featuresEyebrow": "Features",
     "featuresTitle": "Built for finding a charge, fast",
@@ -58,7 +70,7 @@
         "desc": "No tracking, no analytics. Your location never leaves your phone."
       },
       "languages": {
-        "title": "11 languages",
+        "title": "12 languages",
         "desc": "Fully localized in German, English, French, Norwegian and more."
       },
       "free": {
@@ -78,9 +90,18 @@
     "sourcesTitle": "Powered by trusted data sources",
     "sourcesSubtitle": "Combine multiple databases for the best coverage wherever you drive.",
     "sources": {
-      "ge": { "name": "GoingElectric", "region": "Germany, Austria & Switzerland" },
-      "ocm": { "name": "Open Charge Map", "region": "Worldwide coverage" },
-      "nobil": { "name": "Nobil", "region": "Norway & Sweden" }
+      "ge": {
+        "name": "GoingElectric",
+        "region": "Germany, Austria & Switzerland"
+      },
+      "ocm": {
+        "name": "Open Charge Map",
+        "region": "Worldwide coverage"
+      },
+      "nobil": {
+        "name": "Nobil",
+        "region": "Norway & Sweden"
+      }
     },
     "sourcesNote": "Enable one or several sources at once. EVMap merges and de-duplicates the results on your map.",
     "openSourceBadge": "Open source",

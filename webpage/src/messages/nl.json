@@ -23,36 +23,85 @@
     "highlightTitle": "Weet het voor je vertrekt",
     "highlightBody": "Open een station om realtime beschikbaarheid, elke connector met vermogen, openingstijden, foto's en tarieven te zien. Start daarna navigatie met één tik.",
     "stats": {
-      "sources": { "value": "3", "label": "Gegevensbronnen" },
-      "languages": { "value": "11", "label": "Talen" },
-      "price": { "currency": "EUR", "label": "Altijd gratis" },
-      "trackers": { "value": "0", "label": "Trackers" }
+      "sources": {
+        "value": "3",
+        "label": "Gegevensbronnen"
+      },
+      "languages": {
+        "value": "12",
+        "label": "Talen"
+      },
+      "price": {
+        "currency": "EUR",
+        "label": "Altijd gratis"
+      },
+      "trackers": {
+        "value": "0",
+        "label": "Trackers"
+      }
     },
     "featuresEyebrow": "Functies",
     "featuresTitle": "Gebouwd om snel een laadpunt te vinden",
     "featuresSubtitle": "Een native iOS-app zonder reclame, zonder account en zonder rommel.",
     "featuresMore": "En de details die tellen: foto's, openingstijden, laadkaarten, tarieven en beschikbaarheid van Tesla Superchargers.",
     "features": {
-      "availability": { "title": "Realtime beschikbaarheid", "desc": "Zie welke connectors nu vrij of bezet zijn voor ondersteunde stations in de DACH-regio, voor je er naartoe rijdt." },
-      "carplay": { "title": "Apple CarPlay", "desc": "Vind je volgende laadpunt rechtstreeks vanaf het scherm van je auto." },
-      "search": { "title": "Overal zoeken", "desc": "Navigeer in seconden naar elk adres, stad of bezienswaardheid." },
-      "filters": { "title": "Krachtige filters", "desc": "Connectortype, minimaal vermogen, netwerk, laadkaarten, beschikbaarheid en meer." },
-      "favorites": { "title": "Offline favorieten", "desc": "Sla je vaste stations op, gesorteerd op afstand en opgeslagen op je apparaat." },
-      "privacy": { "title": "Privacy eerst", "desc": "Geen tracking, geen analyse. Je locatie verlaat nooit je telefoon." },
-      "languages": { "title": "11 talen", "desc": "Volledig gelokaliseerd in het Duits, Engels, Frans, Noors en meer." },
-      "free": { "title": "Advertentievrij en open source", "desc": "Niet-commercieel en volledig open source. Geen advertenties, geen abonnementen en geen verborgen kosten, nooit." }
+      "availability": {
+        "title": "Realtime beschikbaarheid",
+        "desc": "Zie welke connectors nu vrij of bezet zijn voor ondersteunde stations in de DACH-regio, voor je er naartoe rijdt."
+      },
+      "carplay": {
+        "title": "Apple CarPlay",
+        "desc": "Vind je volgende laadpunt rechtstreeks vanaf het scherm van je auto."
+      },
+      "search": {
+        "title": "Overal zoeken",
+        "desc": "Navigeer in seconden naar elk adres, stad of bezienswaardheid."
+      },
+      "filters": {
+        "title": "Krachtige filters",
+        "desc": "Connectortype, minimaal vermogen, netwerk, laadkaarten, beschikbaarheid en meer."
+      },
+      "favorites": {
+        "title": "Offline favorieten",
+        "desc": "Sla je vaste stations op, gesorteerd op afstand en opgeslagen op je apparaat."
+      },
+      "privacy": {
+        "title": "Privacy eerst",
+        "desc": "Geen tracking, geen analyse. Je locatie verlaat nooit je telefoon."
+      },
+      "languages": {
+        "title": "12 talen",
+        "desc": "Volledig gelokaliseerd in het Duits, Engels, Frans, Noors en meer."
+      },
+      "free": {
+        "title": "Advertentievrij en open source",
+        "desc": "Niet-commercieel en volledig open source. Geen advertenties, geen abonnementen en geen verborgen kosten, nooit."
+      }
     },
     "screensEyebrow": "Nader bekeken",
     "screensTitle": "Ontworpen om thuis te voelen op iOS",
     "screensSubtitle": "Kaart, stationsdetails en filters. Overzichtelijk, snel en native.",
-    "screens": { "map": "Kaart", "detail": "Stationsdetails", "filter": "Filters" },
+    "screens": {
+      "map": "Kaart",
+      "detail": "Stationsdetails",
+      "filter": "Filters"
+    },
     "sourcesEyebrow": "Dekking",
     "sourcesTitle": "Aangedreven door betrouwbare gegevensbronnen",
     "sourcesSubtitle": "Combineer meerdere databases voor de beste dekking waar je ook rijdt.",
     "sources": {
-      "ge": { "name": "GoingElectric", "region": "Duitsland, Oostenrijk en Zwitserland" },
-      "ocm": { "name": "Open Charge Map", "region": "Wereldwijde dekking" },
-      "nobil": { "name": "Nobil", "region": "Noorwegen en Zweden" }
+      "ge": {
+        "name": "GoingElectric",
+        "region": "Duitsland, Oostenrijk en Zwitserland"
+      },
+      "ocm": {
+        "name": "Open Charge Map",
+        "region": "Wereldwijde dekking"
+      },
+      "nobil": {
+        "name": "Nobil",
+        "region": "Noorwegen en Zweden"
+      }
     },
     "sourcesNote": "Activeer een of meerdere bronnen tegelijk. EVMap voegt de resultaten samen en verwijdert duplicaten op je kaart.",
     "openSourceBadge": "Open source",
@@ -71,9 +120,18 @@
     "intro": "EVMap for iOS verzamelt, bewaart of deelt geen persoonlijke gegevens.",
     "dataYouEnterTitle": "Gegevens die je invoert",
     "dataYouEnter": {
-      "location": { "label": "Locatie", "desc": "Alleen op het apparaat gebruikt om de kaart te centreren en favorieten op afstand te sorteren. Nooit doorgezonden naar de ontwikkelaar." },
-      "tesla": { "label": "Tesla-inloggegevens", "desc": "Als je inlogt bij je Tesla-account, worden de gegevens alleen opgeslagen in de iOS-sleutelhanger op je apparaat, uitsluitend gebruikt om de realtime beschikbaarheid van Superchargers op te halen en nooit doorgezonden naar de ontwikkelaar." },
-      "filters": { "label": "Filterinstellingen en favorieten", "desc": "Lokaal opgeslagen op je apparaat via SwiftData." }
+      "location": {
+        "label": "Locatie",
+        "desc": "Alleen op het apparaat gebruikt om de kaart te centreren en favorieten op afstand te sorteren. Nooit doorgezonden naar de ontwikkelaar."
+      },
+      "tesla": {
+        "label": "Tesla-inloggegevens",
+        "desc": "Als je inlogt bij je Tesla-account, worden de gegevens alleen opgeslagen in de iOS-sleutelhanger op je apparaat, uitsluitend gebruikt om de realtime beschikbaarheid van Superchargers op te halen en nooit doorgezonden naar de ontwikkelaar."
+      },
+      "filters": {
+        "label": "Filterinstellingen en favorieten",
+        "desc": "Lokaal opgeslagen op je apparaat via SwiftData."
+      }
     },
     "thirdPartyTitle": "Diensten van derden",
     "thirdPartyIntro": "EVMap maakt verbinding met de volgende externe API's om laadstationgegevens te laden. Je IP-adres is zichtbaar voor deze services als onderdeel van normale netwerkverzoeken.",

@@ -23,36 +23,85 @@
     "highlightTitle": "Sapere prima di partire",
     "highlightBody": "Apri qualsiasi stazione per vedere la disponibilità in tempo reale, ogni connettore con la sua potenza, orari, foto e prezzi. Poi avvia la navigazione con un tocco.",
     "stats": {
-      "sources": { "value": "3", "label": "Fonti dati" },
-      "languages": { "value": "11", "label": "Lingue" },
-      "price": { "currency": "EUR", "label": "Sempre gratuita" },
-      "trackers": { "value": "0", "label": "Tracker" }
+      "sources": {
+        "value": "3",
+        "label": "Fonti dati"
+      },
+      "languages": {
+        "value": "12",
+        "label": "Lingue"
+      },
+      "price": {
+        "currency": "EUR",
+        "label": "Sempre gratuita"
+      },
+      "trackers": {
+        "value": "0",
+        "label": "Tracker"
+      }
     },
     "featuresEyebrow": "Funzionalità",
     "featuresTitle": "Progettata per trovare una ricarica rapidamente",
     "featuresSubtitle": "Un'app iOS nativa senza pubblicità, senza account e senza fronzoli.",
     "featuresMore": "E i dettagli che contano: foto, orari, carte di ricarica, prezzi e disponibilità dei Supercharger Tesla.",
     "features": {
-      "availability": { "title": "Disponibilità in tempo reale", "desc": "Scopri quali connettori sono liberi o occupati ora per le stazioni supportate nella regione DACH, prima di recarti lì." },
-      "carplay": { "title": "Apple CarPlay", "desc": "Trova la prossima stazione direttamente dal display della tua auto." },
-      "search": { "title": "Cerca ovunque", "desc": "Raggiungi qualsiasi indirizzo, città o punto di interesse in pochi secondi." },
-      "filters": { "title": "Filtri potenti", "desc": "Tipo di connettore, potenza minima, rete, carte di ricarica, disponibilità e altro ancora." },
-      "favorites": { "title": "Preferiti offline", "desc": "Salva le stazioni preferite, ordinate per distanza e memorizzate sul tuo dispositivo." },
-      "privacy": { "title": "Privacy prima di tutto", "desc": "Nessun tracciamento, nessuna analisi. La tua posizione non lascia mai il telefono." },
-      "languages": { "title": "11 lingue", "desc": "Completamente localizzata in tedesco, inglese, francese, norvegese e altro ancora." },
-      "free": { "title": "Senza pub e open source", "desc": "Non commerciale e completamente open source. Nessuna pubblicità, nessun abbonamento e nessun costo nascosto, mai." }
+      "availability": {
+        "title": "Disponibilità in tempo reale",
+        "desc": "Scopri quali connettori sono liberi o occupati ora per le stazioni supportate nella regione DACH, prima di recarti lì."
+      },
+      "carplay": {
+        "title": "Apple CarPlay",
+        "desc": "Trova la prossima stazione direttamente dal display della tua auto."
+      },
+      "search": {
+        "title": "Cerca ovunque",
+        "desc": "Raggiungi qualsiasi indirizzo, città o punto di interesse in pochi secondi."
+      },
+      "filters": {
+        "title": "Filtri potenti",
+        "desc": "Tipo di connettore, potenza minima, rete, carte di ricarica, disponibilità e altro ancora."
+      },
+      "favorites": {
+        "title": "Preferiti offline",
+        "desc": "Salva le stazioni preferite, ordinate per distanza e memorizzate sul tuo dispositivo."
+      },
+      "privacy": {
+        "title": "Privacy prima di tutto",
+        "desc": "Nessun tracciamento, nessuna analisi. La tua posizione non lascia mai il telefono."
+      },
+      "languages": {
+        "title": "12 lingue",
+        "desc": "Completamente localizzata in tedesco, inglese, francese, norvegese e altro ancora."
+      },
+      "free": {
+        "title": "Senza pub e open source",
+        "desc": "Non commerciale e completamente open source. Nessuna pubblicità, nessun abbonamento e nessun costo nascosto, mai."
+      }
     },
     "screensEyebrow": "Uno sguardo più da vicino",
     "screensTitle": "Pensata per iOS, si sente a casa",
     "screensSubtitle": "Mappa, dettagli delle stazioni e filtri. Pulita, veloce e nativa.",
-    "screens": { "map": "Mappa", "detail": "Dettagli stazione", "filter": "Filtri" },
+    "screens": {
+      "map": "Mappa",
+      "detail": "Dettagli stazione",
+      "filter": "Filtri"
+    },
     "sourcesEyebrow": "Copertura",
     "sourcesTitle": "Alimentata da fonti dati affidabili",
     "sourcesSubtitle": "Combina più database per la migliore copertura ovunque tu guidi.",
     "sources": {
-      "ge": { "name": "GoingElectric", "region": "Germania, Austria e Svizzera" },
-      "ocm": { "name": "Open Charge Map", "region": "Copertura mondiale" },
-      "nobil": { "name": "Nobil", "region": "Norvegia e Svezia" }
+      "ge": {
+        "name": "GoingElectric",
+        "region": "Germania, Austria e Svizzera"
+      },
+      "ocm": {
+        "name": "Open Charge Map",
+        "region": "Copertura mondiale"
+      },
+      "nobil": {
+        "name": "Nobil",
+        "region": "Norvegia e Svezia"
+      }
     },
     "sourcesNote": "Attiva una o più fonti contemporaneamente. EVMap unisce e deduplica i risultati sulla tua mappa.",
     "openSourceBadge": "Open source",
@@ -71,9 +120,18 @@
     "intro": "EVMap for iOS non raccoglie, memorizza o condivide alcun dato personale.",
     "dataYouEnterTitle": "Dati che inserisci",
     "dataYouEnter": {
-      "location": { "label": "Posizione", "desc": "Usata solo sul dispositivo per centrare la mappa e ordinare i preferiti per distanza. Mai trasmessa allo sviluppatore." },
-      "tesla": { "label": "Credenziali Tesla", "desc": "Se accedi al tuo account Tesla, le credenziali sono memorizzate solo nel Portachiavi iOS del tuo dispositivo, usate esclusivamente per recuperare la disponibilità in tempo reale dei Supercharger, e mai trasmesse allo sviluppatore." },
-      "filters": { "label": "Filtri e preferiti", "desc": "Memorizzati localmente sul tuo dispositivo tramite SwiftData." }
+      "location": {
+        "label": "Posizione",
+        "desc": "Usata solo sul dispositivo per centrare la mappa e ordinare i preferiti per distanza. Mai trasmessa allo sviluppatore."
+      },
+      "tesla": {
+        "label": "Credenziali Tesla",
+        "desc": "Se accedi al tuo account Tesla, le credenziali sono memorizzate solo nel Portachiavi iOS del tuo dispositivo, usate esclusivamente per recuperare la disponibilità in tempo reale dei Supercharger, e mai trasmesse allo sviluppatore."
+      },
+      "filters": {
+        "label": "Filtri e preferiti",
+        "desc": "Memorizzati localmente sul tuo dispositivo tramite SwiftData."
+      }
     },
     "thirdPartyTitle": "Servizi di terze parti",
     "thirdPartyIntro": "EVMap contatta le seguenti API esterne per caricare i dati delle stazioni. Il tuo indirizzo IP è visibile a questi servizi nel normale funzionamento della rete.",
