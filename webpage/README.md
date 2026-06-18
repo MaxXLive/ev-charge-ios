@@ -1,59 +1,78 @@
-# EVMap iOS — Marketing Website
+# EVMap for iOS — Marketing Website
 
-Single-page promo site for the EVMap iOS app with App Store download button,
-feature overview, privacy policy and support form.
+Single-page promo site for the EVMap iOS app: App Store download, feature
+overview, screenshots, data sources, the open-source Android origin, plus a
+privacy policy and a support form.
 
 - **Framework:** Next.js 16 (App Router) + next-intl + Tailwind v4
-- **Languages:** German + English (auto-detect via browser language, English fallback)
-- **URLs:** `evmap-ios.ermackov.de/<locale>` · `/de/privacy` · `/en/support` …
-- **Theme:** green accents matching the app logo (`#4caf50`)
+- **Languages:** German + English (browser auto-detect, English fallback)
+- **URLs:** `evmap-ios.ermackov.de/<locale>` · `/de/privacy` · `/en/support`
+- **Theme:** light, restrained, green accents from the app logo (`#15a34a` / `#00e676`)
 
 ## Pages
 
 | Route | Content |
 |---|---|
-| `/[locale]` | Landing: hero + App Store badge, features, data sources, open-source/Android origin, CTA |
-| `/[locale]/privacy` | Privacy policy (from `PRIVACY.md`, localized) |
-| `/[locale]/support` | Support/feedback form |
-
-## Support form / feedback API
-
-Reuses the same feedback portal backend as `vehicle-service-history` (PitStop).
-`src/app/api/feedback/route.ts` proxies to `FEEDBACK_HOST`, verifies Cloudflare
-Turnstile, and forwards to `/api/v1/feedback`. If `NEXT_PUBLIC_TURNSTILE_SITE_KEY`
-is unset, the CAPTCHA is skipped (dev convenience).
+| `/[locale]` | Landing: hero + App Store badge, stats, feature highlight, feature grid, screenshots, data sources, Android origin, CTA |
+| `/[locale]/privacy` | Privacy policy (localized, mirrors the app's `PRIVACY.md`) |
+| `/[locale]/support` | Support / feedback form |
 
 ## Setup
 
 ```bash
 npm install
 cp .env.example .env.local   # fill in feedback + Turnstile keys
-npm run dev                  # http://localhost:3000
+npm run dev                  # http://localhost:3000 (port 3000 is often taken → PORT=3210 npm run dev)
 npm run build && npm run start
 ```
 
-## TODO before launch
+Env vars (`.env.local`, gitignored):
 
-- Set the real numeric App Store ID in `src/lib/site-config.ts` (`appStoreUrl`).
-- Configure env vars on Vercel: `FEEDBACK_API_KEY`, `NEXT_PUBLIC_TURNSTILE_SITE_KEY`,
-  `TURNSTILE_SECRET_KEY` (and optionally `FEEDBACK_HOST`).
-- Point `evmap-ios.ermackov.de` at the Vercel deployment.
+| Var | Purpose |
+|---|---|
+| `FEEDBACK_API_KEY` | Auth for the shared feedback portal |
+| `FEEDBACK_HOST` | Portal base URL (defaults to `feedback-portal-mx.vercel.app`) |
+| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Cloudflare Turnstile site key (CAPTCHA) |
+| `TURNSTILE_SECRET_KEY` | Turnstile secret (server-side verify) |
+
+If the Turnstile keys are unset, the CAPTCHA is skipped (dev convenience).
+Use Cloudflare test keys locally (`1x00000000000000000000AA`).
+
+## Support form / feedback API
+
+`src/app/api/feedback/route.ts` proxies to `FEEDBACK_HOST` (same backend as the
+PitStop project), verifies Turnstile, and forwards to `/api/v1/feedback`. The key
+never reaches the client.
 
 ## Screenshots
 
-The framed iPhone screenshots come straight from the app's fastlane output.
-`npm run gen:screenshots` reads `../evmap/fastlane/screenshots/<locale>/iPhone 17
-Pro-*_framed.png`, removes the opaque white padding (flood-fill + auto-crop) and
-writes `public/screenshots/<locale>/{map,detail,filter}.png` for **all** locales
-fastlane produced (currently 10). Re-run it after every `fastlane screenshots`;
-commit the result. Requires Pillow (`pip3 install Pillow`).
+Framed iPhone screenshots come from the app's fastlane output. The Android shot
+sits inside a real Nexus 5X frame (`public/android/frame-nexus-5x.png`).
+
+```bash
+npm run gen:screenshots   # needs Pillow: pip3 install Pillow
+```
+
+Reads `../evmap/fastlane/screenshots/<locale>/iPhone 17 Pro-*_framed.png`, removes
+the opaque white padding (flood-fill from corners + auto-crop), and writes
+`public/screenshots/<locale>/{map,detail,filter}.png` for **all** locales fastlane
+produced (currently 10). Re-run after every `fastlane screenshots`; commit the
+result. The generated PNGs are committed so Vercel needs no access to `../evmap`.
 
 ## Adding languages (i18n)
 
 1. Add the locale to `src/i18n/routing.ts` (`locales`).
-2. Create `src/messages/<locale>.json` (copy `en.json` as template).
+2. Create `src/messages/<locale>.json` (copy `en.json`). Set `stats.price.currency`
+   to that market's currency (e.g. `EUR`, `USD`).
 3. Screenshots for that locale already exist (see above) — no extra work.
-4. The navbar language switcher and metadata `alternates` pick it up automatically.
+4. App Store badge: add the official SVG to `public/badges/app-store-<locale>.svg`
+   and map it in `src/components/marketing/app-store-badge.tsx` (falls back to `en`).
+5. The navbar language switcher and metadata `alternates` pick it up automatically.
 
-The app ships in 11 languages; the website starts with `de` + `en` and the
-screenshot pipeline is ready for the rest.
+## Deploy (Vercel)
+
+- **Root Directory = `webpage`** (the app is a subfolder of the iOS repo).
+- Set the env vars above in Project → Settings → Environment Variables.
+- Add domain `evmap-ios.ermackov.de`.
+- Enable Web Analytics in the Analytics tab (`@vercel/analytics` is already wired
+  in `src/app/layout.tsx`).
