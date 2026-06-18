@@ -5,7 +5,7 @@ overview, screenshots, data sources, the open-source Android origin, plus a
 privacy policy and a support form.
 
 - **Framework:** Next.js 16 (App Router) + next-intl + Tailwind v4
-- **Languages:** German + English (browser auto-detect, English fallback)
+- **Languages:** German, English, Czech, French, Italian, Dutch, Norwegian, Portuguese, Romanian, Swedish (browser auto-detect, English fallback)
 - **URLs:** `evmap-ios.ermackov.de/<locale>` · `/de/privacy` · `/en/support`
 - **Theme:** light, restrained, green accents from the app logo (`#15a34a` / `#00e676`)
 
@@ -61,13 +61,18 @@ result. The generated PNGs are committed so Vercel needs no access to `../evmap`
 
 ## Adding languages (i18n)
 
-1. Add the locale to `src/i18n/routing.ts` (`locales`).
-2. Create `src/messages/<locale>.json` (copy `en.json`). Set `stats.price.currency`
-   to that market's currency (e.g. `EUR`, `USD`).
-3. Screenshots for that locale already exist (see above) — no extra work.
-4. App Store badge: add the official SVG to `public/badges/app-store-<locale>.svg`
-   and map it in `src/components/marketing/app-store-badge.tsx` (falls back to `en`).
-5. The navbar language switcher and metadata `alternates` pick it up automatically.
+The app ships in 11 languages; 10 are live on the website (all except Estonian).
+
+1. Add the locale code to `src/i18n/routing.ts` (`locales` array).
+2. Add the native language name to `LOCALE_LABELS` in `src/components/marketing/navbar.tsx`.
+3. Create `src/messages/<locale>.json` (copy `en.json`). Set `stats.price.currency`
+   to that market's currency (e.g. `EUR`, `USD`, `GBP`).
+4. Screenshots already exist for that locale if fastlane produced them — run
+   `npm run gen:screenshots` to regenerate if needed.
+5. App Store badge: copy the official SVG to `public/badges/app-store-<locale>.svg`
+   (from `~/Downloads/Download-on-the-App-Store/<LOCALE_DIR>/…/Black_lockup/SVG/`)
+   and add the mapping in `src/components/marketing/app-store-badge.tsx` (falls back to `en`).
+6. The navbar dropdown and metadata `alternates` pick everything up automatically.
 
 ## Deploy (Vercel)
 
