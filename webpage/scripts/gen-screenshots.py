@@ -26,9 +26,9 @@ OUT = os.path.normpath(os.path.join(HERE, "..", "public", "screenshots"))
 
 # fastlane file name -> web file name
 SHOTS = {
-    "iPhone 17 Pro-01Map_framed.png": "map",
-    "iPhone 17 Pro-02StationDetail_framed.png": "detail",
-    "iPhone 17 Pro-03Filter_framed.png": "filter",
+    "iPhone 17 Pro-01Map_web_framed.png": "map",
+    "iPhone 17 Pro-02StationDetail_web_framed.png": "detail",
+    "iPhone 17 Pro-03Filter_web_framed.png": "filter",
 }
 
 # fastlane locale dir -> website locale slug

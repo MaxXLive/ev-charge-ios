@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "homeTitle": "EVMap for iOS: Finn ladestasjoner for elbil",
+    "homeDescription": "Gratis og open source iOS-app for å finne ladestasjoner. Data fra GoingElectric, Open Charge Map og Nobil med sanntidstilgjengelighet og CarPlay-støtte."
+  },
+  "nav": {
+    "features": "Funksjoner",
+    "screenshots": "Skjermbilder",
+    "sources": "Data",
+    "privacy": "Personvern",
+    "support": "Støtte",
+    "download": "Last ned"
+  },
+  "home": {
+    "heroEyebrow": "Reklamefri · Open source",
+    "heroTitle": "Hver lader. Ett kart.",
+    "heroSubtitle": "EVMap finner ladestasjoner i hele Europa med sanntidstilgjengelighet. Rask, nativ og bygget for å respektere personvernet ditt.",
+    "heroNote": "Gratis · iPhone, iPad & CarPlay · iOS 26 eller nyere",
+    "shotMapAlt": "EVMap-kart med ladestasjoner",
+    "shotDetailAlt": "EVMap ladestasjon detaljer",
+    "shotFilterAlt": "EVMap filteralternativer",
+    "highlightEyebrow": "Raskt overblikk",
+    "highlightTitle": "Vit det før du kjører",
+    "highlightBody": "Åpne en stasjon for å se sanntidstilgjengelighet, hver kontakt med effekt, åpningstider, bilder og priser. Start deretter navigasjonen med ett trykk.",
+    "stats": {
+      "sources": { "value": "3", "label": "Datakilder" },
+      "languages": { "value": "11", "label": "Språk" },
+      "price": { "currency": "NOK", "label": "Alltid gratis" },
+      "trackers": { "value": "0", "label": "Sporere" }
+    },
+    "featuresEyebrow": "Funksjoner",
+    "featuresTitle": "Bygget for å finne lading raskt",
+    "featuresSubtitle": "En nativ iOS-app uten reklame, uten konto og uten rot.",
+    "featuresMore": "Og detaljene som betyr noe: bilder, åpningstider, ladekort, priser og tilgjengelighet for Tesla Supercharger.",
+    "features": {
+      "availability": { "title": "Sanntidstilgjengelighet", "desc": "Se hvilke kontakter som er ledige eller opptatt nå for støttede stasjoner i DACH-regionen, før du kjører dit." },
+      "carplay": { "title": "Apple CarPlay", "desc": "Finn neste ladepunkt direkte fra bilens skjerm." },
+      "search": { "title": "Søk overalt", "desc": "Gå til en adresse, by eller et interessepunkt på sekunder." },
+      "filters": { "title": "Kraftige filtre", "desc": "Kontakttype, minimum effekt, nettverk, ladekort, tilgjengelighet og mer." },
+      "favorites": { "title": "Offline-favoritter", "desc": "Lagre favorittstasjoner, sortert etter avstand og lagret på enheten din." },
+      "privacy": { "title": "Personvern først", "desc": "Ingen sporing, ingen analyse. Posisjonen din forlater aldri telefonen." },
+      "languages": { "title": "11 språk", "desc": "Fullt lokalisert på tysk, engelsk, fransk, norsk og mer." },
+      "free": { "title": "Reklamefri og open source", "desc": "Ikke-kommersiell og fullt open source. Ingen reklame, ingen abonnementer og ingen skjulte kostnader, aldri." }
+    },
+    "screensEyebrow": "Nærmere titt",
+    "screensTitle": "Designet for å føle seg hjemme på iOS",
+    "screensSubtitle": "Kart, stasjonsdetaljer og filtre. Rent, raskt og nativt.",
+    "screens": { "map": "Kart", "detail": "Stasjonsdetaljer", "filter": "Filtre" },
+    "sourcesEyebrow": "Dekning",
+    "sourcesTitle": "Drevet av pålitelige datakilder",
+    "sourcesSubtitle": "Kombiner flere databaser for best mulig dekning uansett hvor du kjører.",
+    "sources": {
+      "ge": { "name": "GoingElectric", "region": "Tyskland, Østerrike og Sveits" },
+      "ocm": { "name": "Open Charge Map", "region": "Verdensomspennende dekning" },
+      "nobil": { "name": "Nobil", "region": "Norge og Sverige" }
+    },
+    "sourcesNote": "Aktiver en eller flere kilder samtidig. EVMap slår sammen og fjerner duplikater på kartet ditt.",
+    "openSourceBadge": "Open source",
+    "openSourceTitle": "Inspirert av original EVMap for Android",
+    "openSourceBody": "Denne native iOS-appen er en port av EVMap, den populære open source Android-appen av Johan von Forstner (MIT License). Samme idé og samme datakilder, bygget på nytt for iPhone, iPad og CarPlay.",
+    "openSourceAndroidCta": "Android-originalen",
+    "openSourceGithubCta": "Se på GitHub",
+    "androidShotAlt": "EVMap for Android kartskjerm",
+    "androidShotCaption": "EVMap for Android",
+    "ctaTitle": "Finn neste lading.",
+    "ctaSubtitle": "Last ned EVMap og aldri lete etter en ladestasjon igjen."
+  },
+  "privacy": {
+    "title": "Personvernerklæring",
+    "lastUpdated": "Sist oppdatert: 13. juni 2026",
+    "intro": "EVMap for iOS samler ikke inn, lagrer eller deler personopplysninger.",
+    "dataYouEnterTitle": "Data du legger inn",
+    "dataYouEnter": {
+      "location": { "label": "Posisjon", "desc": "Brukes bare på enheten for å sentrere kartet og sortere favoritter etter avstand. Overføres aldri til utvikleren." },
+      "tesla": { "label": "Tesla-innloggingsdetaljer", "desc": "Hvis du logger på Tesla-kontoen din, lagres legitimasjonen kun i iOS-nøkkelringen på enheten, brukes utelukkende til å hente sanntidstilgjengelighet for Superchargere og overføres aldri til utvikleren." },
+      "filters": { "label": "Filterinnstillinger og favoritter", "desc": "Lagres lokalt på enheten via SwiftData." }
+    },
+    "thirdPartyTitle": "Tredjepartstjenester",
+    "thirdPartyIntro": "EVMap kontakter følgende eksterne API-er for å laste inn stasjondata. IP-adressen din er synlig for disse tjenestene som del av normale nettverksforespørsler.",
+    "thirdPartyService": "Tjeneste",
+    "thirdPartyPurpose": "Formål",
+    "thirdPartyRows": {
+      "0": "Stasjonsdata for DACH-regionen",
+      "1": "Stasjonsdata verden over",
+      "2": "Stasjonsdata for Norge og Sverige",
+      "3": "Sanntidstilgjengelighet for GoingElectric-stasjoner",
+      "4": "Prissammenligning (kun deep-link, ingen data sendt)"
+    },
+    "analyticsTitle": "Analyse",
+    "analyticsBody": "Ingen analyseverktøy, sporings-SDK-er eller krasjiverktøy er inkludert.",
+    "contactTitle": "Kontakt",
+    "contactSupportCta": "støtteside"
+  },
+  "support": {
+    "title": "Støtte og tilbakemelding",
+    "subtitle": "Har du et spørsmål, funnet en feil eller vil foreslå en funksjon? Vi hører gjerne fra deg.",
+    "category": "Kategori",
+    "categoryPlaceholder": "Velg en kategori",
+    "titleField": "Emne",
+    "titlePlaceholder": "Kort sammendrag av forespørselen din",
+    "message": "Melding",
+    "messagePlaceholder": "Beskriv forespørselen eller forslaget ditt i detalj...",
+    "email": "Din e-post",
+    "emailPlaceholder": "deg@eksempel.no",
+    "submit": "Send",
+    "sending": "Sender...",
+    "successTitle": "Takk!",
+    "successMessage": "Tilbakemeldingen din er mottatt. Vi tar kontakt per e-post om nødvendig.",
+    "sendAnother": "Send en til",
+    "errorGeneric": "Noe gikk galt. Prøv igjen.",
+    "required": "Dette feltet er obligatorisk.",
+    "invalidEmail": "Skriv inn en gyldig e-postadresse.",
+    "captchaRequired": "Fullfør CAPTCHA-en.",
+    "captchaFailed": "CAPTCHA-verifisering mislyktes. Prøv igjen."
+  },
+  "footer": {
+    "tagline": "Reklamefri, open source iOS-app for å finne EV-ladestasjoner.",
+    "appCol": "App",
+    "projectCol": "Prosjekt",
+    "android": "Android-versjon",
+    "copyright": "© {year} Max Ermackov.",
+    "attribution": "Basert på EVMap av Johan von Forstner (MIT License)."
+  }
+}

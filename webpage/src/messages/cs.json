@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "homeTitle": "EVMap for iOS: Najdi nabíjecí stanici pro elektromobil",
+    "homeDescription": "Bezplatná open source iOS aplikace pro vyhledávání nabíjecích stanic. Data z GoingElectric, Open Charge Map a Nobil s dostupností v reálném čase a podporou CarPlay."
+  },
+  "nav": {
+    "features": "Funkce",
+    "screenshots": "Snímky",
+    "sources": "Zdroje dat",
+    "privacy": "Soukromí",
+    "support": "Podpora",
+    "download": "Stáhnout"
+  },
+  "home": {
+    "heroEyebrow": "Bez reklam · Open source",
+    "heroTitle": "Každá nabíječka. Jedna mapa.",
+    "heroSubtitle": "EVMap najde nabíjecí stanice pro elektromobily po celé Evropě s dostupností v reálném čase. Rychlá, nativní a navržena s ohledem na tvé soukromí.",
+    "heroNote": "Zdarma · iPhone, iPad & CarPlay · iOS 26 nebo novější",
+    "shotMapAlt": "Mapa EVMap s nabíjecími stanicemi",
+    "shotDetailAlt": "Detail nabíjecí stanice EVMap",
+    "shotFilterAlt": "Možnosti filtru EVMap",
+    "highlightEyebrow": "Na první pohled",
+    "highlightTitle": "Vědět dřív, než vyjedeš",
+    "highlightBody": "Otevři libovolnou stanici a zjisti dostupnost v reálném čase, každý konektor s výkonem, otevírací doby, fotografie a ceny. Pak spusť navigaci jedním klepnutím.",
+    "stats": {
+      "sources": { "value": "3", "label": "Zdroje dat" },
+      "languages": { "value": "11", "label": "Jazyky" },
+      "price": { "currency": "CZK", "label": "Navždy zdarma" },
+      "trackers": { "value": "0", "label": "Sledovače" }
+    },
+    "featuresEyebrow": "Funkce",
+    "featuresTitle": "Navržena pro rychlé nalezení nabíjení",
+    "featuresSubtitle": "Nativní iOS aplikace bez reklam, bez účtu a bez zbytečností.",
+    "featuresMore": "A detaily, na kterých záleží: fotografie, otevírací doby, dobíjecí karty, ceny a dostupnost Tesla Superchargerů.",
+    "features": {
+      "availability": { "title": "Dostupnost v reálném čase", "desc": "Zjisti, které konektory jsou volné nebo obsazené, pro podporované stanice v regionu DACH, ještě než tam jedeš." },
+      "carplay": { "title": "Apple CarPlay", "desc": "Najdi další nabíjecí bod přímo z obrazovky svého auta." },
+      "search": { "title": "Hledej kdekoliv", "desc": "Přejdi na libovolnou adresu, město nebo zajímavé místo během sekund." },
+      "filters": { "title": "Výkonné filtry", "desc": "Typ konektoru, minimální výkon, síť, dobíjecí karty, dostupnost a další." },
+      "favorites": { "title": "Oblíbené offline", "desc": "Ulož své oblíbené stanice, seřazené podle vzdálenosti a uložené v zařízení." },
+      "privacy": { "title": "Soukromí na prvním místě", "desc": "Žádné sledování, žádná analytika. Tvoje poloha nikdy neopustí telefon." },
+      "languages": { "title": "11 jazyků", "desc": "Plně lokalizováno do němčiny, angličtiny, francouzštiny, norštiny a dalších jazyků." },
+      "free": { "title": "Bez reklam a open source", "desc": "Nekomerční a plně open source. Žádné reklamy, žádné předplatné a žádné skryté náklady, nikdy." }
+    },
+    "screensEyebrow": "Bližší pohled",
+    "screensTitle": "Navržena tak, aby se na iOS cítila jako doma",
+    "screensSubtitle": "Mapa, detaily stanic a filtry. Přehledná, rychlá a nativní.",
+    "screens": { "map": "Mapa", "detail": "Detail stanice", "filter": "Filtry" },
+    "sourcesEyebrow": "Pokrytí",
+    "sourcesTitle": "Poháněna spolehlivými zdroji dat",
+    "sourcesSubtitle": "Kombinuj více databází pro nejlepší pokrytí kdekoliv jedeš.",
+    "sources": {
+      "ge": { "name": "GoingElectric", "region": "Německo, Rakousko a Švýcarsko" },
+      "ocm": { "name": "Open Charge Map", "region": "Celosvětové pokrytí" },
+      "nobil": { "name": "Nobil", "region": "Norsko a Švédsko" }
+    },
+    "sourcesNote": "Aktivuj jeden nebo více zdrojů najednou. EVMap sloučí výsledky a odstraní duplicity na tvé mapě.",
+    "openSourceBadge": "Open source",
+    "openSourceTitle": "Inspirováno originálním EVMap pro Android",
+    "openSourceBody": "Tato nativní iOS aplikace je portem EVMap, populární open source Android aplikace od Johana von Forstnera (MIT License). Stejná myšlenka a stejné zdroje dat, přebudována nativně pro iPhone, iPad a CarPlay.",
+    "openSourceAndroidCta": "Android originál",
+    "openSourceGithubCta": "Zobrazit na GitHub",
+    "androidShotAlt": "Obrazovka mapy EVMap pro Android",
+    "androidShotCaption": "EVMap pro Android",
+    "ctaTitle": "Najdi své další nabíjení.",
+    "ctaSubtitle": "Stáhni EVMap a nikdy víc nehledej nabíjecí stanici."
+  },
+  "privacy": {
+    "title": "Zásady ochrany soukromí",
+    "lastUpdated": "Poslední aktualizace: 13. června 2026",
+    "intro": "EVMap for iOS neshromažďuje, neukládá ani nesdílí žádné osobní údaje.",
+    "dataYouEnterTitle": "Údaje, které zadáváš",
+    "dataYouEnter": {
+      "location": { "label": "Poloha", "desc": "Používána pouze v zařízení pro vycentrování mapy a řazení oblíbených podle vzdálenosti. Nikdy nepřenášena vývojáři." },
+      "tesla": { "label": "Přihlašovací údaje Tesla", "desc": "Pokud se přihlásíš ke svému účtu Tesla, přihlašovací údaje jsou uloženy pouze v iOS Klíčence zařízení, používány výhradně k načítání dostupnosti Superchargerů v reálném čase a nikdy nepřenášeny vývojáři." },
+      "filters": { "label": "Nastavení filtrů a oblíbené", "desc": "Uloženo lokálně v zařízení prostřednictvím SwiftData." }
+    },
+    "thirdPartyTitle": "Služby třetích stran",
+    "thirdPartyIntro": "EVMap kontaktuje následující externí API pro načítání dat nabíjecích stanic. Tvoje IP adresa je viditelná pro tyto služby v rámci běžných síťových požadavků.",
+    "thirdPartyService": "Služba",
+    "thirdPartyPurpose": "Účel",
+    "thirdPartyRows": {
+      "0": "Data nabíjecích stanic pro region DACH",
+      "1": "Data nabíjecích stanic po celém světě",
+      "2": "Data nabíjecích stanic pro Norsko a Švédsko",
+      "3": "Dostupnost v reálném čase pro stanice GoingElectric",
+      "4": "Porovnání cen (pouze deep-link, žádná data odeslána)"
+    },
+    "analyticsTitle": "Analytika",
+    "analyticsBody": "Nejsou zahrnuty žádné analytické nástroje, sledovací SDK ani nástroje pro hlášení pádu.",
+    "contactTitle": "Kontakt",
+    "contactSupportCta": "stránka podpory"
+  },
+  "support": {
+    "title": "Podpora a zpětná vazba",
+    "subtitle": "Máš otázku, našel jsi chybu nebo chceš navrhnout funkci? Rádi od tebe uslyšíme.",
+    "category": "Kategorie",
+    "categoryPlaceholder": "Vyberte kategorii",
+    "titleField": "Předmět",
+    "titlePlaceholder": "Stručný popis tvé žádosti",
+    "message": "Zpráva",
+    "messagePlaceholder": "Popiš podrobně svůj dotaz nebo návrh...",
+    "email": "Tvůj e-mail",
+    "emailPlaceholder": "ty@priklad.cz",
+    "submit": "Odeslat",
+    "sending": "Odesílání...",
+    "successTitle": "Děkujeme!",
+    "successMessage": "Tvá zpětná vazba byla přijata. V případě potřeby se ti ozveme e-mailem.",
+    "sendAnother": "Odeslat další",
+    "errorGeneric": "Něco se pokazilo. Zkus to znovu.",
+    "required": "Toto pole je povinné.",
+    "invalidEmail": "Zadej platnou e-mailovou adresu.",
+    "captchaRequired": "Vyplňte CAPTCHA.",
+    "captchaFailed": "Ověření CAPTCHA selhalo. Zkus to znovu."
+  },
+  "footer": {
+    "tagline": "Bezplatná open source iOS aplikace pro vyhledávání nabíjecích stanic.",
+    "appCol": "Aplikace",
+    "projectCol": "Projekt",
+    "android": "Verze pro Android",
+    "copyright": "© {year} Max Ermackov.",
+    "attribution": "Vychází z EVMap od Johana von Forstnera (MIT License)."
+  }
+}
