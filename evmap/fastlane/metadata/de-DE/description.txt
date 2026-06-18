@@ -1,18 +1,18 @@
-Mit EVMap kannst du Stromtankstellen in deiner Nähe komfortabel über dein iPhone finden. Die Datenbanken von GoingElectric.de oder Open Charge Map werden als Datenquelle genutzt und bieten Community-gepflegte Informationen zu Ladestationen auf der ganzen Welt. Für viele Ladepunkte in Europa kann zusätzlich der aktuelle Status (verfügbar oder belegt) angezeigt werden.
+EVMap hilft dir, Ladestationen für Elektroautos aus mehreren Datenquellen zu finden: GoingElectric, Open Charge Map und Nobil. Alles in einer werbefreien, quelloffenen App.
 
-Funktionen:
-- Anzeige der Stromtankstellen aus den Stromtankstellenverzeichnissen von GoingElectric.de und Open Charge Map
-- Echtzeit-Verfügbarkeitsanzeige für viele Ladesäulen (nur in Europa)
-- Integrierter Preisvergleich für die jeweilige Ladesäule mit Chargeprice.app (nur in Europa)
-- Kartendaten von OpenStreetMap
-- Suche nach Orten
-- Erweiterte Filterfunktionen, Filterprofile speichern
-- Favoritenliste, auch mit Anzeige der Verfügbarkeit
-- Apple CarPlay-Unterstützung: Ladestationen direkt auf dem Autodisplay
-- Keine nervige Werbung
+FUNKTIONEN
+- Mehrere Datenquellen: kombiniere GoingElectric (DACH), Open Charge Map (weltweit) und Nobil (Norwegen/Schweden)
+- Karte mit nach Leistung eingefärbten Pins, Clustering und Standard-, Satelliten- oder Hybrid-Ansicht
+- Stationsdetails: Anschlüsse mit Typ und Leistung, Öffnungszeiten, Kosten, Fotos zum Durchwischen, Ladekarten
+- Echtzeit-Verfügbarkeit für GoingElectric-Stationen in der DACH/EU-Region über die EnBW-API
+- Tesla Supercharger: Echtzeit-Verfügbarkeit, Preise und Auslastung nach dem Anmelden, kein Tesla-Fahrzeug nötig
+- Starke Filter: Anschlusstyp, Leistung, Netzwerk, Ladekarten, Barrierefreiheit und mehr
+- Filterprofile: eigene Voreinstellungen speichern und laden
+- Favoriten: Stationen merken und nach Entfernung sortieren
+- Apple CarPlay: Ladestationen direkt auf dem Display deines Autos finden
+- Orte suchen und Ladestationen in der Nähe finden über Apple Karten
+- Stationsnotizen mit Apples nativem Translation-Framework übersetzen
 
-EVMap ist ein Open-Source-Projekt und unter https://github.com/MaxXLive/evmap-ios zu finden.
+Eine native iOS-App zum Finden von Ladestationen. Werbefrei, nicht-kommerziell, quelloffen. Quellcode: https://github.com/MaxXLive/evmap-ios
 
-Die App ist kein offizielles Angebot von GoingElectric.de oder Open Charge Map, sondern nutzt die öffentlichen APIs dieser Seiten.
-
-Eine Liste der benötigten Berechtigungen mit Beschreibung gibt es unter diesem Link: https://github.com/MaxXLive/evmap-ios
+EVMap ist kein offizielles Produkt von GoingElectric.de, Open Charge Map oder Nobil und nutzt lediglich deren öffentliche APIs.

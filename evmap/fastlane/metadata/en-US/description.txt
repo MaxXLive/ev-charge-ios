@@ -1,18 +1,18 @@
-Using EVMap, you can find electric vehicle chargers comfortably using your iPhone. It provides mobile access to the community-driven databases from GoingElectric.de and Open Charge Map, containing information about charging locations across the world. For many chargepoints in Europe, you can see real-time status information.
+EVMap helps you find electric vehicle charging stations from multiple data sources: GoingElectric, Open Charge Map, and Nobil. All in one ad-free, open source app.
 
-Features:
-- Shows all charging stations from the community-maintained GoingElectric.de and Open Charge Map directories
-- Realtime availability information (only in Europe)
-- Integrated price comparison using Chargeprice.app (only in Europe)
-- Map data from OpenStreetMap
-- Search for places
-- Advanced filtering options, including saved filter profiles
-- Favorites list, also with availability information
-- No ads, fully open source
+FEATURES
+- Multiple data sources: combine GoingElectric (DACH), Open Charge Map (worldwide), and Nobil (Norway/Sweden)
+- Map with pins colored by power, clustering, and standard, satellite or hybrid views
+- Station details: connectors with type and power, opening hours, costs, swipeable photos, charge cards
+- Real-time availability for GoingElectric stations in the DACH/EU region via the EnBW API
+- Tesla Superchargers: real-time availability, pricing and utilization after signing in, no Tesla vehicle required
+- Powerful filters: connector type, power, network, charge cards, accessibility and more
+- Filter profiles: save and load your own presets
+- Favorites: bookmark stations and sort by distance
+- Apple CarPlay: find charging stations right on your car's display
+- Search for places and find charging stations nearby via Apple Maps
+- Translate station notes with Apple's native Translation framework
 
-EVMap is an open source project and can be found at https://github.com/MaxXLive/evmap-ios.
+A native iOS app for finding EV charging stations. Ad-free, non-commercial, open source. Source code: https://github.com/MaxXLive/evmap-ios
 
-- Apple CarPlay support: find chargers directly on your car's display
-This app is not an official product of GoingElectric.de or Open Charge Map, it only uses their public APIs.
-
-A list of necessary permissions with explanations is available here: https://github.com/MaxXLive/evmap-ios
+EVMap is not an official product of GoingElectric.de, Open Charge Map, or Nobil; it only uses their public APIs.

@@ -1,18 +1,18 @@
-Pomocí aplikace EVMap můžete pohodlně najít nabíječky elektromobilů s vaším iPhone mobilem. Poskytuje mobilní přístup do komunitních databází GoingElectric.de a Open Charge Map, které obsahují informace o nabíjecích místech po celém světě. U mnoha nabíjecích míst v Evropě si můžete zobrazit informace o jejich stavu v reálném čase.
+EVMap vám pomáhá najít nabíjecí stanice pro elektromobily z několika datových zdrojů: GoingElectric, Open Charge Map a Nobil. Vše v jedné aplikaci bez reklam a s otevřeným zdrojovým kódem.
 
-Funkce:
-- Zobrazuje všechny nabíjecí stanice z komunitou spravovaných databází GoingElectric.de a Open Charge Map.
-- Informace o dostupnosti v reálném čase (pouze v Evropě)
-- Integrované srovnání cen pomocí Chargeprice.app (pouze v Evropě)
-- Mapové podklady z OpenStreetMap
-- Vyhledávání míst
-- Pokročilé možnosti filtrování, včetně uložených profilů filtrů
-- Seznam oblíbených, také s informacemi o dostupnosti
-- Podpora Apple CarPlay: najděte nabíječky přímo na displeji vašeho automobilu
-- Žádné reklamy, plně otevřený zdrojový kód
+FUNKCE
+- Více datových zdrojů: kombinujte GoingElectric (DACH), Open Charge Map (celosvětově) a Nobil (Norsko/Švédsko)
+- Mapa s barevně odlišenými piny podle výkonu, shlukováním a standardním, satelitním nebo hybridním zobrazením
+- Detaily stanice: konektory s typem a výkonem, otevírací doby, náklady, prohlížení fotografií, nabíjecí karty
+- Dostupnost v reálném čase pro stanice GoingElectric v regionu DACH/EU prostřednictvím API EnBW
+- Tesla Superchargers: dostupnost v reálném čase, ceny a vytíženost po přihlášení, vozidlo Tesla není potřeba
+- Výkonné filtry: typ konektoru, výkon, síť, nabíjecí karty, dostupnost pro handicapované a další
+- Profily filtrů: ukládejte a načítejte vlastní předvolby
+- Oblíbené: označujte stanice a seřaďte je podle vzdálenosti
+- Apple CarPlay: najděte nabíjecí stanice přímo na displeji svého auta
+- Vyhledávejte místa a najděte nabíjecí stanice v okolí přes Apple Mapy
+- Překládejte poznámky ke stanicím pomocí nativního frameworku Translation od Apple
 
-EVMap je projekt s otevřeným zdrojovým kódem a najdete jej na adrese https://github.com/MaxXLive/evmap-ios.
+Nativní iOS aplikace pro hledání nabíjecích stanic. Bez reklam, nekomerční, open source. Zdrojový kód: https://github.com/MaxXLive/evmap-ios
 
-Tato aplikace není oficiálním produktem GoingElectric.de ani Open Charge Map, využívá pouze jejich veřejná API.
-
-Seznam potřebných oprávnění s vysvětlivkami je k dispozici zde: https://github.com/MaxXLive/evmap-ios
+EVMap není oficiálním produktem GoingElectric.de, Open Charge Map ani Nobil; využívá pouze jejich veřejná API.

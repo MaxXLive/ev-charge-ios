@@ -1,19 +1,18 @@
-Grâce à EVMap, vous pouvez trouver les chargeurs de véhicules électriques confortablement à l'aide de votre téléphone iPhone. Il fournit un accès mobile aux bases de données communautaires de GoingElectric.de et Open Charge Map, qui contiennent des informations sur les points de charge dans le monde entier. Pour de nombreux points de charge en Europe, vous pouvez voir des informations sur le statut en temps réel.
+EVMap vous aide à trouver des bornes de recharge pour véhicules électriques depuis plusieurs sources de données: GoingElectric, Open Charge Map et Nobil. Le tout dans une application sans publicité et open source.
 
-Caractéristiques :
-- Conception matérielle ("Material Design")
-- Affiche toutes les stations de recharge des répertoires GoingElectric.de et Open Charge Map gérés par la communauté.
-- Informations sur la disponibilité en temps réel (uniquement en Europe)
-- Comparaison des prix intégrée grâce à Chargeprice.app (uniquement en Europe)
-- Données cartographiques provenant d'OpenStreetMap
-- Recherche de lieux
-- Options de filtrage avancées, y compris les profils de filtrage enregistrés
-- Liste de favoris, avec également des informations sur la disponibilité
-- Prise en charge d'Apple CarPlay : trouvez des bornes directement sur l'écran de votre voiture
-- Pas de publicité, entièrement open source
+FONCTIONNALITES
+- Plusieurs sources de données: combinez GoingElectric (DACH), Open Charge Map (mondial) et Nobil (Norvège/Suède)
+- Carte avec des marqueurs colorés selon la puissance, clustering et vues standard, satellite ou hybride
+- Détails de la station: connecteurs avec type et puissance, horaires, coûts, photos à faire défiler, cartes de recharge
+- Disponibilité en temps réel pour les stations GoingElectric dans la région DACH/UE via l'API EnBW
+- Tesla Superchargers: disponibilité en temps réel, tarifs et taux d'utilisation après connexion, aucun véhicule Tesla requis
+- Filtres puissants: type de connecteur, puissance, réseau, cartes de recharge, accessibilité et plus encore
+- Profils de filtres: enregistrez et chargez vos propres préréglages
+- Favoris: marquez les stations et triez par distance
+- Apple CarPlay: trouvez des bornes directement sur l'écran de votre voiture
+- Recherchez des lieux et trouvez des bornes à proximité via Plans Apple
+- Traduisez les notes des stations avec le framework natif Translation d'Apple
 
-EVMap est un projet open source et peut être trouvé sur https://github.com/MaxXLive/evmap-ios.
+Une application iOS native pour trouver des bornes de recharge. Sans publicité, non commerciale, open source. Code source: https://github.com/MaxXLive/evmap-ios
 
-Cette application n'est pas un produit officiel de GoingElectric.de ou Open Charge Map, elle utilise uniquement leurs API publiques.
-
-Une liste des permissions nécessaires avec des explications est disponible ici : https://github.com/MaxXLive/evmap-ios
+EVMap n'est pas un produit officiel de GoingElectric.de, Open Charge Map ou Nobil; elle utilise uniquement leurs API publiques.

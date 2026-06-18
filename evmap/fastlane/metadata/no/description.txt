@@ -1,20 +1,18 @@
-Finn steder å lade fra den gemenskapsdrevne databasen til GoingElectric.de og Open Charge Map med din iPhone-enhet.
-Du finner info om ladestasjoner i hele verden og sanntidsinfo for mange av dem som er å finne i Europa.
+EVMap hjelper deg med å finne ladestasjoner for elbiler fra flere datakilder: GoingElectric, Open Charge Map og Nobil. Alt i én reklamefri app med åpen kildekode.
 
-- Fri programvare
-- Materiell design
-- Sanntidsinfo (kun i Europa)
-- Integrert sammenligningsinfo ved bruk av Chargeprice.app (kun i Europa)
-- Kartdata fra OpenStreetMap
-- Søk etter steder
-- Avanserte filtreringsvalg, inkludert lagrede filterprofiler
-- Favorittliste, som også har tilgjengelighetsinfo
-- Apple CarPlay-støtte: finn ladere direkte på bilens skjerm
-- Ingen reklame
+FUNKSJONER
+- Flere datakilder: kombiner GoingElectric (DACH), Open Charge Map (globalt) og Nobil (Norge/Sverige)
+- Kart med fargekodede nåler etter effekt, klynging og standard-, satellitt- eller hybridvisning
+- Stasjonsdetaljer: kontakter med type og effekt, åpningstider, kostnader, sveipbare bilder, ladekort
+- Sanntidstilgjengelighet for GoingElectric-stasjoner i DACH/EU-regionen via EnBW-API
+- Tesla Superchargers: sanntidstilgjengelighet, priser og belegg etter innlogging, ingen Tesla-bil nødvendig
+- Kraftige filtre: kontakttype, effekt, nettverk, ladekort, tilgjengelighet og mer
+- Filterprofiler: lagre og last inn dine egne forhåndsinnstillinger
+- Favoritter: merk stasjoner og sorter etter avstand
+- Apple CarPlay: finn ladestasjoner direkte på bilens skjerm
+- Søk etter steder og finn ladestasjoner i nærheten via Apple Kart
+- Oversett stasjonsnotater med Apples innebygde Translation-rammeverk
 
-Du finner kildekoden på https://github.com/MaxXLive/evmap-ios.
+En native iOS-app for å finne ladestasjoner. Reklamefri, ikke-kommersiell, åpen kildekode. Kildekode: https://github.com/MaxXLive/evmap-ios
 
-Dette kartet er ikke et offisielt program fra hverken GoingElectric.de eller Open Charge Map.
-Kun de offentlige API-ene derfra benyttes.
-
-Nødvendige tilganger er forklart på https://github.com/MaxXLive/evmap-ios
+EVMap er ikke et offisielt produkt fra GoingElectric.de, Open Charge Map eller Nobil; appen bruker kun deres offentlige API-er.

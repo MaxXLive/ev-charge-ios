@@ -19,7 +19,7 @@
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.navigation</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Zeigt Ladestationen in deiner Nähe und deinen Standort auf der Karte.</string>
+	<string>Shows charging stations near you and your location on the map.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchScreen</key>

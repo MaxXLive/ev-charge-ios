@@ -4,6 +4,16 @@ Release notes for each version.
 
 ---
 
+## v1.0.0 (Build 14)
+
+**App-Store-Rejection-Fixes**
+
+- Lokalisierte Standort-Berechtigungsabfrage (InfoPlist.xcstrings, 11 Sprachen) statt hart kodiertem Deutsch
+- App-Store-Beschreibungen überarbeitet: alle 10 Sprachen — Nobil ergänzt, Tesla-Feature ergänzt, OpenStreetMap/Chargeprice/Android/Material-Design-Altlasten entfernt, doppelte GitHub-Links bereinigt
+- Support-URL auf `https://evmap-ios.ermackov.de/support` aktualisiert (funktionierende Support-Seite)
+
+---
+
 ## v1.0.0 (Build 13)
 
 **Apple CarPlay (aktiviert)**

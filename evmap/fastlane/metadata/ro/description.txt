@@ -1,16 +1,18 @@
 EVMap te ajută să găsești stații de încărcare pentru vehicule electrice din mai multe surse de date: GoingElectric, Open Charge Map și Nobil. Totul într-o aplicație fără reclame și open source.
 
 FUNCȚII
-• Mai multe surse de date: combină GoingElectric (DACH), Open Charge Map (la nivel mondial) și Nobil (Norvegia/Suedia)
-• Hartă cu pini colorați în funcție de putere, grupare și vizualizări standard, satelit sau hibrid
-• Detalii stație: conectori cu tip și putere, program, costuri, fotografii glisante, carduri de încărcare
-• Disponibilitate în timp real pentru stațiile GoingElectric din DACH/UE prin API-ul EnBW
-• Filtre puternice: tip conector, putere, rețea, carduri de încărcare, accesibilitate și altele
-• Profiluri de filtre: salvează și încarcă propriile presetări
-• Favorite: marchează stații și sortează după distanță
-• Apple CarPlay: găsești stații de încărcare direct pe ecranul mașinii tale
-• Căutare locații prin Apple Maps
-• Traduce notele stațiilor cu framework-ul nativ Translation de la Apple
-• Integrare Chargeprice pentru compararea prețurilor
+- Mai multe surse de date: combină GoingElectric (DACH), Open Charge Map (la nivel mondial) și Nobil (Norvegia/Suedia)
+- Hartă cu pini colorați în funcție de putere, grupare și vizualizări standard, satelit sau hibrid
+- Detalii stație: conectori cu tip și putere, program, costuri, fotografii glisante, carduri de încărcare
+- Disponibilitate în timp real pentru stațiile GoingElectric din DACH/UE prin API-ul EnBW
+- Tesla Supercharger: disponibilitate în timp real, prețuri și grad de ocupare după autentificare, nu este necesar un vehicul Tesla
+- Filtre puternice: tip conector, putere, rețea, carduri de încărcare, accesibilitate și altele
+- Profiluri de filtre: salvează și încarcă propriile presetări
+- Favorite: marchează stații și sortează după distanță
+- Apple CarPlay: găsești stații de încărcare direct pe ecranul mașinii tale
+- Caută locații și găsește stații în apropiere prin Apple Maps
+- Traduce notele stațiilor cu framework-ul nativ Translation de la Apple
 
-Un port nativ iOS al aplicației open source EVMap pentru Android. Fără reclame, necomercial, open source.
+O aplicație iOS nativă pentru găsirea stațiilor de încărcare. Fără reclame, necomercială, open source. Cod sursă: https://github.com/MaxXLive/evmap-ios
+
+EVMap nu este un produs oficial al GoingElectric.de, Open Charge Map sau Nobil; folosește doar API-urile lor publice.
