@@ -43,13 +43,19 @@ platform :ios do
     )
   end
 
-  desc "Generate localized App Store screenshots via UI test (snapshot) + device frames (frameit)"
+  desc "Generate localized App Store screenshots via UI test (snapshot) + branded background + title"
   lane :screenshots do
     capture_screenshots # raw screenshots, reads fastlane/Snapfile
-    frame_screenshots(path: "./fastlane/screenshots") # wraps each in an Apple device frame
-    # frameit outputs frame-native dimensions; pad each *_framed.png to an exact
-    # ASC size (6.9" = 1290x2796) so App Store Connect accepts them.
-    sh("bash", "pad_framed.sh", "1290x2796")
+    reframe
+  end
+
+  desc "Re-decorate existing raw screenshots (frame + branded background + title) without re-capturing"
+  lane :reframe do
+    sh("bash", "frame_prepare.sh", "install")    # clear stale frames, install font
+    sh("python3", "build_titles.py")             # write frameit/<locale>/title.strings
+    frame_screenshots(path: "./fastlane/screenshots") # plain transparent device frames
+    sh("bash", "frame_compose.sh")               # branded bg + title; saves *_web_framed.png for webpage
+    sh("bash", "frame_prepare.sh", "relocale")   # rename nb -> no for App Store Connect
   end
 
   desc "Build + upload to TestFlight"

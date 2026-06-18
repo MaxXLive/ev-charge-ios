@@ -18,7 +18,11 @@ final class evmapUITests: XCTestCase {
     func testScreenshots() throws {
         let app = XCUIApplication()
         setupSnapshot(app)
-        app.launchArguments += ["-onboardingDone", "YES", "-screenshotMode", "YES"]
+        app.launchArguments += [
+            "-onboardingDone", "YES",
+            "-screenshotMode", "YES",
+            "-dataSources", "goingElectric",  // single source so no filters are greyed out
+        ]
         app.launch()
 
         // Dismiss the system location-permission alert if it appears.
