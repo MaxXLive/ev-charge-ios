@@ -15,6 +15,7 @@ WEB="$HERE/screenshots_web"
 SRC="$HERE/frameit"
 FONT="$ROOT/TitleFont.ttf"
 PHONE_BG="$SRC/background.png"
+IPAD_BG="$SRC/background_ipad.png"
 
 getstr() {
   grep -E "^\"$2\"" "$1" 2>/dev/null \
@@ -59,7 +60,9 @@ for langdir in "$ROOT"/*/; do
     web_out="$WEB/$lang/$(basename "${dev%_framed.png}_web_framed.png")"
     cp "$dev" "$web_out"
 
-    render "$title" "$PHONE_BG" 1290x2796 1162  80 320  94 20 "$dev" "$dev"
-    echo "compose: $lang/$base  ($title)"
+    ipad_out="${dev%_framed.png}_ipad_framed.png"
+    render "$title" "$IPAD_BG"  2048x2732 1062 100 440 120 20 "$ipad_out" "$dev"
+    render "$title" "$PHONE_BG" 1290x2796 1162  80 320  94 20 "$dev"      "$dev"
+    echo "compose: $lang/$base  (+ iPad)  ($title)"
   done
 done
