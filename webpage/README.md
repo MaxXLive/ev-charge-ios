@@ -53,11 +53,11 @@ sits inside a real Nexus 5X frame (`public/android/frame-nexus-5x.png`).
 npm run gen:screenshots   # needs Pillow: pip3 install Pillow
 ```
 
-Reads `../evmap/fastlane/screenshots/<locale>/iPhone 17 Pro-*_framed.png`, removes
+Reads `../evcharge/fastlane/screenshots/<locale>/iPhone 17 Pro-*_framed.png`, removes
 the opaque white padding (flood-fill from corners + auto-crop), and writes
 `public/screenshots/<locale>/{map,detail,filter}.png` for **all** locales fastlane
 produced (currently 10). Re-run after every `fastlane screenshots`; commit the
-result. The generated PNGs are committed so Vercel needs no access to `../evmap`.
+result. The generated PNGs are committed so Vercel needs no access to `../evcharge`.
 
 ## Adding languages (i18n)
 

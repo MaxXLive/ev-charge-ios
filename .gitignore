@@ -1,9 +1,9 @@
 # API keys — never commit
-evmap/evmap/Secrets.plist
+evcharge/evcharge/Secrets.plist
 
 # Xcode
-evmap/build/
-evmap/DerivedData/
+evcharge/build/
+evcharge/DerivedData/
 **/*.xcuserstate
 **/xcuserdata/
 **/*.xcscmblueprint
@@ -11,14 +11,14 @@ evmap/DerivedData/
 .DS_Store
 
 # fastlane secrets & build output
-evmap/fastlane/.env
-evmap/fastlane/*.p8
-evmap/fastlane/report.xml
-evmap/fastlane/Preview.html
-evmap/fastlane/screenshots/
-evmap/fastlane/test_output/
-evmap/vendor/bundle/
-evmap/build/
+evcharge/fastlane/.env
+evcharge/fastlane/*.p8
+evcharge/fastlane/report.xml
+evcharge/fastlane/Preview.html
+evcharge/fastlane/screenshots/
+evcharge/fastlane/test_output/
+evcharge/vendor/bundle/
+evcharge/build/
 
 # Playwright MCP screenshots/snapshots
 .playwright-mcp/

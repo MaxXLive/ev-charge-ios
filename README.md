@@ -1,4 +1,4 @@
-# EVMap iOS
+# EV Charge
 
 A native iOS/SwiftUI port of [EVMap](https://ev-map.app), an open-source Android app for finding EV charging stations (MIT License, Copyright Johan von Forstner). Ad-free, non-commercial, open source.
 
@@ -34,7 +34,7 @@ A native iOS/SwiftUI port of [EVMap](https://ev-map.app), an open-source Android
 
 ```bash
 git clone https://github.com/MaxXLive/ev-charge-ios.git
-cd ev-charge-ios/evmap
+cd ev-charge-ios/evcharge
 ```
 
 ### 2. Configure API keys
@@ -42,10 +42,10 @@ cd ev-charge-ios/evmap
 Copy the example secrets file and fill in your keys:
 
 ```bash
-cp evmap/Secrets.example.plist evmap/Secrets.plist
+cp evcharge/Secrets.example.plist evcharge/Secrets.plist
 ```
 
-Edit `evmap/Secrets.plist`:
+Edit `evcharge/Secrets.plist`:
 
 | Key | Where to get it |
 |-----|-----------------|
@@ -58,7 +58,7 @@ Edit `evmap/Secrets.plist`:
 ### 3. Open in Xcode and run
 
 ```bash
-open evmap.xcodeproj
+open evcharge.xcodeproj
 ```
 
 Select a simulator or device and press Run (`⌘R`).
@@ -66,7 +66,7 @@ Select a simulator or device and press Run (`⌘R`).
 ## Project Structure
 
 ```
-evmap/evmap/
+evcharge/evcharge/
 ├── Core/               # AppState, ChargepointAPI protocol, DataSource registry, Secrets
 ├── Models/             # ChargeLocation, Chargepoint, Filters, SwiftData persistence models
 ├── API/
@@ -111,10 +111,10 @@ What is intentionally kept the same: the data-source APIs and models, filter def
 
 ## Releasing to the App Store
 
-App Store Connect automation lives in `evmap/fastlane/`. See `evmap/fastlane/SETUP.md` for the one-time setup (API key, UITest target).
+App Store Connect automation lives in `evcharge/fastlane/`. See `evcharge/fastlane/SETUP.md` for the one-time setup (API key, UITest target).
 
 ```bash
-cd evmap
+cd evcharge
 
 # Upload metadata + screenshots (10 languages) only — no binary
 fastlane metadata

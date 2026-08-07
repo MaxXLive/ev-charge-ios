@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate web screenshots from the fastlane framed originals.
 
-Reads ../evmap/fastlane/screenshots/<fastlaneLocale>/iPhone 17 Pro-*_framed.png,
+Reads ../evcharge/fastlane/screenshots/<fastlaneLocale>/iPhone 17 Pro-*_framed.png,
 removes the opaque white padding around the device (flood-fill from the corners,
 then auto-crop), and writes public/screenshots/<webLocale>/{map,detail,filter}.png.
 
@@ -21,7 +21,7 @@ except ImportError:
     sys.exit("Pillow required:  pip3 install Pillow")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.normpath(os.path.join(HERE, "..", "..", "evmap", "fastlane", "screenshots_web"))
+SRC = os.path.normpath(os.path.join(HERE, "..", "..", "evcharge", "fastlane", "screenshots_web"))
 OUT = os.path.normpath(os.path.join(HERE, "..", "public", "screenshots"))
 
 # fastlane file name -> web file name

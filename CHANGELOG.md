@@ -64,7 +64,7 @@ Release notes for each version.
 - fastlane automation for App Store Connect: build, upload metadata, screenshots and binary in one command
 - Localized App Store metadata in 10 languages (cs, de, en, fr, it, nl, no, pt, ro, sv) with descriptions, keywords, subtitles and release notes
 - Automated screenshot pipeline: snapshot captures 3 screens (map, station detail, filter sheet) in all 10 languages, frameit adds the official iPhone 17 Pro device frame, and pad_framed.sh pads to the required 1290x2796 canvas
-- UITest target (evmapUITests) with deterministic screenshot flow: Stuttgart city center, HPC Ladepark detail, filter sheet
+- UITest target (evchargeUITests) with deterministic screenshot flow: Stuttgart city center, HPC Ladepark detail, filter sheet
 - Screenshot mode in MapView: pins map to Stuttgart at a tight zoom and opens detail sheet at full height when FASTLANE_SNAPSHOT is set
 
 ---
