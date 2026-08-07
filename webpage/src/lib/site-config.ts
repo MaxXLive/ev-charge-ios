@@ -1,6 +1,6 @@
 export const siteConfig = {
-  url: "https://evmap-ios.ermackov.de",
-  name: "EVMap for iOS",
+  url: "https://ev-charge.ermackov.de",
+  name: "EV Charge for iOS",
   locales: ["de", "en"] as const,
   defaultLocale: "en" as const,
   // App Store link.
@@ -8,5 +8,5 @@ export const siteConfig = {
   // Open source Android original that inspired this port.
   androidUrl: "https://ev-map.app",
   androidGithubUrl: "https://github.com/ev-map/EVMap",
-  githubUrl: "https://github.com/MaxXLive/evmap-ios",
+  githubUrl: "https://github.com/MaxXLive/ev-charge-ios",
 };

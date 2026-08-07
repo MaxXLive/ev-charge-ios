@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "EVMap for iOS: Find EV charging stations",
+    "homeTitle": "EV Charge for iOS: Find EV charging stations",
     "homeDescription": "Ad-free, open source EV charging station finder for iOS. Powered by GoingElectric, Open Charge Map and Nobil with real-time availability and CarPlay support."
   },
   "nav": {
@@ -14,11 +14,11 @@
   "home": {
     "heroEyebrow": "Ad-free · Open source",
     "heroTitle": "Every charger. One map.",
-    "heroSubtitle": "EVMap finds EV charging stations across Europe with live availability. Fast, native and built to respect your privacy.",
+    "heroSubtitle": "EV Charge finds EV charging stations across Europe with live availability. Fast, native and built to respect your privacy.",
     "heroNote": "Free · iPhone, iPad & CarPlay · iOS 26 or later",
-    "shotMapAlt": "EVMap map with charging stations",
-    "shotDetailAlt": "EVMap charging station details",
-    "shotFilterAlt": "EVMap filter options",
+    "shotMapAlt": "EV Charge map with charging stations",
+    "shotDetailAlt": "EV Charge charging station details",
+    "shotFilterAlt": "EV Charge filter options",
     "highlightEyebrow": "At a glance",
     "highlightTitle": "Know before you go",
     "highlightBody": "Open any station to see live availability, every connector and its power, opening hours, photos and pricing. Then start navigation in one tap.",
@@ -103,7 +103,7 @@
         "region": "Norway & Sweden"
       }
     },
-    "sourcesNote": "Enable one or several sources at once. EVMap merges and de-duplicates the results on your map.",
+    "sourcesNote": "Enable one or several sources at once. EV Charge merges and de-duplicates the results on your map.",
     "openSourceBadge": "Open source",
     "openSourceTitle": "Inspired by the original EVMap for Android",
     "openSourceBody": "This native iOS app is a port of EVMap, the popular open source Android app by Johan von Forstner (MIT License). Same idea and same data sources, rebuilt natively for iPhone, iPad and CarPlay.",
@@ -112,12 +112,12 @@
     "androidShotAlt": "EVMap for Android map screen",
     "androidShotCaption": "EVMap for Android",
     "ctaTitle": "Find your next charge.",
-    "ctaSubtitle": "Download EVMap and never hunt for a charging station again."
+    "ctaSubtitle": "Download EV Charge and never hunt for a charging station again."
   },
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: 13 June 2026",
-    "intro": "EVMap for iOS does not collect, store, or share any personal data.",
+    "intro": "EV Charge for iOS does not collect, store, or share any personal data.",
     "dataYouEnterTitle": "Data you enter",
     "dataYouEnter": {
       "location": {
@@ -134,7 +134,7 @@
       }
     },
     "thirdPartyTitle": "Third-party services",
-    "thirdPartyIntro": "EVMap contacts the following external APIs to load charging station data. Your IP address is visible to these services as part of normal network requests.",
+    "thirdPartyIntro": "EV Charge contacts the following external APIs to load charging station data. Your IP address is visible to these services as part of normal network requests.",
     "thirdPartyService": "Service",
     "thirdPartyPurpose": "Purpose",
     "thirdPartyRows": {

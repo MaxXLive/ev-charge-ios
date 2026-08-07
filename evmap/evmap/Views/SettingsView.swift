@@ -73,7 +73,7 @@ struct SettingsView: View {
                 } header: {
                     Text("Sprache")
                 } footer: {
-                    Text("Die Sprache der App folgt den Systemeinstellungen. Über „App-Sprache“ öffnest du die iOS-Einstellungen, um eine andere Sprache nur für EVMap zu wählen.")
+                    Text("Die Sprache der App folgt den Systemeinstellungen. Über „App-Sprache“ öffnest du die iOS-Einstellungen, um eine andere Sprache nur für EV Charge zu wählen.")
                 }
 
                 Section("Datenquelle") {
@@ -158,14 +158,14 @@ struct AboutView: View {
                     Image("WelcomeLogo")
                         .resizable().scaledToFit()
                         .frame(width: 44, height: 44)
-                    Text("EVMap iOS").font(.title2.bold())
+                    Text("EV Charge").font(.title2.bold())
                     Spacer()
                 }
                 .listRowBackground(Color.clear)
-                Text("EVMap iOS ist eine native SwiftUI-Portierung der quelloffenen Android-App EVMap.")
+                Text("EV Charge ist eine native SwiftUI-Portierung der quelloffenen Android-App EVMap.")
             }
             Section("App") {
-                Link("EVMap iOS auf GitHub", destination: URL(string: "https://github.com/MaxXLive/evmap-ios")!)
+                Link("EV Charge auf GitHub", destination: URL(string: "https://github.com/MaxXLive/ev-charge-ios")!)
                 Text("© 2026 Max Ermackov. Lizenz: MIT.")
                     .font(.footnote).foregroundStyle(.secondary)
             }

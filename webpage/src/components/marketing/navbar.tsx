@@ -92,9 +92,9 @@ export function MarketingNavbar() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
           <Link href={l("/")} className="flex items-center gap-2.5">
-            <Image src="/icon.png" alt="EVMap iOS" width={34} height={34} className="rounded-[10px] shadow-sm" />
+            <Image src="/icon.png" alt="EV Charge iOS" width={34} height={34} className="rounded-[10px] shadow-sm" />
             <span className="text-lg font-bold tracking-tight">
-              EVMap <span className="font-semibold text-muted">for iOS</span>
+              EV Charge <span className="font-semibold text-muted">for iOS</span>
             </span>
           </Link>
 

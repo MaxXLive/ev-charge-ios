@@ -35,7 +35,7 @@ enum DataSourceID: String, CaseIterable, Identifiable, Sendable {
         case .nobil:
             return String(localized: "Offizielles Verzeichnis in Schweden und Norwegen.")
         case .openStreetMap:
-            return String(localized: "Experimentelle Unterstützung in EVMap, nicht alle Funktionen nutzbar.")
+            return String(localized: "Experimentelle Unterstützung in EV Charge, nicht alle Funktionen nutzbar.")
         }
     }
 

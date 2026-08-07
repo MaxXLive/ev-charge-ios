@@ -1,4 +1,4 @@
-EVMap te ajută să găsești stații de încărcare pentru vehicule electrice din mai multe surse de date: GoingElectric, Open Charge Map și Nobil. Totul într-o aplicație fără reclame și open source.
+EV Charge te ajută să găsești stații de încărcare pentru vehicule electrice din mai multe surse de date: GoingElectric, Open Charge Map și Nobil. Totul într-o aplicație fără reclame și open source.
 
 FUNCȚII
 - Mai multe surse de date: combină GoingElectric (DACH), Open Charge Map (la nivel mondial) și Nobil (Norvegia/Suedia)
@@ -13,6 +13,8 @@ FUNCȚII
 - Caută locații și găsește stații în apropiere prin Apple Maps
 - Traduce notele stațiilor cu framework-ul nativ Translation de la Apple
 
-O aplicație iOS nativă pentru găsirea stațiilor de încărcare. Fără reclame, necomercială, open source. Cod sursă: https://github.com/MaxXLive/evmap-ios
+O aplicație iOS nativă pentru găsirea stațiilor de încărcare. Fără reclame, necomercială, open source. Cod sursă: https://github.com/MaxXLive/ev-charge-ios
 
-EVMap nu este un produs oficial al GoingElectric.de, Open Charge Map sau Nobil; folosește doar API-urile lor publice.
+Bazat pe EVMap de Johan von Forstner (MIT License).
+
+EV Charge nu este un produs oficial al GoingElectric.de, Open Charge Map sau Nobil; folosește doar API-urile lor publice.

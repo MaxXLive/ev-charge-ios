@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "EVMap for iOS: Găsește stații de încărcare EV",
+    "homeTitle": "EV Charge for iOS: Găsește stații de încărcare EV",
     "homeDescription": "Aplicație iOS gratuită și open source pentru găsirea stațiilor de încărcare. Date din GoingElectric, Open Charge Map și Nobil cu disponibilitate în timp real și suport CarPlay."
   },
   "nav": {
@@ -14,11 +14,11 @@
   "home": {
     "heroEyebrow": "Fără reclame · Open source",
     "heroTitle": "Fiecare încărcător. O singură hartă.",
-    "heroSubtitle": "EVMap găsește stații de încărcare pentru vehicule electrice în toată Europa cu disponibilitate în timp real. Rapid, nativ și creat pentru a respecta confidențialitatea ta.",
+    "heroSubtitle": "EV Charge găsește stații de încărcare pentru vehicule electrice în toată Europa cu disponibilitate în timp real. Rapid, nativ și creat pentru a respecta confidențialitatea ta.",
     "heroNote": "Gratuit · iPhone, iPad & CarPlay · iOS 26 sau mai nou",
-    "shotMapAlt": "Harta EVMap cu stații de încărcare",
-    "shotDetailAlt": "Detalii stație EVMap",
-    "shotFilterAlt": "Opțiuni filtre EVMap",
+    "shotMapAlt": "Harta EV Charge cu stații de încărcare",
+    "shotDetailAlt": "Detalii stație EV Charge",
+    "shotFilterAlt": "Opțiuni filtre EV Charge",
     "highlightEyebrow": "La prima vedere",
     "highlightTitle": "Știi înainte să pleci",
     "highlightBody": "Deschide orice stație pentru a vedea disponibilitatea în timp real, fiecare conector cu puterea sa, orarul, fotografiile și prețurile. Apoi pornește navigarea cu o atingere.",
@@ -103,7 +103,7 @@
         "region": "Norvegia și Suedia"
       }
     },
-    "sourcesNote": "Activează una sau mai multe surse simultan. EVMap unește și elimină duplicatele din rezultatele de pe harta ta.",
+    "sourcesNote": "Activează una sau mai multe surse simultan. EV Charge unește și elimină duplicatele din rezultatele de pe harta ta.",
     "openSourceBadge": "Open source",
     "openSourceTitle": "Inspirat din EVMap original pentru Android",
     "openSourceBody": "Această aplicație iOS nativă este un port al EVMap, populara aplicație Android open source de Johan von Forstner (MIT License). Aceeași idee și aceleași surse de date, reconstruită nativ pentru iPhone, iPad și CarPlay.",
@@ -112,12 +112,12 @@
     "androidShotAlt": "Ecranul hărții EVMap pentru Android",
     "androidShotCaption": "EVMap pentru Android",
     "ctaTitle": "Găsește următoarea încărcare.",
-    "ctaSubtitle": "Descarcă EVMap și nu mai căuta niciodată o stație de încărcare."
+    "ctaSubtitle": "Descarcă EV Charge și nu mai căuta niciodată o stație de încărcare."
   },
   "privacy": {
     "title": "Politica de confidențialitate",
     "lastUpdated": "Ultima actualizare: 13 iunie 2026",
-    "intro": "EVMap for iOS nu colectează, stochează sau distribuie date cu caracter personal.",
+    "intro": "EV Charge for iOS nu colectează, stochează sau distribuie date cu caracter personal.",
     "dataYouEnterTitle": "Date pe care le introduci",
     "dataYouEnter": {
       "location": {
@@ -134,7 +134,7 @@
       }
     },
     "thirdPartyTitle": "Servicii terțe",
-    "thirdPartyIntro": "EVMap contactează următoarele API-uri externe pentru a încărca datele stațiilor. Adresa ta IP este vizibilă pentru aceste servicii ca parte a cererilor de rețea normale.",
+    "thirdPartyIntro": "EV Charge contactează următoarele API-uri externe pentru a încărca datele stațiilor. Adresa ta IP este vizibilă pentru aceste servicii ca parte a cererilor de rețea normale.",
     "thirdPartyService": "Serviciu",
     "thirdPartyPurpose": "Scop",
     "thirdPartyRows": {

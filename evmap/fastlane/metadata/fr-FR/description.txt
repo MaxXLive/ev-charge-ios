@@ -1,4 +1,4 @@
-EVMap vous aide à trouver des bornes de recharge pour véhicules électriques depuis plusieurs sources de données: GoingElectric, Open Charge Map et Nobil. Le tout dans une application sans publicité et open source.
+EV Charge vous aide à trouver des bornes de recharge pour véhicules électriques depuis plusieurs sources de données: GoingElectric, Open Charge Map et Nobil. Le tout dans une application sans publicité et open source.
 
 FONCTIONNALITES
 - Plusieurs sources de données: combinez GoingElectric (DACH), Open Charge Map (mondial) et Nobil (Norvège/Suède)
@@ -13,6 +13,8 @@ FONCTIONNALITES
 - Recherchez des lieux et trouvez des bornes à proximité via Plans Apple
 - Traduisez les notes des stations avec le framework natif Translation d'Apple
 
-Une application iOS native pour trouver des bornes de recharge. Sans publicité, non commerciale, open source. Code source: https://github.com/MaxXLive/evmap-ios
+Une application iOS native pour trouver des bornes de recharge. Sans publicité, non commerciale, open source. Code source: https://github.com/MaxXLive/ev-charge-ios
 
-EVMap n'est pas un produit officiel de GoingElectric.de, Open Charge Map ou Nobil; elle utilise uniquement leurs API publiques.
+Basé sur EVMap par Johan von Forstner (MIT License).
+
+EV Charge n'est pas un produit officiel de GoingElectric.de, Open Charge Map ou Nobil; elle utilise uniquement leurs API publiques.

@@ -1,4 +1,4 @@
-EVMap hilft dir, Ladestationen für Elektroautos aus mehreren Datenquellen zu finden: GoingElectric, Open Charge Map und Nobil. Alles in einer werbefreien, quelloffenen App.
+EV Charge hilft dir, Ladestationen für Elektroautos aus mehreren Datenquellen zu finden: GoingElectric, Open Charge Map und Nobil. Alles in einer werbefreien, quelloffenen App.
 
 FUNKTIONEN
 - Mehrere Datenquellen: kombiniere GoingElectric (DACH), Open Charge Map (weltweit) und Nobil (Norwegen/Schweden)
@@ -13,6 +13,8 @@ FUNKTIONEN
 - Orte suchen und Ladestationen in der Nähe finden über Apple Karten
 - Stationsnotizen mit Apples nativem Translation-Framework übersetzen
 
-Eine native iOS-App zum Finden von Ladestationen. Werbefrei, nicht-kommerziell, quelloffen. Quellcode: https://github.com/MaxXLive/evmap-ios
+Eine native iOS-App zum Finden von Ladestationen. Werbefrei, nicht-kommerziell, quelloffen. Quellcode: https://github.com/MaxXLive/ev-charge-ios
 
-EVMap ist kein offizielles Produkt von GoingElectric.de, Open Charge Map oder Nobil und nutzt lediglich deren öffentliche APIs.
+Basiert auf EVMap von Johan von Forstner (MIT-Lizenz).
+
+EV Charge ist kein offizielles Produkt von GoingElectric.de, Open Charge Map oder Nobil und nutzt lediglich deren öffentliche APIs.

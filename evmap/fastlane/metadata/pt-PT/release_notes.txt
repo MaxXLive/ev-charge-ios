@@ -1,1 +1,1 @@
-Primeira versão do EVMap para iOS. Encontre estações de carregamento para veículos elétricos do GoingElectric, Open Charge Map e Nobil, com disponibilidade em tempo real, filtros poderosos, favoritos e detalhes das estações.
+Primeira versão do EV Charge para iOS. Encontre estações de carregamento para veículos elétricos do GoingElectric, Open Charge Map e Nobil, com disponibilidade em tempo real, filtros poderosos, favoritos e detalhes das estações.

@@ -37,7 +37,15 @@ Build a signed release archive (.ipa)
 [bundle exec] fastlane ios screenshots
 ```
 
-Generate localized App Store screenshots via UI test (snapshot) + device frames (frameit)
+Generate localized App Store screenshots via UI test (snapshot) + branded background + title
+
+### ios reframe
+
+```sh
+[bundle exec] fastlane ios reframe
+```
+
+Re-decorate existing raw screenshots (frame + branded background + title) without re-capturing
 
 ### ios beta
 

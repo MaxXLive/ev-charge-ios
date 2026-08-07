@@ -28,4 +28,4 @@ No analytics, tracking SDKs, or crash reporting tools are included.
 
 ## Contact
 
-Max Ermackov — github.com/MaxXLive/evmap-ios
+Max Ermackov — github.com/MaxXLive/ev-charge-ios

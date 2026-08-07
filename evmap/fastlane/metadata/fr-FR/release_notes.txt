@@ -1,1 +1,1 @@
-Première version d'EVMap pour iOS. Trouvez des bornes de recharge pour VE depuis GoingElectric, Open Charge Map et Nobil, avec disponibilité en temps réel, filtres puissants, favoris et détails des stations.
+Première version d'EV Charge pour iOS. Trouvez des bornes de recharge pour VE depuis GoingElectric, Open Charge Map et Nobil, avec disponibilité en temps réel, filtres puissants, favoris et détails des stations.

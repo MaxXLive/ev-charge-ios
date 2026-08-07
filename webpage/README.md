@@ -1,12 +1,12 @@
-# EVMap for iOS — Marketing Website
+# EV Charge for iOS — Marketing Website
 
-Single-page promo site for the EVMap iOS app: App Store download, feature
+Single-page promo site for the EV Charge iOS app: App Store download, feature
 overview, screenshots, data sources, the open-source Android origin, plus a
 privacy policy and a support form.
 
 - **Framework:** Next.js 16 (App Router) + next-intl + Tailwind v4
 - **Languages:** German, English, Czech, French, Italian, Dutch, Norwegian, Portuguese, Romanian, Swedish (browser auto-detect, English fallback)
-- **URLs:** `evmap-ios.ermackov.de/<locale>` · `/de/privacy` · `/en/support`
+- **URLs:** `ev-charge.ermackov.de/<locale>` · `/de/privacy` · `/en/support`
 - **Theme:** light, restrained, green accents from the app logo (`#15a34a` / `#00e676`)
 
 ## Pages
@@ -78,6 +78,6 @@ The app ships in 11 languages; 10 are live on the website (all except Estonian).
 
 - **Root Directory = `webpage`** (the app is a subfolder of the iOS repo).
 - Set the env vars above in Project → Settings → Environment Variables.
-- Add domain `evmap-ios.ermackov.de`.
+- Add domain `ev-charge.ermackov.de`.
 - Enable Web Analytics in the Analytics tab (`@vercel/analytics` is already wired
   in `src/app/layout.tsx`).

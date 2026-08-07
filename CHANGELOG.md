@@ -1,36 +1,48 @@
-# Changelog — EVMap iOS
+# Changelog — EV Charge iOS
 
 Release notes for each version.
 
 ---
 
+## v1.1.0 (Build 16)
+
+**Rebrand: EVMap → EV Charge**
+
+- Renamed the app from "EVMap" to "EV Charge" (trademark resolution with Johan von Forstner, Apple ref APP273415): home-screen name, App Store name & subtitle (11 languages), in-app text
+- New, distinct app icon (Type 2 connector, full-bleed with a subtle gradient) + WelcomeLogo; removed the old EVMap icon/logo (incl. the unused AppLogo asset)
+- Attribution to the original: in-app credits (EVMap, Johan von Forstner, MIT) plus a line in all store descriptions ("Based on EVMap by Johan von Forstner, MIT License")
+- Domain → `ev-charge.ermackov.de`, repo → `MaxXLive/ev-charge-ios`
+- Marketing website fully rebranded (copy in 12 languages, wordmark, metadata, favicon) — attribution to the Android original intentionally preserved
+
+---
+
 ## v1.0.0 (Build 14)
 
-**App-Store-Rejection-Fixes**
+**App Store rejection fixes**
 
-- Lokalisierte Standort-Berechtigungsabfrage (InfoPlist.xcstrings, 11 Sprachen) statt hart kodiertem Deutsch
-- App-Store-Beschreibungen überarbeitet: alle 10 Sprachen — Nobil ergänzt, Tesla-Feature ergänzt, OpenStreetMap/Chargeprice/Android/Material-Design-Altlasten entfernt, doppelte GitHub-Links bereinigt
-- Support-URL auf `https://evmap-ios.ermackov.de/support` aktualisiert (funktionierende Support-Seite)
+- Localized location permission prompt (InfoPlist.xcstrings, 11 languages) instead of hardcoded German
+- Reworked App Store descriptions: all 10 languages — added Nobil, added Tesla feature, removed OpenStreetMap/Chargeprice/Android/Material-Design leftovers, cleaned up duplicate GitHub links
+- Updated support URL to `https://ev-charge.ermackov.de/support` (working support page)
 
 ---
 
 ## v1.0.0 (Build 13)
 
-**Apple CarPlay (aktiviert)**
+**Apple CarPlay (enabled)**
 
-- Apple CarPlay vollständig aktiviert nach Genehmigung des `com.apple.developer.carplay-charging` Entitlements
-- Lade-Karte, Stationsdetails, Navigation, Favoriten, Suche und Filter-Profile direkt am Autodisplay
+- Apple CarPlay fully enabled after approval of the `com.apple.developer.carplay-charging` entitlement
+- Charging map, station details, navigation, favorites, search and filter profiles directly on the car display
 
 ---
 
 ## v1.0.0 (Build 10)
 
-**Lizenzen & Credits**
+**Licenses & Credits**
 
-- Lizenzen-&-Credits-Seite erweitert: Attribution für alle Datenquellen (Open Charge Map CC BY-SA 4.0, NOBIL, Chargeprice), Apple Maps/MapKit und EnBW-Verfügbarkeit
-- Eigenes Copyright (Max Ermackov, MIT) mit GitHub-Link ergänzt
-- Hinweis, dass keine externen Drittanbieter-Bibliotheken verwendet werden
-- Alle neuen Texte in alle 11 Sprachen übersetzt
+- Expanded the Licenses & Credits page: attribution for all data sources (Open Charge Map CC BY-SA 4.0, NOBIL, Chargeprice), Apple Maps/MapKit and EnBW availability
+- Added own copyright (Max Ermackov, MIT) with a GitHub link
+- Note that no external third-party libraries are used
+- All new text translated into all 11 languages
 
 ---
 

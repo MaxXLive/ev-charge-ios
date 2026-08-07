@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "EVMap for iOS: Najdi nabíjecí stanici pro elektromobil",
+    "homeTitle": "EV Charge for iOS: Najdi nabíjecí stanici pro elektromobil",
     "homeDescription": "Bezplatná open source iOS aplikace pro vyhledávání nabíjecích stanic. Data z GoingElectric, Open Charge Map a Nobil s dostupností v reálném čase a podporou CarPlay."
   },
   "nav": {
@@ -14,11 +14,11 @@
   "home": {
     "heroEyebrow": "Bez reklam · Open source",
     "heroTitle": "Každá nabíječka. Jedna mapa.",
-    "heroSubtitle": "EVMap najde nabíjecí stanice pro elektromobily po celé Evropě s dostupností v reálném čase. Rychlá, nativní a navržena s ohledem na tvé soukromí.",
+    "heroSubtitle": "EV Charge najde nabíjecí stanice pro elektromobily po celé Evropě s dostupností v reálném čase. Rychlá, nativní a navržena s ohledem na tvé soukromí.",
     "heroNote": "Zdarma · iPhone, iPad & CarPlay · iOS 26 nebo novější",
-    "shotMapAlt": "Mapa EVMap s nabíjecími stanicemi",
-    "shotDetailAlt": "Detail nabíjecí stanice EVMap",
-    "shotFilterAlt": "Možnosti filtru EVMap",
+    "shotMapAlt": "Mapa EV Charge s nabíjecími stanicemi",
+    "shotDetailAlt": "Detail nabíjecí stanice EV Charge",
+    "shotFilterAlt": "Možnosti filtru EV Charge",
     "highlightEyebrow": "Na první pohled",
     "highlightTitle": "Vědět dřív, než vyjedeš",
     "highlightBody": "Otevři libovolnou stanici a zjisti dostupnost v reálném čase, každý konektor s výkonem, otevírací doby, fotografie a ceny. Pak spusť navigaci jedním klepnutím.",
@@ -103,7 +103,7 @@
         "region": "Norsko a Švédsko"
       }
     },
-    "sourcesNote": "Aktivuj jeden nebo více zdrojů najednou. EVMap sloučí výsledky a odstraní duplicity na tvé mapě.",
+    "sourcesNote": "Aktivuj jeden nebo více zdrojů najednou. EV Charge sloučí výsledky a odstraní duplicity na tvé mapě.",
     "openSourceBadge": "Open source",
     "openSourceTitle": "Inspirováno originálním EVMap pro Android",
     "openSourceBody": "Tato nativní iOS aplikace je portem EVMap, populární open source Android aplikace od Johana von Forstnera (MIT License). Stejná myšlenka a stejné zdroje dat, přebudována nativně pro iPhone, iPad a CarPlay.",
@@ -112,12 +112,12 @@
     "androidShotAlt": "Obrazovka mapy EVMap pro Android",
     "androidShotCaption": "EVMap pro Android",
     "ctaTitle": "Najdi své další nabíjení.",
-    "ctaSubtitle": "Stáhni EVMap a nikdy víc nehledej nabíjecí stanici."
+    "ctaSubtitle": "Stáhni EV Charge a nikdy víc nehledej nabíjecí stanici."
   },
   "privacy": {
     "title": "Zásady ochrany soukromí",
     "lastUpdated": "Poslední aktualizace: 13. června 2026",
-    "intro": "EVMap for iOS neshromažďuje, neukládá ani nesdílí žádné osobní údaje.",
+    "intro": "EV Charge for iOS neshromažďuje, neukládá ani nesdílí žádné osobní údaje.",
     "dataYouEnterTitle": "Údaje, které zadáváš",
     "dataYouEnter": {
       "location": {
@@ -134,7 +134,7 @@
       }
     },
     "thirdPartyTitle": "Služby třetích stran",
-    "thirdPartyIntro": "EVMap kontaktuje následující externí API pro načítání dat nabíjecích stanic. Tvoje IP adresa je viditelná pro tyto služby v rámci běžných síťových požadavků.",
+    "thirdPartyIntro": "EV Charge kontaktuje následující externí API pro načítání dat nabíjecích stanic. Tvoje IP adresa je viditelná pro tyto služby v rámci běžných síťových požadavků.",
     "thirdPartyService": "Služba",
     "thirdPartyPurpose": "Účel",
     "thirdPartyRows": {

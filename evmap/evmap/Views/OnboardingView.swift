@@ -48,7 +48,7 @@ struct OnboardingView: View {
             Image("WelcomeLogo")
                 .resizable().scaledToFit()
                 .frame(width: 150, height: 150)
-            Text("Willkommen bei EVMap").font(.title.bold()).multilineTextAlignment(.center)
+            Text("Willkommen bei EV Charge").font(.title.bold()).multilineTextAlignment(.center)
             Text("Finde Ladestationen für Elektroautos in deiner Nähe")
                 .multilineTextAlignment(.center).foregroundStyle(.secondary)
         }
@@ -77,7 +77,7 @@ struct OnboardingView: View {
         onboardPage(
             icon: "car.fill",
             title: String(localized: "Apple CarPlay"),
-            text: String(localized: "EVMap unterstützt Apple CarPlay. Verbinde dein iPhone mit dem Autodisplay und finde Ladestationen direkt auf der Fahrt – ohne dein Telefon zu berühren.")
+            text: String(localized: "EV Charge unterstützt Apple CarPlay. Verbinde dein iPhone mit dem Autodisplay und finde Ladestationen direkt auf der Fahrt – ohne dein Telefon zu berühren.")
         )
     }
 

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "EVMap for iOS: Trouver des bornes de recharge",
+    "homeTitle": "EV Charge for iOS: Trouver des bornes de recharge",
     "homeDescription": "Application iOS gratuite et open source pour trouver des bornes de recharge. Données GoingElectric, Open Charge Map et Nobil, disponibilité en temps réel et support CarPlay."
   },
   "nav": {
@@ -14,11 +14,11 @@
   "home": {
     "heroEyebrow": "Sans pub · Open source",
     "heroTitle": "Chaque borne. Une carte.",
-    "heroSubtitle": "EVMap trouve les bornes de recharge dans toute l'Europe avec la disponibilité en temps réel. Rapide, natif et conçu pour respecter votre vie privée.",
+    "heroSubtitle": "EV Charge trouve les bornes de recharge dans toute l'Europe avec la disponibilité en temps réel. Rapide, natif et conçu pour respecter votre vie privée.",
     "heroNote": "Gratuit · iPhone, iPad & CarPlay · iOS 26 ou ultérieur",
-    "shotMapAlt": "Carte EVMap avec les bornes de recharge",
-    "shotDetailAlt": "Détails d'une borne EVMap",
-    "shotFilterAlt": "Options de filtre EVMap",
+    "shotMapAlt": "Carte EV Charge avec les bornes de recharge",
+    "shotDetailAlt": "Détails d'une borne EV Charge",
+    "shotFilterAlt": "Options de filtre EV Charge",
     "highlightEyebrow": "En un coup d'oeil",
     "highlightTitle": "Sachez avant de partir",
     "highlightBody": "Ouvrez n'importe quelle borne pour voir la disponibilité en temps réel, chaque connecteur avec sa puissance, les horaires, les photos et les tarifs. Lancez ensuite la navigation d'une pression.",
@@ -103,7 +103,7 @@
         "region": "Norvège et Suède"
       }
     },
-    "sourcesNote": "Activez une ou plusieurs sources à la fois. EVMap fusionne et déduplique les résultats sur votre carte.",
+    "sourcesNote": "Activez une ou plusieurs sources à la fois. EV Charge fusionne et déduplique les résultats sur votre carte.",
     "openSourceBadge": "Open source",
     "openSourceTitle": "Inspiré de l'EVMap original pour Android",
     "openSourceBody": "Cette application iOS native est un portage d'EVMap, la populaire application Android open source de Johan von Forstner (MIT License). Même idée et mêmes sources de données, reconstruite nativement pour iPhone, iPad et CarPlay.",
@@ -112,12 +112,12 @@
     "androidShotAlt": "Écran de carte EVMap pour Android",
     "androidShotCaption": "EVMap pour Android",
     "ctaTitle": "Trouvez votre prochaine borne.",
-    "ctaSubtitle": "Téléchargez EVMap et ne cherchez plus jamais une borne de recharge."
+    "ctaSubtitle": "Téléchargez EV Charge et ne cherchez plus jamais une borne de recharge."
   },
   "privacy": {
     "title": "Politique de confidentialité",
     "lastUpdated": "Dernière mise à jour: 13 juin 2026",
-    "intro": "EVMap for iOS ne collecte, ne stocke et ne partage aucune donnée personnelle.",
+    "intro": "EV Charge for iOS ne collecte, ne stocke et ne partage aucune donnée personnelle.",
     "dataYouEnterTitle": "Données que vous saisissez",
     "dataYouEnter": {
       "location": {
@@ -134,7 +134,7 @@
       }
     },
     "thirdPartyTitle": "Services tiers",
-    "thirdPartyIntro": "EVMap contacte les API externes suivantes pour charger les données des bornes. Votre adresse IP est visible par ces services dans le cadre des requêtes réseau normales.",
+    "thirdPartyIntro": "EV Charge contacte les API externes suivantes pour charger les données des bornes. Votre adresse IP est visible par ces services dans le cadre des requêtes réseau normales.",
     "thirdPartyService": "Service",
     "thirdPartyPurpose": "Utilisation",
     "thirdPartyRows": {

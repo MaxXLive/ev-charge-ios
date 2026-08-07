@@ -1,1 +1,1 @@
-Eerste versie van EVMap voor iOS. Vind laadstations voor elektrische auto's uit GoingElectric, Open Charge Map en Nobil, met realtime beschikbaarheid, krachtige filters, favorieten en stationsdetails.
+Eerste versie van EV Charge voor iOS. Vind laadstations voor elektrische auto's uit GoingElectric, Open Charge Map en Nobil, met realtime beschikbaarheid, krachtige filters, favorieten en stationsdetails.

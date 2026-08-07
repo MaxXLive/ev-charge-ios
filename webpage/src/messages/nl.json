@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "EVMap for iOS: Vind EV-laadstations",
+    "homeTitle": "EV Charge for iOS: Vind EV-laadstations",
     "homeDescription": "Gratis open source iOS-app voor EV-laadstations. Gegevens van GoingElectric, Open Charge Map en Nobil met realtime beschikbaarheid en CarPlay-ondersteuning."
   },
   "nav": {
@@ -14,11 +14,11 @@
   "home": {
     "heroEyebrow": "Advertentievrij · Open source",
     "heroTitle": "Elke lader. Één kaart.",
-    "heroSubtitle": "EVMap vindt EV-laadstations in heel Europa met realtime beschikbaarheid. Snel, native en gebouwd om je privacy te respecteren.",
+    "heroSubtitle": "EV Charge vindt EV-laadstations in heel Europa met realtime beschikbaarheid. Snel, native en gebouwd om je privacy te respecteren.",
     "heroNote": "Gratis · iPhone, iPad & CarPlay · iOS 26 of later",
-    "shotMapAlt": "EVMap-kaart met laadstations",
-    "shotDetailAlt": "EVMap laadstation details",
-    "shotFilterAlt": "EVMap filteropties",
+    "shotMapAlt": "EV Charge-kaart met laadstations",
+    "shotDetailAlt": "EV Charge laadstation details",
+    "shotFilterAlt": "EV Charge filteropties",
     "highlightEyebrow": "In één oogopslag",
     "highlightTitle": "Weet het voor je vertrekt",
     "highlightBody": "Open een station om realtime beschikbaarheid, elke connector met vermogen, openingstijden, foto's en tarieven te zien. Start daarna navigatie met één tik.",
@@ -103,7 +103,7 @@
         "region": "Noorwegen en Zweden"
       }
     },
-    "sourcesNote": "Activeer een of meerdere bronnen tegelijk. EVMap voegt de resultaten samen en verwijdert duplicaten op je kaart.",
+    "sourcesNote": "Activeer een of meerdere bronnen tegelijk. EV Charge voegt de resultaten samen en verwijdert duplicaten op je kaart.",
     "openSourceBadge": "Open source",
     "openSourceTitle": "Geïnspireerd door de originele EVMap voor Android",
     "openSourceBody": "Deze native iOS-app is een port van EVMap, de populaire open source Android-app van Johan von Forstner (MIT License). Hetzelfde idee en dezelfde gegevensbronnen, opnieuw gebouwd voor iPhone, iPad en CarPlay.",
@@ -112,12 +112,12 @@
     "androidShotAlt": "EVMap voor Android kaartscherm",
     "androidShotCaption": "EVMap voor Android",
     "ctaTitle": "Vind je volgende laadbeurt.",
-    "ctaSubtitle": "Download EVMap en zoek nooit meer naar een laadstation."
+    "ctaSubtitle": "Download EV Charge en zoek nooit meer naar een laadstation."
   },
   "privacy": {
     "title": "Privacybeleid",
     "lastUpdated": "Laatst bijgewerkt: 13 juni 2026",
-    "intro": "EVMap for iOS verzamelt, bewaart of deelt geen persoonlijke gegevens.",
+    "intro": "EV Charge for iOS verzamelt, bewaart of deelt geen persoonlijke gegevens.",
     "dataYouEnterTitle": "Gegevens die je invoert",
     "dataYouEnter": {
       "location": {
@@ -134,7 +134,7 @@
       }
     },
     "thirdPartyTitle": "Diensten van derden",
-    "thirdPartyIntro": "EVMap maakt verbinding met de volgende externe API's om laadstationgegevens te laden. Je IP-adres is zichtbaar voor deze services als onderdeel van normale netwerkverzoeken.",
+    "thirdPartyIntro": "EV Charge maakt verbinding met de volgende externe API's om laadstationgegevens te laden. Je IP-adres is zichtbaar voor deze services als onderdeel van normale netwerkverzoeken.",
     "thirdPartyService": "Dienst",
     "thirdPartyPurpose": "Doel",
     "thirdPartyRows": {

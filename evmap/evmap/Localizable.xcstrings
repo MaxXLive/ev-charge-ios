@@ -4865,78 +4865,78 @@
         }
       }
     },
-    "Die Sprache der App folgt den Systemeinstellungen. Über „App-Sprache“ öffnest du die iOS-Einstellungen, um eine andere Sprache nur für EVMap zu wählen.": {
+    "Die Sprache der App folgt den Systemeinstellungen. Über „App-Sprache“ öffnest du die iOS-Einstellungen, um eine andere Sprache nur für EV Charge zu wählen.": {
       "localizations": {
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jazyk aplikace se řídí nastavením systému. Pomocí „Jazyk aplikace“ otevřete nastavení iOS a zvolíte jiný jazyk jen pro EVMap."
+            "value": "Jazyk aplikace se řídí nastavením systému. Pomocí „Jazyk aplikace“ otevřete nastavení iOS a zvolíte jiný jazyk jen pro EV Charge."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Die Sprache der App folgt den Systemeinstellungen. Über „App-Sprache“ öffnest du die iOS-Einstellungen, um eine andere Sprache nur für EVMap zu wählen."
+            "value": "Die Sprache der App folgt den Systemeinstellungen. Über „App-Sprache“ öffnest du die iOS-Einstellungen, um eine andere Sprache nur für EV Charge zu wählen."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The app language follows the system settings. Use “App language” to open the iOS settings and choose a different language just for EVMap."
+            "value": "The app language follows the system settings. Use “App language” to open the iOS settings and choose a different language just for EV Charge."
           }
         },
         "et": {
           "stringUnit": {
             "state": "translated",
-            "value": "Rakenduse keel järgib süsteemi seadeid. Vali „Rakenduse keel“, et avada iOS-i seaded ja valida EVMapile eraldi keel."
+            "value": "Rakenduse keel järgib süsteemi seadeid. Vali „Rakenduse keel“, et avada iOS-i seaded ja valida EV Chargeile eraldi keel."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "La langue de l'app suit les réglages du système. Utilisez « Langue de l'app » pour ouvrir les réglages iOS et choisir une autre langue uniquement pour EVMap."
+            "value": "La langue de l'app suit les réglages du système. Utilisez « Langue de l'app » pour ouvrir les réglages iOS et choisir une autre langue uniquement pour EV Charge."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "La lingua dell'app segue le impostazioni di sistema. Usa “Lingua dell'app” per aprire le impostazioni iOS e scegliere un'altra lingua solo per EVMap."
+            "value": "La lingua dell'app segue le impostazioni di sistema. Usa “Lingua dell'app” per aprire le impostazioni iOS e scegliere un'altra lingua solo per EV Charge."
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Appens språk følger systeminnstillingene. Bruk «Appspråk» for å åpne iOS-innstillingene og velge et annet språk kun for EVMap."
+            "value": "Appens språk følger systeminnstillingene. Bruk «Appspråk» for å åpne iOS-innstillingene og velge et annet språk kun for EV Charge."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De app-taal volgt de systeeminstellingen. Gebruik ‘App-taal’ om de iOS-instellingen te openen en alleen voor EVMap een andere taal te kiezen."
+            "value": "De app-taal volgt de systeeminstellingen. Gebruik ‘App-taal’ om de iOS-instellingen te openen en alleen voor EV Charge een andere taal te kiezen."
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "O idioma da app segue as definições do sistema. Use “Idioma da app” para abrir as definições do iOS e escolher outro idioma apenas para o EVMap."
+            "value": "O idioma da app segue as definições do sistema. Use “Idioma da app” para abrir as definições do iOS e escolher outro idioma apenas para o EV Charge."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Limba aplicației urmează setările sistemului. Folosiți „Limba aplicației” pentru a deschide setările iOS și a alege o altă limbă doar pentru EVMap."
+            "value": "Limba aplicației urmează setările sistemului. Folosiți „Limba aplicației” pentru a deschide setările iOS și a alege o altă limbă doar pentru EV Charge."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Appens språk följer systeminställningarna. Använd ”Appspråk” för att öppna iOS-inställningarna och välja ett annat språk enbart för EVMap."
+            "value": "Appens språk följer systeminställningarna. Använd ”Appspråk” för att öppna iOS-inställningarna och välja ett annat språk enbart för EV Charge."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "El idioma de la app sigue la configuración del sistema. Usa «Idioma de la app» para abrir los ajustes de iOS y elegir un idioma diferente solo para EVMap."
+            "value": "El idioma de la app sigue la configuración del sistema. Usa «Idioma de la app» para abrir los ajustes de iOS y elegir un idioma diferente solo para EV Charge."
           }
         }
       }
@@ -6081,258 +6081,258 @@
         }
       }
     },
-    "EVMap iOS": {
-      "comment": "The name of the EVMap iOS app.",
+    "EV Charge": {
+      "comment": "The name of the EV Charge app.",
       "isCommentAutoGenerated": true,
       "localizations": {
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS"
+            "value": "EV Charge"
           }
         }
       }
     },
-    "EVMap iOS auf GitHub": {
+    "EV Charge auf GitHub": {
       "localizations": {
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS na GitHubu"
+            "value": "EV Charge na GitHubu"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS auf GitHub"
+            "value": "EV Charge auf GitHub"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS on GitHub"
+            "value": "EV Charge on GitHub"
           }
         },
         "et": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS GitHubis"
+            "value": "EV Charge GitHubis"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS sur GitHub"
+            "value": "EV Charge sur GitHub"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS su GitHub"
+            "value": "EV Charge su GitHub"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS på GitHub"
+            "value": "EV Charge på GitHub"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS op GitHub"
+            "value": "EV Charge op GitHub"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS no GitHub"
+            "value": "EV Charge no GitHub"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS pe GitHub"
+            "value": "EV Charge pe GitHub"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS på GitHub"
+            "value": "EV Charge på GitHub"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS en GitHub"
+            "value": "EV Charge en GitHub"
           }
         }
       }
     },
-    "EVMap iOS ist eine native SwiftUI-Portierung der quelloffenen Android-App EVMap.": {
+    "EV Charge ist eine native SwiftUI-Portierung der quelloffenen Android-App EVMap.": {
       "localizations": {
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS je nativní SwiftUI port open-source aplikace EVMap pro Android."
+            "value": "EV Charge je nativní SwiftUI port open-source aplikace EVMap pro Android."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS ist eine native SwiftUI-Portierung der quelloffenen Android-App EVMap."
+            "value": "EV Charge ist eine native SwiftUI-Portierung der quelloffenen Android-App EVMap."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS is a native SwiftUI port of the open-source Android app EVMap."
+            "value": "EV Charge is a native SwiftUI port of the open-source Android app EVMap."
           }
         },
         "et": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS on avatud lähtekoodiga Androidi rakenduse EVMap natiivne SwiftUI port."
+            "value": "EV Charge on avatud lähtekoodiga Androidi rakenduse EVMap natiivne SwiftUI port."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS est un portage natif SwiftUI de l'application Android open source EVMap."
+            "value": "EV Charge est un portage natif SwiftUI de l'application Android open source EVMap."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS è un port nativo SwiftUI dell'app Android open source EVMap."
+            "value": "EV Charge è un port nativo SwiftUI dell'app Android open source EVMap."
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS er en innebygd SwiftUI-port av den åpne Android-appen EVMap."
+            "value": "EV Charge er en innebygd SwiftUI-port av den åpne Android-appen EVMap."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS is een native SwiftUI-port van de opensource Android-app EVMap."
+            "value": "EV Charge is een native SwiftUI-port van de opensource Android-app EVMap."
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "O EVMap iOS é um port nativo em SwiftUI da app Android de código aberto EVMap."
+            "value": "O EV Charge é um port nativo em SwiftUI da app Android de código aberto EVMap."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS este un port nativ SwiftUI al aplicației Android open-source EVMap."
+            "value": "EV Charge este un port nativ SwiftUI al aplicației Android open-source EVMap."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS är en inbyggd SwiftUI-portning av den öppna Android-appen EVMap."
+            "value": "EV Charge är en inbyggd SwiftUI-portning av den öppna Android-appen EVMap."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap iOS es un port nativo en SwiftUI de la app de código abierto para Android EVMap."
+            "value": "EV Charge es un port nativo en SwiftUI de la app de código abierto para Android EVMap."
           }
         }
       }
     },
-    "EVMap unterstützt Apple CarPlay. Verbinde dein iPhone mit dem Autodisplay und finde Ladestationen direkt auf der Fahrt – ohne dein Telefon zu berühren.": {
+    "EV Charge unterstützt Apple CarPlay. Verbinde dein iPhone mit dem Autodisplay und finde Ladestationen direkt auf der Fahrt – ohne dein Telefon zu berühren.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap supports Apple CarPlay. Connect your iPhone to your car's display to find charging stations on the road – without touching your phone."
+            "value": "EV Charge supports Apple CarPlay. Connect your iPhone to your car's display to find charging stations on the road – without touching your phone."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "EVMap es compatible con Apple CarPlay. Conecta tu iPhone a la pantalla de tu coche y encuentra estaciones de carga en ruta, sin tocar el teléfono."
+            "value": "EV Charge es compatible con Apple CarPlay. Conecta tu iPhone a la pantalla de tu coche y encuentra estaciones de carga en ruta, sin tocar el teléfono."
           }
         }
       }
     },
-    "Experimentelle Unterstützung in EVMap, nicht alle Funktionen nutzbar.": {
+    "Experimentelle Unterstützung in EV Charge, nicht alle Funktionen nutzbar.": {
       "localizations": {
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Experimentální podpora v EVMap, ne všechny funkce jsou dostupné."
+            "value": "Experimentální podpora v EV Charge, ne všechny funkce jsou dostupné."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Experimentelle Unterstützung in EVMap, nicht alle Funktionen nutzbar."
+            "value": "Experimentelle Unterstützung in EV Charge, nicht alle Funktionen nutzbar."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Experimental support in EVMap, not all features available."
+            "value": "Experimental support in EV Charge, not all features available."
           }
         },
         "et": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eksperimentaalne tugi EVMapis, kõik funktsioonid pole saadaval."
+            "value": "Eksperimentaalne tugi EV Chargeis, kõik funktsioonid pole saadaval."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prise en charge expérimentale dans EVMap, toutes les fonctions ne sont pas disponibles."
+            "value": "Prise en charge expérimentale dans EV Charge, toutes les fonctions ne sont pas disponibles."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Supporto sperimentale in EVMap, non tutte le funzioni sono disponibili."
+            "value": "Supporto sperimentale in EV Charge, non tutte le funzioni sono disponibili."
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eksperimentell støtte i EVMap, ikke alle funksjoner er tilgjengelige."
+            "value": "Eksperimentell støtte i EV Charge, ikke alle funksjoner er tilgjengelige."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Experimentele ondersteuning in EVMap, niet alle functies beschikbaar."
+            "value": "Experimentele ondersteuning in EV Charge, niet alle functies beschikbaar."
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Suporte experimental no EVMap, nem todas as funções disponíveis."
+            "value": "Suporte experimental no EV Charge, nem todas as funções disponíveis."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Suport experimental în EVMap, nu toate funcțiile sunt disponibile."
+            "value": "Suport experimental în EV Charge, nu toate funcțiile sunt disponibile."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Experimentellt stöd i EVMap, alla funktioner är inte tillgängliga."
+            "value": "Experimentellt stöd i EV Charge, alla funktioner är inte tillgängliga."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Soporte experimental en EVMap, no todas las funciones están disponibles."
+            "value": "Soporte experimental en EV Charge, no todas las funciones están disponibles."
           }
         }
       }
@@ -15099,78 +15099,78 @@
         }
       }
     },
-    "Willkommen bei EVMap": {
+    "Willkommen bei EV Charge": {
       "localizations": {
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vítejte v EVMap"
+            "value": "Vítejte v EV Charge"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Willkommen bei EVMap"
+            "value": "Willkommen bei EV Charge"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Welcome to EVMap"
+            "value": "Welcome to EV Charge"
           }
         },
         "et": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tere tulemast EVMapi"
+            "value": "Tere tulemast EV Chargei"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bienvenue dans EVMap"
+            "value": "Bienvenue dans EV Charge"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Benvenuto in EVMap"
+            "value": "Benvenuto in EV Charge"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Velkommen til EVMap"
+            "value": "Velkommen til EV Charge"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Welkom bij EVMap"
+            "value": "Welkom bij EV Charge"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bem-vindo ao EVMap"
+            "value": "Bem-vindo ao EV Charge"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bun venit la EVMap"
+            "value": "Bun venit la EV Charge"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Välkommen till EVMap"
+            "value": "Välkommen till EV Charge"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bienvenido a EVMap"
+            "value": "Bienvenido a EV Charge"
           }
         }
       }

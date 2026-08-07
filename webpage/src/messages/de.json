@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "EVMap for iOS: Ladestationen finden",
+    "homeTitle": "EV Charge for iOS: Ladestationen finden",
     "homeDescription": "Werbefreier, quelloffener Ladesäulen-Finder für iOS. Mit GoingElectric, Open Charge Map und Nobil, Echtzeit-Verfügbarkeit und CarPlay-Unterstützung."
   },
   "nav": {
@@ -14,11 +14,11 @@
   "home": {
     "heroEyebrow": "Werbefrei · Open Source",
     "heroTitle": "Jede Ladesäule. Eine Karte.",
-    "heroSubtitle": "EVMap findet Ladestationen in ganz Europa mit Echtzeit-Verfügbarkeit. Schnell, nativ und gebaut, um deine Privatsphäre zu schützen.",
+    "heroSubtitle": "EV Charge findet Ladestationen in ganz Europa mit Echtzeit-Verfügbarkeit. Schnell, nativ und gebaut, um deine Privatsphäre zu schützen.",
     "heroNote": "Kostenlos · iPhone, iPad & CarPlay · ab iOS 26",
-    "shotMapAlt": "EVMap-Karte mit Ladestationen",
-    "shotDetailAlt": "EVMap-Stationsdetails",
-    "shotFilterAlt": "EVMap-Filteroptionen",
+    "shotMapAlt": "EV Charge-Karte mit Ladestationen",
+    "shotDetailAlt": "EV Charge-Stationsdetails",
+    "shotFilterAlt": "EV Charge-Filteroptionen",
     "highlightEyebrow": "Auf einen Blick",
     "highlightTitle": "Wissen, bevor du losfährst",
     "highlightBody": "Öffne eine Station und sieh Echtzeit-Verfügbarkeit, jeden Anschluss mit Leistung, Öffnungszeiten, Fotos und Preise. Dann starte die Navigation mit einem Tipp.",
@@ -103,7 +103,7 @@
         "region": "Norwegen & Schweden"
       }
     },
-    "sourcesNote": "Aktiviere eine oder mehrere Quellen gleichzeitig. EVMap führt die Ergebnisse zusammen und entfernt Duplikate auf deiner Karte.",
+    "sourcesNote": "Aktiviere eine oder mehrere Quellen gleichzeitig. EV Charge führt die Ergebnisse zusammen und entfernt Duplikate auf deiner Karte.",
     "openSourceBadge": "Open Source",
     "openSourceTitle": "Inspiriert vom Original EVMap für Android",
     "openSourceBody": "Diese native iOS-App ist eine Portierung von EVMap, der beliebten quelloffenen Android-App von Johan von Forstner (MIT-Lizenz). Gleiche Idee und gleiche Datenquellen, neu gebaut für iPhone, iPad und CarPlay.",
@@ -112,12 +112,12 @@
     "androidShotAlt": "EVMap für Android Kartenansicht",
     "androidShotCaption": "EVMap für Android",
     "ctaTitle": "Finde deine nächste Ladung.",
-    "ctaSubtitle": "Lade EVMap und suche nie wieder nach einer Ladestation."
+    "ctaSubtitle": "Lade EV Charge und suche nie wieder nach einer Ladestation."
   },
   "privacy": {
     "title": "Datenschutzerklärung",
     "lastUpdated": "Zuletzt aktualisiert: 13. Juni 2026",
-    "intro": "EVMap für iOS sammelt, speichert oder teilt keine personenbezogenen Daten.",
+    "intro": "EV Charge für iOS sammelt, speichert oder teilt keine personenbezogenen Daten.",
     "dataYouEnterTitle": "Daten, die du eingibst",
     "dataYouEnter": {
       "location": {
@@ -134,7 +134,7 @@
       }
     },
     "thirdPartyTitle": "Drittanbieter-Dienste",
-    "thirdPartyIntro": "EVMap kontaktiert die folgenden externen APIs, um Ladestationsdaten zu laden. Deine IP-Adresse ist für diese Dienste im Rahmen normaler Netzwerkanfragen sichtbar.",
+    "thirdPartyIntro": "EV Charge kontaktiert die folgenden externen APIs, um Ladestationsdaten zu laden. Deine IP-Adresse ist für diese Dienste im Rahmen normaler Netzwerkanfragen sichtbar.",
     "thirdPartyService": "Dienst",
     "thirdPartyPurpose": "Zweck",
     "thirdPartyRows": {

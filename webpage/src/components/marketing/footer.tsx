@@ -15,8 +15,8 @@ export function MarketingFooter() {
         <div className="flex flex-col gap-10 sm:flex-row sm:justify-between">
           <div className="max-w-xs">
             <div className="flex items-center gap-2.5">
-              <Image src="/icon.png" alt="EVMap for iOS" width={34} height={34} className="rounded-[10px]" />
-              <span className="text-lg font-bold text-white">EVMap <span className="font-semibold text-white/55">for iOS</span></span>
+              <Image src="/icon.png" alt="EV Charge for iOS" width={34} height={34} className="rounded-[10px]" />
+              <span className="text-lg font-bold text-white">EV Charge <span className="font-semibold text-white/55">for iOS</span></span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-white/60">{t("footer.tagline")}</p>
           </div>

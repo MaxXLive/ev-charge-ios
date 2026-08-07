@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "EVMap for iOS: Encontre estações de carregamento",
+    "homeTitle": "EV Charge for iOS: Encontre estações de carregamento",
     "homeDescription": "Aplicação iOS gratuita e open source para encontrar estações de carregamento. Dados de GoingElectric, Open Charge Map e Nobil com disponibilidade em tempo real e suporte CarPlay."
   },
   "nav": {
@@ -14,11 +14,11 @@
   "home": {
     "heroEyebrow": "Sem publicidade · Open source",
     "heroTitle": "Cada carregador. Um mapa.",
-    "heroSubtitle": "O EVMap encontra estações de carregamento em toda a Europa com disponibilidade em tempo real. Rápido, nativo e criado para respeitar a tua privacidade.",
+    "heroSubtitle": "O EV Charge encontra estações de carregamento em toda a Europa com disponibilidade em tempo real. Rápido, nativo e criado para respeitar a tua privacidade.",
     "heroNote": "Gratuito · iPhone, iPad & CarPlay · iOS 26 ou posterior",
-    "shotMapAlt": "Mapa EVMap com estações de carregamento",
-    "shotDetailAlt": "Detalhes da estação EVMap",
-    "shotFilterAlt": "Opções de filtro EVMap",
+    "shotMapAlt": "Mapa EV Charge com estações de carregamento",
+    "shotDetailAlt": "Detalhes da estação EV Charge",
+    "shotFilterAlt": "Opções de filtro EV Charge",
     "highlightEyebrow": "De relance",
     "highlightTitle": "Saber antes de partir",
     "highlightBody": "Abre qualquer estação para ver a disponibilidade em tempo real, cada conector com a sua potência, horários, fotos e preços. Depois inicia a navegação com um toque.",
@@ -103,7 +103,7 @@
         "region": "Noruega e Suécia"
       }
     },
-    "sourcesNote": "Ativa uma ou mais fontes ao mesmo tempo. O EVMap une e remove duplicados dos resultados no teu mapa.",
+    "sourcesNote": "Ativa uma ou mais fontes ao mesmo tempo. O EV Charge une e remove duplicados dos resultados no teu mapa.",
     "openSourceBadge": "Open source",
     "openSourceTitle": "Inspirado no EVMap original para Android",
     "openSourceBody": "Esta aplicação iOS nativa é um port do EVMap, a popular aplicação Android open source de Johan von Forstner (MIT License). A mesma ideia e as mesmas fontes de dados, reconstruída nativamente para iPhone, iPad e CarPlay.",
@@ -112,12 +112,12 @@
     "androidShotAlt": "Ecrã do mapa EVMap para Android",
     "androidShotCaption": "EVMap para Android",
     "ctaTitle": "Encontra o teu próximo carregamento.",
-    "ctaSubtitle": "Descarrega o EVMap e nunca mais procures uma estação de carregamento."
+    "ctaSubtitle": "Descarrega o EV Charge e nunca mais procures uma estação de carregamento."
   },
   "privacy": {
     "title": "Política de Privacidade",
     "lastUpdated": "Última atualização: 13 de junho de 2026",
-    "intro": "O EVMap for iOS não recolhe, armazena nem partilha quaisquer dados pessoais.",
+    "intro": "O EV Charge for iOS não recolhe, armazena nem partilha quaisquer dados pessoais.",
     "dataYouEnterTitle": "Dados que introduzes",
     "dataYouEnter": {
       "location": {
@@ -134,7 +134,7 @@
       }
     },
     "thirdPartyTitle": "Serviços de terceiros",
-    "thirdPartyIntro": "O EVMap contacta as seguintes API externas para carregar dados das estações. O teu endereço IP é visível para estes serviços como parte dos pedidos de rede normais.",
+    "thirdPartyIntro": "O EV Charge contacta as seguintes API externas para carregar dados das estações. O teu endereço IP é visível para estes serviços como parte dos pedidos de rede normais.",
     "thirdPartyService": "Serviço",
     "thirdPartyPurpose": "Finalidade",
     "thirdPartyRows": {

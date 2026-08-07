@@ -33,8 +33,8 @@ A native iOS/SwiftUI port of [EVMap](https://ev-map.app), an open-source Android
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MaxXLive/evmap-ios.git
-cd evmap-ios/evmap
+git clone https://github.com/MaxXLive/ev-charge-ios.git
+cd ev-charge-ios/evmap
 ```
 
 ### 2. Configure API keys

@@ -12,8 +12,8 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "EVMap for iOS: Find EV charging stations",
-    template: "%s | EVMap for iOS",
+    default: "EV Charge for iOS: Find EV charging stations",
+    template: "%s | EV Charge for iOS",
   },
   description:
     "Find EV charging stations on iOS. Ad-free, open source, privacy-friendly. Powered by GoingElectric, Open Charge Map and Nobil with real-time availability.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "GoingElectric",
     "Open Charge Map",
     "Nobil",
-    "EVMap",
+    "EV Charge",
     "iOS",
     "CarPlay",
   ],
@@ -34,20 +34,20 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "EVMap",
+    title: "EV Charge",
   },
   openGraph: {
     type: "website",
-    siteName: "EVMap for iOS",
+    siteName: "EV Charge for iOS",
     locale: "en_US",
     alternateLocale: "de_DE",
     images: [
-      { url: "/icon.png", width: 1024, height: 1024, alt: "EVMap App Icon" },
+      { url: "/icon.png", width: 1024, height: 1024, alt: "EV Charge App Icon" },
     ],
   },
   twitter: {
     card: "summary",
-    title: "EVMap for iOS: Find EV charging stations",
+    title: "EV Charge for iOS: Find EV charging stations",
     description:
       "Ad-free, open source EV charging station finder for iOS with real-time availability.",
     images: ["/icon.png"],
