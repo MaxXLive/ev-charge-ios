@@ -1,1 +1,1 @@
-Första versionen av EV Charge för iOS. Hitta laddstationer för elbilar från GoingElectric, Open Charge Map och Nobil, med realtidstillgänglighet, kraftfulla filter, favoriter och stationsdetaljer.
+Nytt namn och ny ikon: EVMap heter nu EV Charge. Samma funktioner, fortfarande gratis, reklamfri och öppen källkod.

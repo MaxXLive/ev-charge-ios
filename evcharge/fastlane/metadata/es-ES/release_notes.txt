@@ -1,1 +1,1 @@
-Primera versión de EV Charge para iOS. Encuentra puntos de carga para vehículos eléctricos desde GoingElectric, Open Charge Map y Nobil, con disponibilidad en tiempo real, filtros potentes, favoritos e información detallada de las estaciones.
+Nuevo nombre y nuevo icono: EVMap ahora es EV Charge. Las mismas funciones, sigue siendo gratis, sin anuncios y de código abierto.

@@ -1,1 +1,1 @@
-První verze EV Charge pro iOS. Najděte nabíjecí stanice pro elektromobily z GoingElectric, Open Charge Map a Nobil, s dostupností v reálném čase, výkonnými filtry, oblíbenými a detaily stanic.
+Nový název a ikona: z EVMap je nyní EV Charge. Stejné funkce, stále zdarma, bez reklam a open source.
